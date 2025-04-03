@@ -1,0 +1,47 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	flex: 1;
+}
+
+.card__image > picture > img {
+	width: 79px;
+	height: 85px;
+}
+
+.card__content {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.card__description {
+	color: var(--color-gray-900);
+}
+
+@media (width >= 376px) {
+	.card {
+		flex-direction: row;
+		gap: 20px;
+	}
+}
+
+@media (width >= 769px) {
+	.card__image > picture > img {
+		width: 109px;
+		height: 116px;
+	}
+}
+
+@media (width >= 1025px) {
+	.card {
+		flex-direction: column;
+		gap: 0;
+		align-items: center;
+	}
+
+	.card__content {
+		text-align: center;
+	}
+}

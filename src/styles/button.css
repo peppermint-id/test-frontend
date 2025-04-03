@@ -1,0 +1,96 @@
+/* ========== Base Button Styles ========== */
+.btn {
+	display: inline-flex;
+	gap: 8px;
+	padding: 13px 32px;
+	border: none;
+	align-items: center;
+	border-radius: 9999px;
+	cursor: pointer;
+	justify-content: center;
+	outline: none;
+	transition:
+		background-color 0.3s ease,
+		border-color 0.3s ease,
+		color 0.3s ease;
+	white-space: nowrap;
+}
+
+.btn:disabled {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.btn:focus-visible {
+	outline: none;
+}
+
+/* ========== Variants ========== */
+
+/* Primary Button */
+.btn--primary {
+	color: var(--color-white);
+	background-color: var(--color-orange-500);
+	fill: var(--color-white);
+	stroke: var(--color-white);
+}
+
+.btn--primary:hover {
+	background-color: #ff671b;
+}
+
+.btn--primary:active {
+	background-color: var(--color-orange-400);
+}
+
+/* Secondary Button */
+.btn--secondary {
+	color: var(--color-black);
+	border: 1px solid var(--color-gray-700);
+	background-color: transparent;
+	fill: var(--color-black);
+	stroke: var(--color-black);
+}
+
+.btn--secondary:hover {
+	border-color: var(--color-orange-500);
+}
+
+.btn--secondary:active {
+	border-color: var(--color-orange-400);
+}
+
+/* Tertiary Button */
+.btn--tertiary {
+	width: fit-content;
+	padding: 0;
+	color: var(--color-black);
+	background-color: transparent;
+	fill: var(--color-orange-500);
+	stroke: var(--color-orange-500);
+}
+
+.btn--tertiary:hover {
+	color: var(--color-gray-800);
+	fill: var(--color-orange-400);
+	stroke: var(--color-orange-400);
+}
+
+.btn--tertiary:active {
+	color: var(--color-gray-900);
+	fill: var(--color-orange-400);
+	stroke: var(--color-orange-400);
+}
+
+/* ========== Sizes ========== */
+.btn--lg {
+	padding: 13px 32px;
+}
+
+.btn--md {
+	padding: 9.5px 20px;
+}
+
+.btn--sm {
+	padding: 5.5px 20px;
+}

@@ -1,0 +1,74 @@
+---
+import "./styles.css";
+
+import UseCaseCard from "./use-case-card.astro";
+
+// Use Cases List
+const useCases = [];
+---
+
+<section class="useCases">
+	<div class="u-grid-bg u-grid-bg--top u-grid-bg--primary u-grid-bg--top-0">
+	</div>
+	<div
+		class="u-grid-bg u-grid-bg--top-thin u-grid-bg--secondary u-grid-bg--top-0"
+	>
+	</div>
+	<div class="u-grid-bg u-grid-bg--bottom u-grid-bg--primary"></div>
+	<div class="u-grid-bg u-grid-bg--bottom-thin u-grid-bg--secondary"></div>
+
+	<div class="useCases__grid">
+		<div class="u-grid-bg u-grid-bg--left u-grid-bg--primary"></div>
+		<div class="u-grid-bg u-grid-bg--left-thin u-grid-bg--secondary"></div>
+		<div class="u-grid-bg u-grid-bg--right u-grid-bg--primary"></div>
+		<div class="u-grid-bg u-grid-bg--right-thin u-grid-bg--secondary"></div>
+
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-left u-grid-bg--primary u-grid-bg--top-0"
+		>
+		</div>
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-left u-grid-bg--secondary u-grid-bg--top-0"
+		>
+		</div>
+
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-right u-grid-bg--primary u-grid-bg--top-0"
+		>
+		</div>
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-right u-grid-bg--secondary u-grid-bg--top-0"
+		>
+		</div>
+
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--bottom-left u-grid-bg--primary"
+		>
+		</div>
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--bottom-left u-grid-bg--secondary"
+		>
+		</div>
+
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--bottom-right u-grid-bg--primary"
+		>
+		</div>
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--bottom-right u-grid-bg--secondary"
+		>
+		</div>
+
+		<div class="useCases__container u-box-shadow">
+			<!-- Use Cases Pattern-->
+			<h3
+				class="useCases__title text__heading--h5 text__heading--h4-md text__heading--h3-lg"
+			>
+				<!-- Use Cases Title-->
+			</h3>
+			<div class="useCases__card__container">
+				{useCases.map((item) => <UseCaseCard card={item} />)}
+			</div>
+		</div>
+	</div>
+</section>

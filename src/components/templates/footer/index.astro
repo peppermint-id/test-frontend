@@ -1,0 +1,299 @@
+---
+import { Icon } from "@/components/atoms";
+import type { TFooterMenu } from "@/types";
+
+import "./styles.css";
+
+const footerData: TFooterMenu[] = [
+	{
+		title: "PRODUCTS",
+		links: [
+			{
+				name: "Tetrate Istio Subscription - Commercial Istio Support",
+				url: "/products/tetrate-istio-subscription/",
+				external: false,
+			},
+			{
+				name: "Tetrate Istio Distro",
+				url: "https://docs.tetrate.io/istio-distro/",
+				external: true,
+			},
+			{
+				name: "Tetrate Enterprise Gateway for Envoy",
+				url: "/products/tetrate-enterprise-gateway-for-envoy/",
+				external: false,
+			},
+			{
+				name: "Tetrate Service Express",
+				url: "/tetrate-service-express/",
+				external: false,
+			},
+			{
+				name: "Tetrate Service Bridge",
+				url: "/products/tetrate-service-bridge/",
+				external: false,
+			},
+		],
+	},
+	{
+		title: "SOLUTIONS",
+		links: [
+			{
+				name: "Financial Services",
+				url: "/solutions/financial-services/",
+				external: false,
+			},
+			{
+				name: "FIPS",
+				url: "/solutions/fips-140-2-validated-service-mesh/",
+				external: false,
+			},
+			{ name: "Government", url: "/solutions/government/", external: false },
+			{
+				name: "Kubernetes",
+				url: "/solutions/manage-kubernetes-complexity/",
+				external: false,
+			},
+			{
+				name: "Kubernetes Ingress",
+				url: "/learn/kubernetes/what-is-kubernetes-ingress/",
+				external: false,
+			},
+			{
+				name: "Zero Trust",
+				url: "/solutions/zero-trust-security/",
+				external: false,
+			},
+		],
+	},
+	{
+		title: "LEARN",
+		links: [
+			{ name: "Blog", url: "/blog", external: false },
+			{
+				name: "Resources for Kubernetes Ingress and Enterprise Istio Support",
+				url: "/resources/",
+				external: false,
+			},
+			{ name: "Learning Center", url: "/learning-center", external: false },
+			{
+				name: "Tetrate Academy",
+				url: "https://academy.tetrate.io/",
+				external: true,
+			},
+			{
+				name: "Documentation",
+				url: "https://docs.tetrate.io/",
+				external: true,
+			},
+		],
+	},
+	{
+		title: "EVENTS",
+		links: [
+			{
+				name: "What's New in Envoy Gateway 1.1",
+				url: "/event/whats-new-in-envoy-gateway-1-1/",
+				external: false,
+			},
+			{
+				name: "Best Practices For Platform Owners and App Developers",
+				url: "/event/best-practices-for-platform-owners-and-app-developers/",
+				external: false,
+			},
+		],
+	},
+	{
+		title: "COMPANY",
+		links: [
+			{ name: "About", url: "/about/", external: false },
+			{ name: "Leadership", url: "/about/#leadership", external: false },
+			{ name: "Investors", url: "/about/#investors", external: false },
+			{ name: "Partners", url: "/about/#partners", external: false },
+			{ name: "Newsroom", url: "/about/#newsroom", external: false },
+			{ name: "Careers", url: "/about/#careers", external: false },
+			{ name: "Get Support", url: "/about/#support", external: false },
+			{ name: "Contact Us", url: "/about/#support", external: false },
+			{ name: "Legal", url: "/legal/", external: false },
+			{ name: "Sitemap", url: "/sitemap/", external: false },
+		],
+	},
+];
+---
+
+<footer class="footer">
+	<div class="footer__grid">
+		<div class="u-grid-bg u-grid-bg--top u-grid-bg--primary"></div>
+		<div class="u-grid-bg u-grid-bg--top-thin u-grid-bg--secondary"></div>
+		<div class="u-grid-bg u-grid-bg--bottom u-grid-bg--primary"></div>
+		<div class="u-grid-bg u-grid-bg--bottom-thin u-grid-bg--secondary"></div>
+
+		<div class="footer__container">
+			<div class="u-grid-bg u-grid-bg--left u-grid-bg--primary"></div>
+			<div class="u-grid-bg u-grid-bg--left-thin u-grid-bg--secondary"></div>
+			<div class="u-grid-bg u-grid-bg--right u-grid-bg--primary"></div>
+			<div class="u-grid-bg u-grid-bg--right-thin u-grid-bg--secondary"></div>
+
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-left u-grid-bg--primary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-left u-grid-bg--secondary"
+			>
+			</div>
+
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-right u-grid-bg--primary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-right u-grid-bg--secondary"
+			>
+			</div>
+
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--bottom-left u-grid-bg--primary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--bottom-left u-grid-bg--secondary"
+			>
+			</div>
+
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--bottom-right u-grid-bg--primary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--bottom-right u-grid-bg--secondary"
+			>
+			</div>
+			<div class="footer__sections">
+				{
+					footerData.map((item) => (
+						<div class="footer__column">
+							<h6 class="text__body--14-semibold-uppercase">{item.title}</h6>
+							<li class="footer__links">
+								{item.links.map((link) => (
+									<a
+										href={link.url}
+										class="footer__link"
+										target={link.external ? "_blank" : "_self"}
+									>
+										<span class="text__body--14 text__caption--md text__body--14-lg">
+											{link.name}
+										</span>
+									</a>
+								))}
+							</li>
+						</div>
+					))
+				}
+			</div>
+
+			<div class="footer__bottom">
+				<a href="/">
+					<img
+						src="/images/logo.svg"
+						class="footer__logo"
+						loading="lazy"
+						alt="Tetrate logo in the Footer section"
+					/>
+				</a>
+				<div class="footer__social">
+					<span class="text__body--14">Follow us</span>
+					<div class="footer__social-icons">
+						<a
+							href="https://x.com/tetrateio"
+							class="btn btn--secondary btn--md text__body--14-medium"
+							target="_blank"><Icon name="x" />X</a
+						>
+						<a
+							href="https://www.youtube.com/channel/UCtV2o3OvEH6U3DQ0-_7chNw"
+							class="btn btn--secondary btn--md text__body--14-medium"
+							target="_blank"><Icon name="youtube" />Youtube</a
+						>
+						<a
+							href="https://www.linkedin.com/company/tetrate/about/"
+							class="btn btn--secondary btn--md text__body--14-medium"
+							target="_blank"><Icon name="linkedin" />Linkedin</a
+						>
+						<a
+							href="https://github.com/tetratelabs"
+							class="btn btn--secondary btn--md text__body--14-medium"
+							target="_blank"><Icon name="github" />Github</a
+						>
+						<a
+							href="https://join.slack.com/t/tetrate-community/shared_invite/zt-30pdbaw86-w~ny6j4g5s9nR5mA5dVn0Q"
+							class="btn btn--secondary btn--md text__body--14-medium"
+							target="_blank"><Icon name="slack" />Slack</a
+						>
+					</div>
+					<div class="footer__social-icons--mobile">
+						<a
+							href="https://x.com/tetrateio"
+							class="btn btn--secondary btn--md text__body--14-medium footer__social-icons--btn--mobile"
+							target="_blank"><Icon name="x" /></a
+						>
+						<a
+							href="https://www.youtube.com/channel/UCtV2o3OvEH6U3DQ0-_7chNw"
+							class="btn btn--secondary btn--md text__body--14-medium footer__social-icons--btn--mobile"
+							target="_blank"><Icon name="youtube" /></a
+						>
+						<a
+							href="https://www.linkedin.com/company/tetrate/about/"
+							class="btn btn--secondary btn--md text__body--14-medium footer__social-icons--btn--mobile"
+							target="_blank"><Icon name="linkedin" /></a
+						>
+						<a
+							href="https://github.com/tetratelabs"
+							class="btn btn--secondary btn--md text__body--14-medium footer__social-icons--btn--mobile"
+							target="_blank"><Icon name="github" /></a
+						>
+						<a
+							href="https://join.slack.com/t/tetrate-community/shared_invite/zt-30pdbaw86-w~ny6j4g5s9nR5mA5dVn0Q"
+							class="btn btn--secondary btn--md text__body--14-medium footer__social-icons--btn--mobile"
+							target="_blank"><Icon name="slack" /></a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__legal">
+		<div class="footer__legal-container">
+			<div class="footer__legal-left">
+				<p class="text__body--14">
+					Copyright © Tetrate 2025. All rights reserved.
+				</p>
+				<div class="footer__legal-peppermint">
+					<span class="text__body--14">Designed by</span>
+					<a href="https://peppermint.id/" target="_blank">
+						<img
+							src="/images/peppermint.png"
+							srcset="/images/peppermint.png 1x, /images/peppermint@2x.png 2x"
+							width={107}
+							height={29}
+							loading="lazy"
+							alt="Peppermint logo"
+						/>
+					</a>
+				</div>
+			</div>
+
+			<div class="footer__legal-links">
+				<a href="/privacy" class="footer__legal-link">
+					<span class="text__body--14">Privacy Policy</span>
+				</a>
+				<a
+					href="/legal/service-terms-and-conditions-eula/"
+					class="footer__legal-link"
+				>
+					<span class="text__body--14">Terms & Conditions</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>

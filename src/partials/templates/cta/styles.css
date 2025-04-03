@@ -1,0 +1,186 @@
+/* ========== CTA Block ========== */
+.cta {
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.cta__grid {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	max-width: 1240px;
+}
+
+.cta__bg--linear {
+	z-index: -1;
+	width: 100%;
+	background-image: url("/images/patterns/gray-line.png");
+	background-size: 6px 12px;
+	height: 100vh;
+}
+
+.cta__section {
+	margin: auto;
+	background: var(--color-gray-200);
+	max-width: 1240px;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+	.cta__buttons button {
+		padding: 9px 32px;
+		font-size: 14px;
+		margin-top: 0;
+	}
+}
+
+@media (width >= 1024px) {
+	.cta {
+		padding: 0 20px;
+	}
+
+	.cta__grid {
+		padding: 20px;
+	}
+}
+
+/* ========== CTA Container ========== */
+.cta__container {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	margin: 0 auto;
+	padding: 125px 0;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+@media (width >= 1024px) {
+	.cta__container {
+		gap: 45px;
+		padding: 126px 0;
+	}
+}
+
+/* ========== CTA Text ========== */
+.cta--orange {
+	color: var(--color-orange-500);
+}
+
+.cta__title {
+	z-index: 2;
+}
+
+/* ========== CTA Buttons ========== */
+.cta__buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+/* ========== CTA Patterns ========== */
+
+.cta__bg--top-left {
+	position: absolute;
+	top: 27px;
+	left: 0;
+	z-index: 1;
+	width: 197px;
+	height: auto;
+}
+
+.cta__bg--bottom-left {
+	position: absolute;
+	top: 476px;
+	left: 0;
+	z-index: 1;
+	width: 158px;
+	height: auto;
+}
+
+.cta__bg--bottom-right {
+	position: absolute;
+	top: 345px;
+	right: 0;
+	z-index: 1;
+	width: 158px;
+	height: auto;
+}
+
+@media (width >= 768px) {
+	.cta__buttons {
+		flex-direction: row;
+	}
+
+	.cta__bg--top-left {
+		top: 22px;
+		left: 50%;
+		width: 262px;
+		transform: translateX(calc(-100% - 118px));
+	}
+
+	.cta__bg--bottom-left {
+		top: 412px;
+		left: 50%;
+		width: 211px;
+		transform: translateX(calc(-100% - 169px));
+	}
+
+	.cta__bg--bottom-right {
+		top: 238px;
+		left: 50%;
+		width: 211px;
+		transform: translateX(calc(-100% + 377px));
+	}
+
+	.cta__text br {
+		display: block;
+	}
+
+	.cta__container {
+		gap: 36px;
+		padding: 134px 0;
+		margin-right: 20px;
+	}
+}
+
+@media (width >=1024px) {
+	.cta {
+		position: relative;
+		width: 100%;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.cta__container {
+		z-index: 2;
+		gap: 45px;
+		padding: 125px 0;
+	}
+
+	.cta__bg--top-left {
+		top: 58px;
+		left: 50%;
+		width: 349px;
+		transform: translateX(calc(-100% - 299px));
+	}
+
+	.cta__bg--bottom-left {
+		top: 498px;
+		left: 50%;
+		width: 281px;
+		transform: translateX(calc(-100% - 364px));
+	}
+
+	.cta__bg--bottom-right {
+		top: 266px;
+		left: 50%;
+		width: 281px;
+		transform: translateX(calc(-100% + 646px));
+	}
+}

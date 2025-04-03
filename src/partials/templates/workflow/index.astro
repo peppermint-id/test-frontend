@@ -1,0 +1,53 @@
+---
+import WorkflowCard from "../workflow-card/index.astro";
+import "./styles.css";
+
+const workflowData = [];
+---
+
+<section class="workflow">
+	<h2
+		class="text__heading--h5 text__heading--h4-md text__heading--h2-lg workflow__title"
+	>
+		<!-- Workflow Title -->
+	</h2>
+	<div class="workflow__container">
+		<div class="u-grid-bg u-grid-bg--top u-grid-bg--primary u-grid-bg--top-0">
+		</div>
+		<div
+			class="u-grid-bg u-grid-bg--top-thin u-grid-bg--secondary u-grid-bg--top-0"
+		>
+		</div>
+		<div class="u-grid-bg u-grid-bg--0 u-grid-bg--primary"></div>
+		<div class="u-grid-bg u-grid-bg--bottom-0 u-grid-bg--secondary"></div>
+
+		<div class="workflow__grid">
+			<div class="u-grid-bg u-grid-bg--left u-grid-bg--primary"></div>
+			<div class="u-grid-bg u-grid-bg--left-thin u-grid-bg--secondary"></div>
+			<div class="u-grid-bg u-grid-bg--right u-grid-bg--primary"></div>
+			<div class="u-grid-bg u-grid-bg--right-thin u-grid-bg--secondary"></div>
+
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-left u-grid-bg--primary u-grid-bg--top-0"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-left u-grid-bg--secondary u-grid-bg--top-0"
+			>
+			</div>
+
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-right u-grid-bg--primary u-grid-bg--top-0"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-right u-grid-bg--secondary u-grid-bg--top-0"
+			>
+			</div>
+
+			<div class="workflow__card__container">
+				{workflowData?.map((data) => <WorkflowCard data={data} />)}
+			</div>
+		</div>
+	</div>
+</section>

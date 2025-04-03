@@ -1,0 +1,70 @@
+.workflow {
+	margin-top: 80px;
+}
+
+.workflow__container {
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+}
+
+.workflow__grid {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	max-width: 1240px;
+}
+
+.workflow__card__container {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.workflow__title {
+	margin: auto;
+	margin-bottom: 30px;
+	max-width: 60%;
+	text-align: center;
+}
+
+@media (width >= 768px) {
+	.workflow__grid {
+		padding: 10px 20px;
+	}
+
+	.workflow__title {
+		margin-bottom: 27px;
+	}
+
+	.workflow {
+		margin-top: 100px;
+	}
+
+	.workflow__card__container {
+		display: flex;
+		flex-direction: column;
+		gap: 54px;
+	}
+}
+
+@media (width >= 1020px) {
+	.workflow {
+		margin-top: 180px;
+	}
+
+	.workflow__grid {
+		padding: 20px;
+	}
+
+	.workflow__card__container {
+		display: flex;
+		flex-direction: column;
+		gap: 57px;
+	}
+
+	.workflow__title {
+		margin-bottom: 40px;
+	}
+}

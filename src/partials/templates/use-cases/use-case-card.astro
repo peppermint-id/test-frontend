@@ -1,0 +1,22 @@
+---
+import "./use-case-card.css";
+
+const { card } = Astro.props;
+---
+
+<div class="card">
+	<div class="card__image">
+		<picture>
+			<source srcset={card.image} media="(min-width: 768px)" />
+			<img src={card.imageMobile} loading="lazy" alt={card.title} />
+		</picture>
+	</div>
+	<div class="card__content">
+		<h6 class="text__body--18-medium text__heading--h6-lg">
+			{card.title}
+		</h6>
+		<p class="card__description text__body--14 text__body--16-lg">
+			{card.description}
+		</p>
+	</div>
+</div>

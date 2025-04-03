@@ -1,0 +1,27 @@
+---
+import "./styles.css";
+
+const { data } = Astro.props;
+---
+
+<div class="optimized__card">
+	<picture>
+		<source srcset={data.image.url} media="(min-width: 1020px)" />
+		<source srcset={data.image.urlMobile} media="(min-width: 768px)" />
+		<source srcset={data.image.urlMobile} media="(min-width: 375px)" />
+		<img src={data.image.url} loading="lazy" alt={data?.title} />
+	</picture>
+
+	<div class="optimized__card__content">
+		<h5
+			class="text__heading--h5 text__body--16-medium-md text__heading--h5-lg optimized__card__content__title_heading"
+		>
+			{data.title}
+		</h5>
+		<p
+			class="text__body--16-lg text__caption--md optimized__card__content__title_desc text__body--14"
+		>
+			{data.description}
+		</p>
+	</div>
+</div>

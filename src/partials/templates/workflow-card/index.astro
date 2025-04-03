@@ -1,0 +1,74 @@
+---
+import "./style.css";
+
+const { data } = Astro.props;
+
+const isEven = data?.id % 2 === 0;
+const directionClass = isEven ? "even" : "odd";
+---
+
+<div class="workflow__card__content">
+	<div class={`workflow__card__body ${directionClass}`}>
+		<div class="body__content">
+			<div class="body__title">
+				<h2 class="text__heading--h6 text__heading--h6-md text__heading--h4-lg">
+					{data?.title}
+				</h2>
+				<p
+					class="text__body--14 text__body--14-lg text__body--14-md workflow__card__description"
+				>
+					{data?.subTitle}
+				</p>
+			</div>
+			<div class="workflow__card__wrapper">
+				<div class="workflow__card__global">
+					<picture>
+						<img src={data?.global?.image} loading="lazy" alt={data?.title} />
+					</picture>
+					<div class="contents__item">
+						<p class="text__body--14-semibold">
+							{data?.global?.title}
+						</p>
+						<p class="text__body--14 workflow__card__description">
+							{data?.global?.subtitle}
+						</p>
+					</div>
+				</div>
+				<div class="workflow__card__routing">
+					<picture>
+						<img src={data?.routing?.image} loading="lazy" alt={data?.title} />
+					</picture>
+					<div class="contents__item">
+						<p class="text__body--14-semibold">
+							{data?.routing?.title}
+						</p>
+						<p class="text__body--14 workflow__card__description">
+							{data?.routing?.subtitle}
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="workflow__card__management">
+				<picture>
+					<img src={data?.management?.image} loading="lazy" alt={data?.title} />
+				</picture>
+				<div class="contents__item">
+					<p class="text__body--14-semibold">
+						{data?.management?.title}
+					</p>
+					<p class="text__body--14 workflow__card__description">
+						{data?.management?.subtitle}
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="workflow_card__image">
+			<picture>
+				<source srcset={data?.image?.url} media="(min-width: 1020px)" />
+				<source srcset={data?.image?.urlTablet} media="(min-width: 768px)" />
+				<source srcset={data?.image?.urlMobile} media="(min-width: 375px)" />
+				<img src={data?.image?.url} loading="lazy" alt={data?.title} />
+			</picture>
+		</div>
+	</div>
+</div>

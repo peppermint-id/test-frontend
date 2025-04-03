@@ -1,0 +1,257 @@
+---
+import { Icon, type IconType } from "@/components/atoms";
+import { ArrowRight } from "@/components/svgs";
+import { headerNavigation } from "@/constants";
+import "./styles.css";
+---
+
+<nav class="nav">
+	<div class="nav__container">
+		<a href="/">
+			<img
+				src="/images/logo.svg"
+				class="nav__logo"
+				loading="lazy"
+				alt="Tetrate logo"
+			/>
+		</a>
+
+		<div class="nav__links">
+			{
+				headerNavigation.map((item, index) => (
+					<div class="u-relative nav__link__wrapper">
+						<a href={item.url} class="nav__link text__body--16">
+							{item.title}
+							{item.categories && (
+								<>
+									<Icon name="arrow" className="arrow-down" />
+									<Icon name="arrow-up" className="arrow-up" />
+								</>
+							)}
+						</a>
+						{headerNavigation[index].categories && (
+							<div class="mega_menu__container">
+								{headerNavigation[index].categories.map((category) => (
+									<div
+										class={`mega_menu__column__wrapper ${!category.items[0].description && "mega_menu__column__wrapper__no_gap"}`}
+									>
+										{category.title &&
+											(category.url ? (
+												<a
+													class="text__caption mega_menu__content__wrapper"
+													href={category.url}
+												>
+													{category.title}
+													<ArrowRight color="#FF5500" width={20} height={20} />
+												</a>
+											) : (
+												<p class="text__caption mega_menu__content__wrapper">
+													{category.title}
+												</p>
+											))}
+										{category.items.map((item) =>
+											item?.icon === "button" ? (
+												<a class="mega_menu__item__wrapper" href={item.url}>
+													<button class="btn btn--primary text__body--14-medium text__body--16-semibold-lg">
+														Tetrate Academy
+														<Icon name="arrow-right" />
+													</button>
+												</a>
+											) : (
+												<a
+													class={`mega_menu__item__wrapper ${!item.description && "mega_menu__item__wrapper__center"}`}
+													href={item.url}
+												>
+													{item.icon && (
+														<div class="mega_menu__item_icon__wrapper">
+															<Icon name={item.icon as IconType} />
+														</div>
+													)}
+													<div class="mega_menu__item_description__wrapper">
+														<p class="text__body--16-medium u-whitespace-nowrap">
+															{item.name}
+														</p>
+														{item.description && (
+															<p class="text__body--14 text__color-gray-800 mega_menu__item_description">
+																{item.description}
+															</p>
+														)}
+													</div>
+												</a>
+											)
+										)}
+									</div>
+								))}
+							</div>
+						)}
+					</div>
+				))
+			}
+		</div>
+
+		<div class="nav__buttons">
+			<a href="/contact/pricing-request/">
+				<button
+					class="btn btn--primary btn--md text__body--16-medium nav__pricing_request__btn"
+				>
+					Pricing Request
+				</button>
+			</a>
+			<div class="nav__menu__button">
+				<Icon name="menu" />
+			</div>
+		</div>
+	</div>
+	<div class="nav__mobile">
+		<div class="nav__mobile__top">
+			<img
+				src="/images/logo.svg"
+				class="nav__logo"
+				loading="lazy"
+				alt="Tetrate logo for mobile navigation"
+			/>
+			<div class="nav__close">
+				<Icon name="close" />
+			</div>
+		</div>
+
+		<div class="nav__mobile__content">
+			<div class="nav__mobile__links">
+				{
+					headerNavigation.map((item, index) => (
+						<div class="nav__link__wrapper">
+							<a href={item.url} class="nav__link text__heading--h6">
+								{item.title}
+								{item.categories && (
+									<>
+										<Icon name="arrow" className="arrow-down" />
+										<Icon name="arrow-up" className="arrow-up" />
+									</>
+								)}
+							</a>
+							<div class="mega_menu__container">
+								{headerNavigation[index].categories?.map((category) => (
+									<div
+										class={`mega_menu__column__wrapper ${!category.items[0].description && "mega_menu__column__wrapper__no_gap"}`}
+									>
+										{category.title &&
+											(category.url ? (
+												<a
+													class="text__caption mega_menu__content__wrapper"
+													href={category.url}
+												>
+													{category.title}
+													<ArrowRight color="#FF5500" width={20} height={20} />
+												</a>
+											) : (
+												<p class="text__caption mega_menu__content__wrapper">
+													{category.title}
+												</p>
+											))}
+										{category.items.map((item) =>
+											item?.icon === "button" ? (
+												<a class="mega_menu__item__wrapper" href={item.url}>
+													<button class="btn btn--primary text__body--14-medium text__body--16-semibold-lg">
+														Tetrate Academy
+														<Icon name="arrow-right" />
+													</button>
+												</a>
+											) : (
+												<a
+													class={`mega_menu__item__wrapper ${!item.description && "mega_menu__item__wrapper__center"}`}
+													href={item.url}
+												>
+													{item.icon && (
+														<div class="mega_menu__item_icon__wrapper">
+															<Icon name={item.icon as IconType} />
+														</div>
+													)}
+													<div class="mega_menu__item_description__wrapper">
+														<p class="text__body--16-medium">{item.name}</p>
+														{item.description && (
+															<p class="text__body--14 text__color-gray-800 mega_menu__item_description">
+																{item.description}
+															</p>
+														)}
+													</div>
+												</a>
+											)
+										)}
+									</div>
+								))}
+							</div>
+						</div>
+					))
+				}
+			</div>
+
+			<div class="nav__mobile__buttons">
+				<a href="/contact/demo-request/">
+					<button
+						class="btn btn--secondary text__body--14-medium text__body--16-semibold-md nav__mobile__button"
+					>
+						Request a demo
+					</button>
+				</a>
+				<a href="/contact/pricing-request/">
+					<button
+						class="btn btn--primary text__body--16-medium text__body--16-semibold-md nav__mobile__button"
+					>
+						Pricing Request
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<script>
+	let lastScrollY = window.scrollY;
+	const nav = document.querySelector(".nav");
+
+	const handleScroll = () => {
+		const currentScrollY = window.scrollY;
+
+		if (currentScrollY >= lastScrollY && currentScrollY > 100) {
+			nav?.classList.add("hidden");
+			// nav?.classList.remove("visible");
+		} else {
+			// nav?.classList.add("visible");
+			nav?.classList.remove("hidden");
+		}
+
+		if (currentScrollY > 100) {
+			nav?.classList.add("nav__with__bg");
+		} else {
+			nav?.classList.remove("nav__with__bg");
+		}
+
+		lastScrollY = currentScrollY;
+	};
+
+	window.addEventListener("scroll", handleScroll);
+
+	const nav_mobile = document.querySelector(".nav__mobile");
+
+	document
+		.querySelector(".nav__menu__button")
+		?.addEventListener("click", () => {
+			// nav?.classList.remove("visible");
+			nav_mobile?.classList.add("open");
+			document.body.classList.add("no-scroll");
+		});
+
+	document.querySelector(".nav__close")?.addEventListener("click", () => {
+		// nav?.classList.add("visible");
+		nav_mobile?.classList.remove("open");
+		document.body.classList.remove("no-scroll");
+	});
+
+	const navLinks = document.querySelectorAll(".nav__link__wrapper");
+
+	navLinks.forEach((link) => {
+		link.addEventListener("click", () => {
+			link.classList.toggle("open");
+		});
+	});
+</script>

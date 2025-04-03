@@ -1,0 +1,36 @@
+---
+import { ArrowRight, Close } from "@/components/svgs";
+import "./style.css";
+---
+
+<div class="topBar" id="topBar">
+	<div class="topBar__bg">
+		<div class="topBar__bg--linear"></div>
+		<div class="topBar__container">
+			<h4
+				class="text__body--12-medium text__body--14-medium-lg text__body--14-medium-md topBar__title"
+			>
+				Announcing Tetrate Agent Operations Director for GenAI Runtime
+				Visibility and Governance
+			</h4>
+			<a
+				href="/blog/announcing-tetrate-agent-operations-director-for-genai-runtime-visibility-and-governance/"
+			>
+				<span class="text__body--14-medium topBar__link"
+					>Learn more <ArrowRight color="#FF5500" /></span
+				>
+			</a>
+			<button id="closeTopBar" class="topBar__close">
+				<Close color="#FFFFFF" />
+			</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		document.getElementById("closeTopBar")!.addEventListener("click", () => {
+			document.getElementById("topBar")!.style.display = "none";
+		});
+	});
+</script>

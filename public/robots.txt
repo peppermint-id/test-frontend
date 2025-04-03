@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /*.css
+Allow: /*.js
+Disallow: /calendar/action*
+Disallow: /events/action*
+Sitemap: https://tetrate.io/sitemap_index.xml

@@ -1,0 +1,85 @@
+/* ========== Hero Block ========== */
+.hero__area {
+	background-image: linear-gradient(var(--color-white), #edeeee);
+	margin-top: -80px;
+}
+
+.hero {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	padding: 0 13px;
+	background-image: image-set(
+		url("/images/gatewayHero/hero-bg-mobile.png") 1x,
+		url("/images/gatewayHero/hero-bg-mobile@2x.png") 2x
+	);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: 620px;
+}
+
+.hero__container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin: 0 auto;
+	padding: 110px 10px;
+	align-items: start;
+	justify-content: left;
+	max-width: 1440px;
+	text-align: left;
+}
+
+.hero_button {
+	display: inline-block;
+}
+
+@media (width >= 375px) {
+	.hero_button .btn {
+		padding: 12px 32px;
+	}
+}
+
+@media (width >= 768px) {
+	.hero {
+		background-image: image-set(
+			url("/images/gatewayHero/hero-bg-tablet.png") 1x,
+			url("/images/gatewayHero/hero-bg-tablet@2x.png") 2x
+		);
+		height: 716px;
+	}
+
+	.hero__container {
+		gap: 20px;
+		padding: 131px 20px;
+	}
+
+	.hero_button {
+		margin-top: 10px;
+	}
+}
+
+@media (width >= 1024px) {
+	.hero {
+		background-image: image-set(
+			url("/images/gatewayHero/hero-bg.png") 1x,
+			url("/images/gatewayHero/hero-bg@2x.png") 2x
+		);
+	}
+
+	.hero__container {
+		gap: 30px;
+		padding: 260px 120px;
+	}
+}
+
+@media (width >= 768px) {
+	.hero__text br {
+		display: block;
+	}
+}
+
+.hero__button {
+	margin-top: 12px;
+}

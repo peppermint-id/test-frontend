@@ -1,0 +1,4984 @@
+# Headers
+[[headers]]
+for = "/*"
+[headers.values]
+X-My-Header = "MINE.2"
+
+# ==== REDIRECT FROM INTERNAL DOMAIN ====
+[[redirects]]
+from = "https://tetrateio.netlify.app/*"
+to = "https://tetrate.io/:splat"
+status = 301
+
+# ==== REDIRECTS FROM FLYWHEEL ====
+[[redirects]]
+from = "/wp-content/uploads/2021/07/Tetrate-Support-and-Maintenance-04232021.pdf"
+to = "/wp-content/uploads/2022/11/tetrate-maintenance-and-support-terms.pdf"
+status = 301
+
+[[redirects]]
+from = "/blog/unpacking-next-generation-access-control-ngac-and-tetrate-q*"
+to = "/blog/rbac-vs-abac-vs-ngac/"
+status = 301
+
+[[redirects]]
+from = "/blog/category/tetrate-service-bridge*"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/blog/career/envoy-proxy*"
+to = "/what-is-envoy-proxy/"
+status = 301
+
+[[redirects]]
+from = "/webinar-dod-servicemesh-security-zta*"
+to = "/zero-trust/"
+status = 301
+
+[[redirects]]
+from = "/blog/why-do-you-need-istio-when-you-already-have-kubernetes*"
+to = "/blog/what-is-istio-and-why-does-kubernetes-need-it/"
+status = 301
+
+[[redirects]]
+from = "/blog/businesswire-key-contributors-of-envoy-and-istio-projects-launch-tetrate-with-12-5m-in-funding-to-create-enterprise-grade-service-mesh*"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/blog/service-mesh-day-2019-press-release*"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/blog/businesswire-tetrate-works-with-amazon-web-services-to-bring-enterprise-grade-envoy-to-aws-app-mesh-users*"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/blog/category/open-source/istio-service-mesh/page/9*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/author/adam-zh-hans*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/category/open-source/istio-service-mesh/page/7*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/category/service-mesh/page/4*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/category/*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/category/*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/tag/*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/tag/*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/author/*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/event_listing*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/?p=14482"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/page/*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/autotrader-istio-mtls-success/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/takeaways-from-kubecon-eu-2020/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/tetrates-new-look/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/kubecon-eu-2/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/what-can-i-stop-worrying-about-when-i-have-a-service-mesh/"
+to = "/what-is-istio-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/dont-miss-tetrate-at-kubecon-and-servicemeshcon-nov-17-20-2020/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/lessons-from-running-remote-design-workshop/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/computerworlduk-tetrate-emerges-from-stealth-to-bring-service-mesh-to-the-enterprise/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/digirupt-io-service-mesh-model-gunning-for-disruption-of-networking-market/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-istio-subscription-3/"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/blog/the-top-6-zero-trust-principles-for-kubernetes-security*"
+to = "/blog/zero-trust-kubernetes-security/"
+status = 301
+
+[[redirects]]
+from = "/blog/top-10-blogs-of-2022*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/nist/"
+to = "/government/"
+status = 301
+
+[[redirects]]
+from = "/fips-certified-istio-and-enterprise-support-from-the-founders-and-maintainers-of-istio-and-envoy*"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/event/istiocon/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/%E4%BA%91%E5%8E%9F%E7%94%9F-wasm-day/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/wasm-day/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/nist-tetrate-%E7%BA%BF%E4%B8%8A%E5%A4%A7%E4%BC%9A%EF%BC%9A%E5%A4%9A%E4%BA%91%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84-devsecops-%E5%92%8C%E9%9B%B6%E4%BF%A1%E4%BB%BB%E6%9E%B6%E6%9E%84/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%A4%BE%E5%8C%BA-meetup/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/kubecon-virtual-may-4-7/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/apachecon-asia/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/nist-tetrate-virtual-conference-devsecops-and-zero-trust-architecture-for-multi-cloud-environments/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/open-source-annual-conference-and-apache-roadshow-china/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/kubecon-north-america-2020-virtual/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/devsecops-and-it-innovation-with-department-of-defense/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/tetrate-envoy-and-service-mesh-immersion-day/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/servicemeshcon-%E5%8C%97%E7%BE%8E%E5%B3%B0%E4%BC%9A/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/servicemeshcon-north-america/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%A4%BE%E5%8C%BA-meetup-%E4%B8%8A%E6%B5%B7%E7%AB%99/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/cloud-native-meetup/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/china-software-technology-conference/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/%E4%B8%AD%E5%9B%BD%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF%E5%A4%A7%E4%BC%9A/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-ama-with-vikas-weston-and-zack/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-%E9%9A%8F%E4%BD%A0%E9%97%AE%EF%BC%9A%E6%9D%A5%E8%B7%9F-vikas%E3%80%81weston-%E5%92%8C-zack-%E8%81%8A%E8%81%8A%E5%90%A7/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/cloud-native-meetup-shanghai/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/keyfactor-tetrate-webinar/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-big-talk/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-weekly-episode-4/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/the-2021-amazon-cloud-technology-china-summit-beijing/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/the-2021-amazon-cloud-technology-china-summit/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/episode-05-security-in-istio/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/apache-skywalking-day-conference/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-big-talk-episode-4/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-big-talk-episode-5/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/live-webinar-zero-trust-at-the-department-of-defense/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-weekly-episode-6-envoy-fundamentals/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/episode-07-developing-envoy-wasm-extensions/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-in-the-enterprise/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/episode-08-external-ca-with-istio/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/episode-09-customizing-istio-metrics/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/zero-trust-with-a-service-mesh/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/application-security-in-a-contactless-world-a-fintech-roundtable/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/become-a-certified-istio-expert/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/enterprise-service-mesh/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/contributing-to-istio-and-envoy/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/sapphire-vision-summit-reimagining-the-enterprise/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/containers-from-the-couch-service-mesh-with-tetrate/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/access-control-for-microservices/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/episode-14-istios-new-wasm-based-extension-mechanism-and-ecosystem/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/setting-up-istio-with-external-control-plane/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-wasm-extensions-workshop/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/devsecops-and-zta-for-cloud-native-applications-training-and-conference/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-0-to-60-workshop/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-0-to-60-workshop-ist/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/tsb-1-4-next-generation-api-management/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/service-mesh-or-api-gateway-how-to-pick-the-right-one/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/zero-trust-architecture-for-cloud-native-apps-on-hybrid-infrastructure/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/tetrates-austin-roadshow/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/tetrate-istio-wasm-extensions-workshop/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/secure-multi-cluster-and-multi-tenant-cloud-native-applications-with-mirantis-and-tetrate/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-0-to-60-workshop-may/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/tetrate-tech-talks-episode-5-web-assembly/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/episode-6-kafka-envoy/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/episode-7-kubecon-eu-report/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/delivering-api-security-everywhere-with-envoy-gateway/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/fireside-chat-on-envoy-gateway/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/tetrate-service-bridge-to-connect-and-manage-applications/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-primary-remote-deployment-model/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/certified-istio-administrator-by-tetrate-ciat/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/web-application-firewalls/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/lets-talk-service-mesh-with-kelsey-hightower/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/learning-istio-from-the-inside/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/tetrand-profile-michael-acostamadiedo/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/nist-sp-207-laying-the-groundwork-for-zero-trust-architecture*"
+to = "/blog/nist-sp-207-the-groundwork-for-zero-trust/"
+status = 301
+
+[[redirects]]
+from = "/tetrates-guide-to-federal-security-requirements-for-microservices/"
+to = "/blog/nist-sp-207-laying-the-groundwork-for-zero-trust-architecture/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-express-thank-you/"
+to = "/blog/nist-sp-207-laying-the-groundwork-for-zero-trust-architecture/"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-tetrate-q/"
+to = "/blog/nist-sp-207-laying-the-groundwork-for-zero-trust-architecture/"
+status = 301
+
+[[redirects]]
+from = "/blog/announcing-aws-tetrate-partnership-to-bring-enterprise-grade-envoy-to-app-mesh-users/"
+to = "/how-are-certificates-managed-in-istio/"
+status = 301
+
+[[redirects]]
+from = "/blog/nist-tetrate-2022-conference-talks-nist-standards-for-service-mesh/"
+to = "/how-are-certificates-managed-in-istio/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-0-to-60-workshop-june/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/getistio"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/getistio/"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/wp-content/uploads/2022/11/tetrate-maintenance-and-support-terms.pdf"
+to = "https://tetr8.io/support-terms"
+status = 301
+
+[[redirects]]
+from = "/wp-content/uploads/2021/10/Tetrate-EULA.pdf"
+to = "https://tetr8.io/EULA"
+status = 301
+
+[[redirects]]
+from = "/service-mesh-handbook"
+to = "/resource/service-mesh-handbook/"
+status = 301
+
+[[redirects]]
+from = "/news/*"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/contact/"
+to = "/contact-us/"
+status = 301
+
+[[redirects]]
+from = "/event/qcon-san-francisco-2023-istio-workshop/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/accelerate-eks-adoption-with-eks-blueprints-and-tetrate-istio/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-at-kubecon-cloudnativecon-2023/"
+to = "/kubecon/"
+status = 301
+
+[[redirects]]
+from = "/wp-content/uploads/2021/10/kubecon.jpg"
+to = "/kubecon/"
+status = 301
+
+[[redirects]]
+from = "/event/aws-reinvent-2023*"
+to = "/aws-re-invent2023/"
+status = 301
+
+[[redirects]]
+from = "/blog/brian-dussault-joins-tetrate-as-the-head-of-engineering/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/skywalking-performance/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/learn-events/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/apache-skywalking-ebook-tetrate/"
+to = "/resource/apache-skywalking-in-action/"
+status = 301
+
+[[redirects]]
+from = "/white-paper-value-of-istio-envoy/"
+to = "/resource/current-state-and-future-of-istio-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/nist-tetrate-2021-conference-talk-abac-for-microservices-applications-using-a-service-mesh/"
+to = "/nist-zero-trust-sp-800-207a/"
+status = 301
+
+[[redirects]]
+from = "/white-paper-zero-trust-architecture/"
+to = "/resource/zero-trust-architecture-white-paper/"
+status = 301
+
+[[redirects]]
+from = "/docs/reference/config/rbac/v2/access-bindings.html"
+to = "https://docs.tetrate.io/"
+status = 301
+
+[[redirects]]
+from = "/contact-us-sales/"
+to = "/contact-sales/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-mesh-survey-2022/"
+to = "/blog/what-is-a-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/zta-devsecops-conference-2022/"
+to = "/resources/"
+status = 301
+
+[[redirects]]
+from = "/blog/happy-istio-4th-anniversary-retrospect-and-outlook/"
+to = "/blog/tetrate-istio-subscription-tis-the-only-fully-open-source-istio-and-envoy-distro-for-enterprise-production/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-tetrate-service-bridge-protects-log4j-remote-execution/"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-expands-aws-partnershi-to-bring-enterprise-grade-istio-for-eks-and-eks-distro/"
+to = "/blog/tetrate-expands-aws-partnership-to-bring-enterprise-grade-istio-for-eks-and-eks-distro/"
+status = 301
+
+[[redirects]]
+from = "/press/istios-open-source-app-networking-project/"
+to = "/open-source-contributions/"
+status = 301
+
+[[redirects]]
+from = "/press/tsb-networking-gap-via-service-mesh/"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/blog/grpc-transcoding-with-istio/"
+to = "/blog/how-the-istio-service-mesh-became-critical-infrastructure-for-cloud-native-applications/"
+status = 301
+
+[[redirects]]
+from = "/blog/ngac/"
+to = "/blog/nistoverview/"
+status = 301
+
+[[redirects]]
+from = "/blog/debugistioconfig/"
+to = "/blog/istio-component-ports-and-functions-in-detail/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-servicemesh-api-gateway/"
+to = "/blog/istio-service-mesh-api-gateway/"
+status = 301
+
+[[redirects]]
+from = "/career/lead-technical-recruiter-sourcers-researchers/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/the-basics-of-envoy-and-envoy-extensibility/"
+to = "/blog/get-started-with-envoy-in-5-minutes/"
+status = 301
+
+[[redirects]]
+from = "/contact-us-sales"
+to = "/contact-us/"
+status = 301
+
+[[redirects]]
+from = "/blog/smd-peterson/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoybasicsandextensibility/"
+to = "/blog/get-started-with-envoy-in-5-minutes/"
+status = 301
+
+[[redirects]]
+from = "/career/vp-of-human-resources/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/event-organizers/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/use-cases/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/smd-coultono/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/multicluster-management-with-kubernetes-and-istio/"
+to = "/blog/what-is-istio-and-why-does-kubernetes-need-it/"
+status = 301
+
+[[redirects]]
+from = "/blog/%E7%90%86%E8%A7%A3-istio-%E5%92%8C-tcp-%E6%9C%8D%E5%8A%A1/?lang=zh-hans"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/partners/"
+to = "/partners-and-integrations/"
+status = 301
+
+[[redirects]]
+from = "/wp-content/plugins/code-prettify/readme.txt"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/job/business-operations-and-people/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/vice-president-of-human-resources/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/event/golden-gate-release-of-tetrate-service-bridge-from-a-to-z/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/conference-for-open-source-coders-users-promoters/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/multi-cluster-communication-a-multi-mesh-approach/"
+to = "/blog/istio-multi-cluster-authentication-mtls/"
+status = 301
+
+[[redirects]]
+from = "/blog/nist-standards-for-zero-trust-the-sp-800-204-series/feed/"
+to = "/blog/nist-standards-for-zero-trust-the-sp-800-204-series/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-proxy-1-15-release/feed/"
+to = "/blog/envoy-proxy-1-15-release/"
+status = 301
+
+[[redirects]]
+from = "/blog/apache-skywalking-use-profiling-to-fix-the-blind-spot-of-distributed-tracing/feed/"
+to = "/blog/what-is-apache-skywalking/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-and-federal-agency-nist-istio-and-envoy-training/"
+to = "/government/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-named-2021-cool-vendor-cloud-computing-by-gartner/"
+to = "/blog/tetrate-named-gartner-cool-vendor/"
+status = 301
+
+[[redirects]]
+from = "/blog/announcing-getenvoy/"
+to = "/tetrate-enterprise-envoy-gateway/"
+status = 301
+
+[[redirects]]
+from = "/wp-content/uploads/2021/11/Tetrate-Company-FAQ.pdf"
+to = "/faq/"
+status = 301
+
+[[redirects]]
+from = "/blog/crn-cloud-startups-reel-in-funding/"
+to = "/blog/series-b-journey-next-steps/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-service-mesh-gra/"
+to = "/what-is-istio-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/a-history-of-networking-and-whats-next-for-service-mesh-larry-peterson-at-service-mesh-day-2019/feed/"
+to = "/blog/a-history-of-networking-and-whats-next-for-service-mesh-larry-peterson-at-service-mesh-day-2019/"
+status = 301
+
+[[redirects]]
+from = "/event/aws-and-istio-office-hours-expert-connect/"
+to = "/istio-office-hours-for-aws-users/"
+status = 301
+
+[[redirects]]
+from = "/event/cloudnativesecuritycon-north-america-2023/"
+to = "/blog/new-zero-trust-security-standards-to-protect-multi-site-cloud-native-applications/"
+status = 301
+
+[[redirects]]
+from = "/blog/ebpf-enhanced-http-observability-l7-metrics-and-tracing-with-skywalking/feed/"
+to = "/blog/ebpf-enhanced-http-observability-l7-metrics-and-tracing-with-skywalking/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-wasm-extensions-and-ecosystem/feed/"
+to = "/blog/istio-wasm-extensions-and-ecosystem/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-istio-subscription/why-tetrate-istio-subscription/"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/event/kubecon-cloudnativecon-north-america/"
+to = "/kubecon/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-adds-istio-and-envoy-support-for-arm-neoverse/feed/"
+to = "/blog/tetrate-adds-istio-and-envoy-support-for-arm-neoverse/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-gateway-0-4-0-extending-the-api-for-customization/feed/"
+to = "/blog/envoy-gateway-0-4-0-extending-the-api-for-customization/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-istio-120-gateway-api-external-endpoint-enhancements-wasm-updates-and-more/feed/"
+to = "/blog/whats-new-in-istio-120-gateway-api-external-endpoint-enhancements-wasm-updates-and-more/"
+status = 301
+
+[[redirects]]
+from = "/blog/implementing-gitops-and-canary-deployment-with-argo-project-and-istio/feed/"
+to = "/blog/implementing-gitops-and-canary-deployment-with-argo-project-and-istio/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-partner-form"
+to = "/become-a-tetrate-partner/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-partner-form/"
+to = "/become-a-tetrate-partner/"
+status = 301
+
+[[redirects]]
+from = "/career/software-engineer-golang/all/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/2015/04/borg-predecessor-to-kubernetes/"
+to = "/learn/what-is-the-kubernetes-gateway-api/"
+status = 301
+
+[[redirects]]
+from = "/event-test-2/page/1/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-istio-advisor-plus-gpt/feed/"
+to = "/blog/introducing-istio-advisor-plus-gpt/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-1-18-released-now-with-ambient-mode-available/feed/"
+to = "/blog/istio-1-18-released-now-with-ambient-mode-available/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-adoption-5-lessons-on-how-to-overcome-barriers-to-adoption/feed/"
+to = "/blog/istio-adoption-5-lessons-on-how-to-overcome-barriers-to-adoption/"
+status = 301
+
+[[redirects]]
+from = "/blog/vm-onboarding-with-tsb-service-mesh-and-customer-experience/feed/"
+to = "/blog/vm-onboarding-with-tsb-service-mesh-and-customer-experience/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-istio-subscription-tis-the-only-fully-open-source-istio-and-envoy-distro-for-enterprise-production/feed/"
+to = "/blog/tetrate-istio-subscription-tis-the-only-fully-open-source-istio-and-envoy-distro-for-enterprise-production/"
+status = 301
+
+[[redirects]]
+from = "/blog/new-guide-to-zero-trust-fips-and-fedramp-for-cloud-native-applications-from-tetrate/feed/"
+to = "/blog/new-guide-to-zero-trust-fips-and-fedramp-for-cloud-native-applications-from-tetrate/"
+status = 301
+
+[[redirects]]
+from = "/blog/observing-vms/feed/"
+to = "/blog/observing-vms/"
+status = 301
+
+[[redirects]]
+from = "/blog/simplify-kubernetes-security-with-the-service-mesh/feed/"
+to = "/blog/simplify-kubernetes-security-with-the-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/managing-certificates-in-istio-with-cert-manager-and-spire/feed/"
+to = "/blog/managing-certificates-in-istio-with-cert-manager-and-spire/"
+status = 301
+
+[[redirects]]
+from = "/blog/exploring-envoy-proxys-latest-release-version-127/feed/"
+to = "/blog/exploring-envoy-proxys-latest-release-version-127/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-envoy-gateways-latest-05-release-enhanced-usability-and-observability/feed/"
+to = "/blog/whats-new-in-envoy-gateways-latest-05-release-enhanced-usability-and-observability/"
+status = 301
+
+[[redirects]]
+from = "/blog/intro-to-tetrate-service-bridge-2/feed/"
+to = "/blog/intro-to-tetrate-service-bridge-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-security-release-1-6-8-and-1-5-9/feed/"
+to = "/blog/istio-security-release-1-6-8-and-1-5-9/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-to-debug-microservices-in-kubernetes-with-proxy-sidecar-or-service-mesh-2/feed/"
+to = "/blog/how-to-debug-microservices-in-kubernetes-with-proxy-sidecar-or-service-mesh-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/zero-trust-kubernetes-security/feed/"
+to = "/blog/zero-trust-kubernetes-security/"
+status = 301
+
+[[redirects]]
+from = "/blog/tsb-ci-cd-pipeline-2/feed/"
+to = "/blog/tsb-ci-cd-pipeline-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/performance-optimization-for-istio/feed/"
+to = "/blog/performance-optimization-for-istio/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-recognized-in-gartners-hype-cycle-for-zero-trust-networking-2023/feed/"
+to = "/blog/tetrate-recognized-in-gartners-hype-cycle-for-zero-trust-networking-2023/"
+status = 301
+
+[[redirects]]
+from = "/blog/nist-sp-207-the-groundwork-for-zero-trust/feed/"
+to = "/blog/nist-sp-207-the-groundwork-for-zero-trust/"
+status = 301
+
+[[redirects]]
+from = "/blog/ambient-mesh-what-you-need-to-know-about-this-experimental-new-deployment-model-for-istio/feed/"
+to = "/blog/ambient-mesh-what-you-need-to-know-about-this-experimental-new-deployment-model-for-istio/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-envoy-1-17-v2-xds-api-deprecated/feed/"
+to = "/blog/whats-new-in-envoy-1-17-v2-xds-api-deprecated/"
+status = 301
+
+[[redirects]]
+from = "/blog/devclass-oldtimers-dell-and-intel-show-service-mesh-newbie-tetrate-round-the-enterprise/feed/"
+to = "/blog/devclass-oldtimers-dell-and-intel-show-service-mesh-newbie-tetrate-round-the-enterprise/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-istio-1-9/feed/"
+to = "/blog/whats-new-in-istio-1-9/"
+status = 301
+
+[[redirects]]
+from = "/blog/use-tetrates-open-source-istio-cost-analyzer-to-optimize-your-cloud-egress-costs/feed/"
+to = "/blog/use-tetrates-open-source-istio-cost-analyzer-to-optimize-your-cloud-egress-costs/"
+status = 301
+
+[[redirects]]
+from = "/blog/rbac-vs-abac-vs-ngac/feed/"
+to = "/blog/rbac-vs-abac-vs-ngac/"
+status = 301
+
+[[redirects]]
+from = "/blog/zero-trust-network-for-microservices/feed/"
+to = "/blog/zero-trust-network-for-microservices/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-and-intel-partner-to-boost-coraza-waf-performance-and-efficiency/feed/"
+to = "/blog/tetrate-and-intel-partner-to-boost-coraza-waf-performance-and-efficiency/"
+status = 301
+
+[[redirects]]
+from = "/blog/hands-on-with-the-gateway-api-using-envoy-gateway-0-2/feed/"
+to = "/blog/hands-on-with-the-gateway-api-using-envoy-gateway-0-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/observability-101-what-you-see-is-what-you-get/feed/"
+to = "/blog/observability-101-what-you-see-is-what-you-get/"
+status = 301
+
+[[redirects]]
+from = "/blog/minimizing-cross-zone-traffic-charges-with-istio/feed/"
+to = "/blog/minimizing-cross-zone-traffic-charges-with-istio/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-service-mesh-layers-microservices-security-with-traditional-security-to-move-fast-safely/feed/"
+to = "/blog/how-service-mesh-layers-microservices-security-with-traditional-security-to-move-fast-safely/"
+status = 301
+
+[[redirects]]
+from = "/blog/get-started-with-envoy-in-5-minutes/feed/"
+to = "/blog/get-started-with-envoy-in-5-minutes/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-named-gartner-cool-vendor/feed/"
+to = "/blog/tetrate-named-gartner-cool-vendor/"
+status = 301
+
+[[redirects]]
+from = "/blog/observability-at-scale-skywalking-it-is/feed/"
+to = "/blog/observability-at-scale-skywalking-it-is/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-enterprise-envoy-gateway-from-zero-to-app-serving-in-15-minutes/feed/"
+to = "/blog/tetrate-enterprise-envoy-gateway-from-zero-to-app-serving-in-15-minutes/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-istios-mtls-traffic-encryption-works-as-part-of-a-zero-trust-security-posture/feed/"
+to = "/blog/how-istios-mtls-traffic-encryption-works-as-part-of-a-zero-trust-security-posture/"
+status = 301
+
+[[redirects]]
+from = "/blog/bridging-traditional-and-modern-workloads/feed/"
+to = "/blog/bridging-traditional-and-modern-workloads/"
+status = 301
+
+[[redirects]]
+from = "/blog/wasm-outside-the-browser/feed/"
+to = "/blog/wasm-outside-the-browser/"
+status = 301
+
+[[redirects]]
+from = "/blog/solving-application-networking-and-security-with-tetrate-on-azure-using-open-source-tech-like-istio-and-envoy/feed/"
+to = "/blog/solving-application-networking-and-security-with-tetrate-on-azure-using-open-source-tech-like-istio-and-envoy/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-istio-distro-security-bulletin-envoy-http2-rapid-reset-vulnerability/feed/"
+to = "/blog/tetrate-istio-distro-security-bulletin-envoy-http2-rapid-reset-vulnerability/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-and-envoy-contributions-from-the-data/feed/"
+to = "/blog/istio-and-envoy-contributions-from-the-data/"
+status = 301
+
+[[redirects]]
+from = "/blog/nist-sp-800-207a-explained-zero-trust-architecture-model-for-access-control/feed/"
+to = "/blog/nist-sp-800-207a-explained-zero-trust-architecture-model-for-access-control/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-istio-1-19-gateway-api-and-beyond/feed/"
+to = "/blog/whats-new-in-istio-1-19-gateway-api-and-beyond/"
+status = 301
+
+[[redirects]]
+from = "/job/temporary-administration-assistant/feed/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/case-study-fico-encryption-pci-compliance-with-istio-service-mesh/feed/"
+to = "/blog/case-study-fico-encryption-pci-compliance-with-istio-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/an-istio-based-traffic-management-use-case-of-ebay/feed/"
+to = "/blog/an-istio-based-traffic-management-use-case-of-ebay/"
+status = 301
+
+[[redirects]]
+from = "/blog/proxy-observability-scenarios-with-envoy-gateway/feed/"
+to = "/blog/proxy-observability-scenarios-with-envoy-gateway/"
+status = 301
+
+[[redirects]]
+from = "/career/solutions-engineer-se-federal/feed/"
+to = "/career/solutions-engineer-se-federal/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-envoy-1-19-release/feed/"
+to = "/blog/whats-new-in-envoy-1-19-release/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-8-tips-for-new-contributors/feed/"
+to = "/blog/istio-8-tips-for-new-contributors/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-the-envoy-proxy-handles-a-user-request/feed/"
+to = "/blog/how-the-envoy-proxy-handles-a-user-request/"
+status = 301
+
+[[redirects]]
+from = "/blog/silicon-valley-daily-tetrate-launches-with-12-5-million/feed/"
+to = "/blog/silicon-valley-daily-tetrate-launches-with-12-5-million/"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-tetrate-enterprise-envoy-gateway/feed/"
+to = "/blog/introducing-tetrate-enterprise-envoy-gateway/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-ambient-mesh-merged-to-main/feed/"
+to = "/blog/istio-ambient-mesh-merged-to-main/"
+status = 301
+
+[[redirects]]
+from = "/blog/leveraging-envoypatchpolicy-to-extend-the-capabilities-of-envoy-gateway/feed/"
+to = "/blog/leveraging-envoypatchpolicy-to-extend-the-capabilities-of-envoy-gateway/"
+status = 301
+
+[[redirects]]
+from = "/blog/david-wang-joins-tetrate-as-the-head-of-marketing/feed/"
+to = "/blog/david-wang-joins-tetrate-as-the-head-of-marketing/"
+status = 301
+
+[[redirects]]
+from = "/blog/defense-unicorns-and-tetrate-shorten-compliance-timeline-and-boost-developer-productivity/feed/"
+to = "/blog/defense-unicorns-and-tetrate-shorten-compliance-timeline-and-boost-developer-productivity/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-ouc/feed/"
+to = "/blog/istio-ouc/"
+status = 301
+
+[[redirects]]
+from = "/blog/service-mesh-deployment-best-practices-for-security-and-high-availability/feed/"
+to = "/blog/service-mesh-deployment-best-practices-for-security-and-high-availability/"
+status = 301
+
+[[redirects]]
+from = "/blog/securing-microservices-across-clouds-using-tetrate-service-bridge/feed/"
+to = "/blog/securing-microservices-across-clouds-using-tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/blog/tsb-log4j-security-announcement/feed/"
+to = "/blog/tsb-log4j-security-announcement/"
+status = 301
+
+[[redirects]]
+from = "/blog/career/mtls/feed/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/evolving-infrastructure-and-the-role-of-the-service-mesh/feed/"
+to = "/blog/how-the-istio-service-mesh-became-critical-infrastructure-for-cloud-native-applications/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-contributes-istio-certification-exam-to-cncf/feed/"
+to = "/blog/tetrate-contributes-istio-certification-exam-to-cncf/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-to-integrate-virtual-machines-into-istio-service-mesh/feed/"
+to = "/blog/how-to-integrate-virtual-machines-into-istio-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/l7-traffic-path-in-ambient-mesh/feed/"
+to = "/blog/l7-traffic-path-in-ambient-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-wazero-from-tetrate/feed/"
+to = "/blog/introducing-wazero-from-tetrate/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-with-apache-skywalking-8-2-browser-monitoring-and-more/feed/"
+to = "/blog/whats-new-with-apache-skywalking-8-2-browser-monitoring-and-more/"
+status = 301
+
+[[redirects]]
+from = "/blog/accelerate-zero-trust-adoption-with-cisa-ztmm/feed/"
+to = "/blog/accelerate-zero-trust-adoption-with-cisa-ztmm/"
+status = 301
+
+[[redirects]]
+from = "/blog/the-arm64-processor-is-now-supported-in-istio-1-15/feed/"
+to = "/blog/the-arm64-processor-is-now-supported-in-istio-1-15/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-works-with-amazon-web-services-to-bring-enterprise-grade-envoy-to-aws-app-mesh-users/feed/"
+to = "/blog/aws-marketplace/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-works-with-amazon-web-services-to-bring-enterprise-grade-envoy-to-aws-app-mesh-users/"
+to = "/blog/aws-marketplace/"
+status = 301
+
+[[redirects]]
+from = "/blog/validating-a-request-payload-with-wasm/feed/"
+to = "/blog/validating-a-request-payload-with-wasm/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-to-use-envoy-gateway-with-aws-nlb/feed/"
+to = "/blog/how-to-use-envoy-gateway-with-aws-nlb/"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-getenvoy-extension-toolkit-for-webassembly-based-envoy-extensions/feed/"
+to = "/blog/introducing-getenvoy-extension-toolkit-for-webassembly-based-envoy-extensions/"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-getistio/feed/"
+to = "/blog/introducing-getistio/"
+status = 301
+
+[[redirects]]
+from = "/blog/three-myths-about-service-mesh-service-mesh-day-remarks-from-tetrate-ceo-varun-talwar/feed/"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/blog/three-myths-about-service-mesh-service-mesh-day-remarks-from-tetrate-ceo-varun-talwar/"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-vs-linkerd-vs-consul/feed/"
+to = "/blog/istio-vs-linkerd-vs-consul/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-gateways-latest-v0-3-release-extends-the-kubernetes-gateway-api/feed/"
+to = "/blog/envoy-gateways-latest-v0-3-release-extends-the-kubernetes-gateway-api/"
+status = 301
+
+[[redirects]]
+from = "/load-balance-failover-kafka-redhat-amq-streams-k8s-tsb/feed/"
+to = "/load-balance-failover-kafka-redhat-amq-streams-k8s-tsb/"
+status = 301
+
+[[redirects]]
+from = "/blog/lateral-movement-and-the-service-mesh/feed/"
+to = "/blog/lateral-movement-and-the-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-service-mesh-10-takeaways-from-tetrates-09-2020-ama-session/feed/"
+to = "/blog/istio-service-mesh-10-takeaways-from-tetrates-09-2020-ama-session/"
+status = 301
+
+[[redirects]]
+from = "/blog/netease-qingzhou-istio-practice/feed/"
+to = "/blog/netease-qingzhou-istio-practice/"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-slime-and-aeraki-in-the-evolution-of-istio-open-source-ecosystem/feed/"
+to = "/blog/introducing-slime-and-aeraki-in-the-evolution-of-istio-open-source-ecosystem/"
+status = 301
+
+[[redirects]]
+from = "/blog/mtls-best-practices-for-kubernetes/feed/"
+to = "/blog/mtls-best-practices-for-kubernetes/"
+status = 301
+
+[[redirects]]
+from = "/blog/multisite-failover/feed/"
+to = "/blog/multisite-failover/"
+status = 301
+
+[[redirects]]
+from = "/blog/vms-istio-servicemesh/feed/"
+to = "/blog/vms-istio-servicemesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/optimize-traffic-management-and-security-with-these-service-mesh-best-practices/feed/"
+to = "/blog/optimize-traffic-management-and-security-with-these-service-mesh-best-practices/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/feed/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-istio-1-8-dns-proxy-helps-expand-mesh-to-vms-and-multicluster/feed/"
+to = "/blog/whats-new-in-istio-1-8-dns-proxy-helps-expand-mesh-to-vms-and-multicluster/"
+status = 301
+
+[[redirects]]
+from = "/blog/vm-to-container-communications-101/feed/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-the-istio-service-mesh-became-critical-infrastructure-for-cloud-native-applications/feed/"
+to = "/blog/how-the-istio-service-mesh-became-critical-infrastructure-for-cloud-native-applications/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-are-certificates-managed-in-istio/feed/"
+to = "/blog/how-are-certificates-managed-in-istio/"
+status = 301
+
+[[redirects]]
+from = "/blog/implementing-zero-trust-for-applications-with-the-tanzu-application-platform-and-tetrate-service-bridge-tsb/feed/"
+to = "/blog/implementing-zero-trust-for-applications-with-the-tanzu-application-platform-and-tetrate-service-bridge-tsb/"
+status = 301
+
+[[redirects]]
+from = "/blog/what-is-a-service-mesh/feed/"
+to = "/blog/what-is-a-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-istio-distro-on-the-azure-marketplace/feed/"
+to = "/blog/tetrate-istio-distro-on-the-azure-marketplace/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-to-configure-prometheus-operator-scrape-metrics-from-istio-1-6/feed/"
+to = "/blog/how-to-configure-prometheus-operator-scrape-metrics-from-istio-1-6/"
+status = 301
+
+[[redirects]]
+from = "/blog/the-debate-in-the-community-about-istio-and-service-mesh/feed/"
+to = "/blog/the-debate-in-the-community-about-istio-and-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-contributes-the-first-official-cncf-istio-training-course-to-further-service-mesh-adoption/feed/"
+to = "/blog/tetrate-contributes-the-first-official-cncf-istio-training-course-to-further-service-mesh-adoption/"
+status = 301
+
+[[redirects]]
+from = "/blog/linux-journal-tetrate-hosting-first-service-mesh-industry-conference/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/linux-journal-tetrate-hosting-first-service-mesh-industry-conference/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/career/technical-recruiter/feed/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-has-applied-to-join-the-cncf/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/career/customer-engineer-ce-federal/feed/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/how-to-use-graphql-to-query-the-data-from-skywalking-with-postman/feed/"
+to = "/blog/how-to-use-graphql-to-query-observability-data-from-skywalking-with-postman/"
+status = 301
+
+[[redirects]]
+from = "/how-to-use-graphql-to-query-the-data-from-skywalking-with-postman/"
+to = "/blog/how-to-use-graphql-to-query-observability-data-from-skywalking-with-postman/"
+status = 301
+
+[[redirects]]
+from = "/career/lead-technical-writer/feed/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/lead-technical-writer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/privacy-policy/"
+to = "/privacy/"
+status = 301
+
+[[redirects]]
+from = "/faq/what-is-an-api-gateway/"
+to = "/learn/what-is-an-api-gateway/"
+status = 301
+
+[[redirects]]
+from = "/faq/what-is-envoy-proxy/"
+to = "/what-is-envoy-proxy/"
+status = 301
+
+[[redirects]]
+from = "/event/introducing-tetrate-service-express/"
+to = "/resource/introducing-tetrate-service-express/"
+status = 301
+
+[[redirects]]
+from = "/blog/container-journal-tetrate-launches-istio-service-mesh-offering/"
+to = "/what-is-istio-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/event/update-on-nist-zero-trust-guidelines-and-fips-compliance/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/about-us-us/"
+to = "/about-us/"
+status = 301
+
+[[redirects]]
+from = "/blog/businesswire-tetrate-hosts-first-ever-service-mesh-industry-conference-with-service-mesh-day-2019/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/contact-us-us/"
+to = "/contact-us/"
+status = 301
+
+[[redirects]]
+from = "/event-test-2/page/4/?lang=zh-hans"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/partner-solutions-engineer/?lang=zh-hans"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event/deploying-microservices-in-hybrid-and-heterogeneous-environments-on-aws-with-istio-service-mesh/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-1-7-%E7%89%88%E6%9C%AC%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B0%E5%86%85%E5%AE%B9%EF%BC%9F-%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BA%AB%E4%BB%BD%E3%80%81%E7%AE%80%E5%8C%96%E7%89%88%E8%AF%81%E4%B9%A6%E7%AE%A1/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event/achieving-zero-trust-with-the-service-mesh/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/logo/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/content-engineer/?lang=zh-hans"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event-test-2/page/5/?lang=zh-hans"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/job/director-of-hrbp/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-1-8-%E4%B8%AD%E7%9A%84%E6%96%B0%E5%8A%9F%E8%83%BD%EF%BC%9Adns-%E4%BB%A3%E7%90%86%E6%9C%89%E5%8A%A9%E4%BA%8E%E5%B0%86%E7%BD%91%E6%A0%BC%E6%89%A9%E5%B1%95%E5%88%B0%E8%99%9A%E6%8B%9F%E6%9C%BA/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-istio-cve-security-fixes/"
+to = "/blog/tvs-istio-and-envoy-cve-scanning-solution/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/introducing-tetrate-service-express//1000"
+#to = "/blog/introducing-tetrate-service-express/"
+#status = 301
+
+[[redirects]]
+from = "/blog/skywalking-8-4/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/venil-noronha-vmware-service-mesh-day-2019/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event/dell-technologies-world/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/skywalking-8-4/all"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/debugging-your-istio-networking-configuration//1000"
+#to = "/blog/how-to-debug-microservices-in-kubernetes-with-proxy-sidecar-or-service-mesh-2/"
+#status = 301
+
+[[redirects]]
+from = "/job/marketing-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/skywalking-8-4/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/career/temp-administrative-assistant/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-istio-1-13/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoycon-2020-2/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_type/live-events/page/4/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/job/lead-recruiter/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/%E6%B6%82%E9%B8%A6%E6%99%BA%E8%83%BD%E7%9A%84-istio-%E4%BC%81%E4%B8%9A%E7%BA%A7%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%9E%E8%B7%B5/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event/from-legacy-to-cloud-native-service-mesh-smooths-app-migrations-to-kubernetes/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_type/live-events/page/5/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/job/velocity-ae/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/page/3/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event/building-secure-and-auditable-container-images-using-chainguards-tooling-melange-apko-and-wolfi/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/job/sales-director-emea/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/job/technical-sourcer/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/what-is-envoy-proxy/all"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-proxy-matt-klein-on-the-standard-data-plane-and-where-its-going/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/frontend-engineer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/latest/docs/tasks/traffic-management/egress/egress-gateway/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/finsmes-tetrate-raises-12-5m-in-funding/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/speaker/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/job/administration-assistant/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-at-kubecon-san-diego/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/what-is-istio-and-why-does-kubernetes-need-it//1000"
+#to = "/blog/what-is-istio-and-why-does-kubernetes-need-it/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/skywalkings-new-storage-feature-based-on-shardingsphere-proxy-mysql-sharding//1000"
+#to = "/blog/skywalkings-new-storage-feature-based-on-shardingsphere-proxy-mysql-sharding/"
+#status = 301
+
+[[redirects]]
+from = "/blog/istio-1-0-nightly-on-eks/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-%E5%9F%BA%E7%A1%80%E5%8F%8A%E5%85%B6%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7%E8%A6%81%E9%A2%86/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/press/when-is-service-mesh-worth-it//1000"
+#to = "/press/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/get-started-with-envoy-in-5-minutes//1000"
+#to = "/blog/get-started-with-envoy-in-5-minutes/"
+#status = 301
+
+[[redirects]]
+from = "/blog/istio-nightly-on-eks/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/traffic-types-and-iptables-rules-in-istio-sidecar-explained//1000"
+to = "/blog/traffic-types-and-iptables-rules-in-istio-sidecar-explained/"
+status = 301
+
+[[redirects]]
+from = "/blog/minimizing-cross-zone-traffic-charges-with-istio//1000"
+to = "/blog/minimizing-cross-zone-traffic-charges-with-istio/"
+status = 301
+
+#[[redirects]]
+#from = "/press//1000"
+#to = "/blog/"
+#status = 301
+
+[[redirects]]
+from = "/blog/job/senior-manager-fpa-and-data-management/?lang=zh-hans"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/people-operations-coordinator/?lang=zh-hans"
+to = "/careers/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/end-user-tracing-in-a-skywalking-observed-browser//1000"
+#to = "/blog/end-user-tracing-in-a-skywalking-observed-browser/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/introducing-getenvoy-extension-toolkit-for-webassembly-based-envoy-extensions//1000"
+#to = "/blog/introducing-getenvoy-extension-toolkit-for-webassembly-based-envoy-extensions/"
+#status = 301
+
+#[[redirects]]
+#from = "/press/tetrate-started-by-istio-founders-raises-40-million-to-help-enterprises-with-cloud-native-application-networking-platform//1000"
+#to = "/blog/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/what-is-istio-operator//1000"
+#to = "/blog/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/tetrates-enterprise-service-mesh-for-openshift-is-now-available-on-the-red-hat-ecosystem-catalog//1000"
+#to = "/blog/tetrates-enterprise-service-mesh-for-openshift-is-now-available-on-the-red-hat-ecosystem-catalog/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/managing-certificates-in-istio-with-cert-manager-and-spire//1000"
+#to = "/blog/managing-certificates-in-istio-with-cert-manager-and-spire/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/tsb-log4j-security-announcement//1000"
+#to = "/blog/tsb-log4j-security-announcement/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/what-is-apache-skywalking//1000"
+#to = "/blog/what-is-apache-skywalking/"
+#status = 301
+
+[[redirects]]
+from = "/event/cloud-native-summit-new-zealand/"
+to = "/events/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/trying-out-istios-dns-proxy-2//1000"
+#to = "/blog/trying-out-istios-dns-proxy-2/"
+#status = 301
+
+[[redirects]]
+from = "/tetrate-istio-with-tsb-towards-hipaa-compliance/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/job/revops-leader/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-delivers-industry-first-application-connectivity-platform/all"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC%E8%AE%A9%E6%88%91%E5%85%8D%E4%BA%8E%E6%8B%85%E5%BF%83%E4%BB%80%E4%B9%88%EF%BC%9F/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/event-marketing-specialist/?lang=zh-hans"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/coohom-istio-practice/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/kubecon-eu/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/whats-new-in-envoy-1-17-v2-xds-api-deprecated//1000"
+#to = "/blog/whats-new-in-envoy-1-17-v2-xds-api-deprecated/"
+#status = 301
+
+[[redirects]]
+from = "/blog/tetrate-expands-aws-partnership-to-bring-enterprise-grade-istio-for-eks-and-eks-distro/feed/"
+to = "/blog/tetrate-expands-aws-partnership-to-bring-enterprise-grade-istio-for-eks-and-eks-distro/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-%E6%89%A9%E5%A4%A7-aws-%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%E5%85%B3%E7%B3%BB%EF%BC%8C%E4%B8%BA-eks-%E5%92%8C-eks-distro-%E5%B8%A6%E6%9D%A5%E4%BC%81%E4%B8%9A%E7%BA%A7-istio/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/designing-traffic-flow-via-tier1-and-tier2-ingress-gateways/feed/"
+to = "/blog/designing-traffic-flow-via-tier1-and-tier2-ingress-gateways/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/envoy-101-file-based-dynamic-configurations//1000"
+#to = "/blog/envoy-101-file-based-dynamic-configurations/"
+#status = 301
+
+#[[redirects]]
+#from = "/tetrate-service-bridge-app-scor//1000"
+#to = "/blog/"
+#status = 301
+
+[[redirects]]
+from = "/blog/ebpf-and-sidecars-getting-the-most-performance-and-resiliency-out-of-the-service-mesh//1000"
+to = "/blog/ebpf-and-sidecars-getting-the-most-performance-and-resiliency-out-of-the-service-mesh/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/istio-component-ports-and-functions-in-detail//1000"
+#to = "/blog/istio-component-ports-and-functions-in-detail/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/istio-vs-linkerd-vs-consul//1000"
+#to = "/blog/"
+#status = 301
+
+[[redirects]]
+from = "/blog/crunchbase-news-other-interesting-rounds-from-last-week/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/tetrate-service-bridge-benefits//1000"
+#to = "/blog/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/wasm-modules-and-envoy-extensibility-explained-part-1//1000"
+#to = "/blog/wasm-modules-and-envoy-extensibility-explained-part-1/"
+#status = 301
+
+[[redirects]]
+from = "/blog/the-future-of-istio-the-path-to-zero-trust-security/feed/"
+to = "/blog/the-future-of-istio-the-path-to-zero-trust-security/"
+status = 301
+
+[[redirects]]
+from = "/blog/traffic-types-and-iptables-rules-in-istio-sidecar-explained/feed/"
+to = "/blog/traffic-types-and-iptables-rules-in-istio-sidecar-explained/"
+status = 301
+
+[[redirects]]
+from = "/blog/traefik-with-istio/feed/"
+to = "/blog/traefik-with-istio/"
+status = 301
+
+#[[redirects]]
+#from = "/about-us//1000"
+#to = "/blog/"
+#status = 301
+
+[[redirects]]
+from = "/event/wazero-1-0-launch-party/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-first-to-provide-hardened-istio-to-dods-iron-bank/feed/"
+to = "/blog/tetrate-first-to-provide-hardened-istio-to-dods-iron-bank/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-1-16-%E7%9A%84%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF%EF%BC%9A%E6%94%AF%E6%8C%81-arm64-%E4%BB%A5%E5%8F%8A%E5%85%B6%E4%BB%96%E5%8A%9F%E8%83%BD%EF%BC%81/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/istio-how-to-export-istio-observability-concerns-to-azure-monitor//1000"
+#to = "/blog/istio-how-to-export-istio-observability-concerns-to-azure-monitor/"
+#status = 301
+
+[[redirects]]
+from = "/event/platformcon-2023/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/press/zero-trust-imperative-within-dod//1000"
+#to = "/blog/"
+#status = 301
+
+[[redirects]]
+from = "/blog/gateway-to-the-future-the-new-gateway-api-and-envoy-gateway-0-2/feed/"
+to = "/blog/gateway-to-the-future-the-new-gateway-api-and-envoy-gateway-0-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/the-new-stack-cloud-providers-vs-open-source-the-open-source-leadership-summit/feed/"
+to = "/blog/the-new-stack-cloud-providers-vs-open-source-the-open-source-leadership-summit/"
+status = 301
+
+#[[redirects]]
+#from = "/career/account-executive-enterprise-sales//1000"
+#to = "/blog/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/zero-trust-network-for-microservices//1000"
+#to = "/blog/zero-trust-network-for-microservices/"
+#status = 301
+
+[[redirects]]
+from = "/blog/why-would-you-need-spire-for-authentication-with-istio/feed/"
+to = "/blog/why-would-you-need-spire-for-authentication-with-istio/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/building-highly-available-ha-and-resilient-microservices-using-istio-service-mesh//1000"
+#to = "/blog/building-highly-available-ha-and-resilient-microservices-using-istio-service-mesh/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/automate-istio-ca-rotation-in-production-at-scale//1000"
+#to = "/blog/automate-istio-ca-rotation-in-production-at-scale/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/traefik-with-istio//1000"
+#to = "/blog/traefik-with-istio/"
+#status = 301
+
+[[redirects]]
+from = "/event-test-2/page/3/?lang=zh-hans"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/the-apdex-score-for-measuring-service-mesh-health//1000"
+#to = "/blog/the-apdex-score-for-measuring-service-mesh-health/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/netease-qingzhou-istio-practice//1000"
+#to = "/blog/"
+#status = 301
+
+[[redirects]]
+from = "/blog/job/head-of-marketing/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-started-by-istio-creators-announces-opening-of-asia-pacific-office-in-singapore/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/tid-add-on-for-eks//1000"
+#to = "/blog/tid-add-on-for-eks/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/how-istio-got-its-name//1000"
+#to = "/blog/how-istio-got-its-name/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/how-istios-mtls-traffic-encryption-works-as-part-of-a-zero-trust-security-posture//1000"
+#to = "/blog/how-istios-mtls-traffic-encryption-works-as-part-of-a-zero-trust-security-posture/"
+#status = 301
+
+[[redirects]]
+from = "/blog/us-government-endorses-zero-trust-architecture-for-security/feed/"
+to = "/blog/us-government-endorses-zero-trust-architecture-for-security/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_type/virtual-event/page/3/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/ebpf-and-sidecars-getting-the-most-performance-and-resiliency-out-of-the-service-mesh/feed/"
+to = "/blog/ebpf-and-sidecars-getting-the-most-performance-and-resiliency-out-of-the-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/career/temporary-administration-assistant/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-bridge-faq/?lang=zh-hant"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/how-tetrate-service-bridge-workspaces-ease-service-mesh-implementation//1000"
+#to = "/blog/how-tetrate-service-bridge-workspaces-ease-service-mesh-implementation/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/hands-on-with-the-gateway-api-using-envoy-gateway-0-2//1000"
+#to = "/blog/hands-on-with-the-gateway-api-using-envoy-gateway-0-2/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/discovery-selectors//1000"
+#to = "/blog/discovery-selectors/"
+#status = 301
+
+[[redirects]]
+from = "/application-tools/tetrateq/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/istio-trust//1000"
+#to = "/blog/istio-trust/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/whats-new-in-the-envoy-1-16-release-support-for-arm64-and-more//1000"
+#to = "/blog/whats-new-in-the-envoy-1-16-release-support-for-arm64-and-more/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/wasm-outside-the-browser//1000"
+#to = "/blog/wasm-outside-the-browser/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/istio-service-mesh-api-gateway//1000"
+#to = "/blog/istio-service-mesh-api-gateway/"
+#status = 301
+
+[[redirects]]
+from = "/blog/%E6%8B%A5%E6%8A%B1%E7%BD%91%E6%A0%BC%E7%BD%91%E5%85%B3/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/%E4%BD%BF%E7%94%A8-skywalking-%E5%92%8C-envoy-%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97%E6%9C%8D%E5%8A%A1%E5%AF%B9%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC%E8%BF%9B%E8%A1%8C%E8%A7%82%E5%AF%9F-2/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/how-the-envoy-proxy-handles-a-user-request//1000"
+#to = "/blog/how-the-envoy-proxy-handles-a-user-request/"
+#status = 301
+
+#[[redirects]]
+#from = "/career/site-reliability-engineer-maintainability//1000"
+#to = "/blog/"
+#status = 301
+
+[[redirects]]
+from = "/blog/service-mesh-day-2019-the-first-ever-service-mesh-industry-conference/feed/"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/tetrate-service-bridge//1000"
+#to = "/blog/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/istio-wasm-extensions-and-ecosystem//1000"
+#to = "/blog/istio-wasm-extensions-and-ecosystem/"
+#status = 301
+
+#[[redirects]]
+#from = "/learn/what-is-mtls//1000"
+#to = "/blog/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/announcing-getenvoy//1000"
+#to = "/blog/"
+#status = 301
+
+[[redirects]]
+from = "/blog/what-is-istio-operator/feed/"
+to = "/blog/what-is-istio-operator/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/istio-how-to-enforce-egress-traffic-using-istios-authorization-policies//1000"
+#to = "/blog/istio-how-to-enforce-egress-traffic-using-istios-authorization-policies/"
+#status = 301
+
+#[[redirects]]
+#from = "/career/technical-recruiter//1000"
+#to = "/blog/"
+#status = 301
+
+[[redirects]]
+from = "/blog/%E5%8F%AF%E8%A7%82%E5%AF%9F%E6%80%A7%E5%AF%BC%E8%AF%BB%EF%BC%9A%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-2/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-1-10-%E7%9A%84%E5%8F%91%E7%8E%B0%E9%80%89%E6%8B%A9%E5%99%A8/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/what-is-istio-and-why-does-kubernetes-need-it/feed/"
+to = "/blog/what-is-istio-and-why-does-kubernetes-need-it/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/understanding-istio-and-tcp-services//1000"
+#to = "/blog/understanding-istio-and-tcp-services/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/envoy-101-configuring-envoy-as-a-gateway//1000"
+#to = "/blog/envoy-101-configuring-envoy-as-a-gateway/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/why-would-you-need-spire-for-authentication-with-istio//1000"
+#to = "/blog/why-would-you-need-spire-for-authentication-with-istio/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/what-is-a-service-mesh//1000"
+#to = "/blog/what-is-a-service-mesh/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/nist-standards-for-zero-trust-the-sp-800-204-series//1000"
+#to = "/blog/nist-standards-for-zero-trust-the-sp-800-204-series/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/using-istio-with-other-ingress-proxies//1000"
+#to = "/blog/using-istio-with-other-ingress-proxies/"
+#status = 301
+
+#[[redirects]]
+#from = "/blog/how-to-configure-prometheus-operator-scrape-metrics-from-istio-1-6//1000"
+#to = "/blog/how-to-configure-prometheus-operator-scrape-metrics-from-istio-1-6/"
+#status = 301
+
+[[redirects]]
+from = "/blog/%E5%8F%AF%E8%A7%82%E5%AF%9F%E6%80%A7%E5%AF%BC%E8%AF%BB%EF%BC%9A%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-bridge-app-scor/?lang=zh-hans"
+to = "/blog/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/ebpf-enhanced-http-observability-l7-metrics-and-tracing-with-skywalking//1000"
+#to = "/blog/ebpf-enhanced-http-observability-l7-metrics-and-tracing-with-skywalking/"
+#status = 301
+
+[[redirects]]
+from = "/blog/%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC%E8%AE%A9%E6%88%91%E5%85%8D%E4%BA%8E%E6%8B%85%E5%BF%83%E4%BB%80%E4%B9%88%EF%BC%9F/feed/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8-envoy-%E7%9A%84-postgres-%E8%BF%87%E6%BB%A4%E5%99%A8%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%BB%9C%E5%8F%AF%E8%A7%82%E5%AF%9F%E6%80%A7/all"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-service-mesh-gra"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E7%9A%84%E6%BC%94%E8%BF%9B%E8%BF%87%E7%A8%8B%E5%8F%8A%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC%E7%9A%84%E4%BD%9C%E7%94%A8/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/devclass-oldtimers-dell-and-intel-show-service-mesh-newbie-tetrate-round-the-enterprise/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/observability-101-what-you-see-is-what-you-get/"
+to = "/blog/observability-in-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/connect-with-experts-and-fellow-aws-users/"
+to = "/about-us/#support"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-the-gateway-api/"
+to = "/api-gateway/"
+status = 301
+
+[[redirects]]
+from = "/blog/what-can-webassembly-do-for-your-application-security-and-extensibility-2-2/"
+to = "/blog/what-can-webassembly-do-for-your-application-security-and-extensibility-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/free-cve-vulnerability-scanner-for-istio-and-envoy/"
+to = "/blog/uncover-hidden-vulnerabilities-with-tetrates-free-advanced-cve-scanner-for-istio-and-envoy/"
+status = 301
+
+[[redirects]]
+from = "/event/zero-trust-and-high-assurance-for-cloud-native-applications/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-bridge-faq/"
+to = "/faq/how-does-tetrate-service-bridge-help-me-keep-my-service-mesh-up-to-date-without-causing-outages/"
+status = 301
+
+[[redirects]]
+from = "/event/platform-engineering-roundtable-internal-api-distribution-for-application-delivery/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-announces-latest-release-of-service-bridge-platform/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/event/introducing-authservice-go-the-future-of-cloud-native-authentication-and-compliance/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/job/software-engineer-developer-productivity/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/temp-administrative-assistant/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/technical-recruiter/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/principal-product-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/engineering-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/vp-of-growth-vertical-and-partner-marketing/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/temporary-administration-assistant/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/hr-operations-specialist/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/content-engineer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/partner-solutions-engineer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/job/product-documentation-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/event/cloud-native-manchester-march-2023-zero-trust-compute-edition/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/request-a-demo/"
+to = "/demo-request/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoycon-2020/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/career/software-engineer-developer-productivity/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/event-test-2/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/bridging-traditional-and-modern-workloads/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/skywalking-graduates-as-an-apache-top-level-project/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/service-mesh-the-cncf-perspective/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-partners/"
+to = "/partners-and-integrations/"
+status = 301
+
+[[redirects]]
+from = "/blog/istiokubecon/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/istio-up-and-running/"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-started-by-istio-founders-raises-40-million-to-help-enterprises-with-cloud-native-application-networking-platform/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/5-things-you-need-to-know-to-optimize-your-companys-approach-in-cloud-computing-by-gartner/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/which-comes-first-istio-or-kubernetes/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/event/qcon-san-francisco-2023-istio-workshopqcon-san-francisco-2023/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event-test-2/page/5/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_category/conferences/page/2/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_category/episode/page/2/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/gloo-gateway/main/portal/dev-portal/security/authn/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/blog/career/mtls/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/press/cloud-native-application-aware-connectivity/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-names-finance-veteran-paul-machle-as-cfo/all"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/schedule-meeting-reinvent-2023/"
+to = "/demo-request/"
+status = 301
+
+[[redirects]]
+from = "/blog/case-study-fico-encryption-pci-compliance-with-istio-service-mesh/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-bridge-benefits/"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/blog/apache-skywalking-profiling/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event/workshop-introduction-to-service-meshes-with-istio/"
+to = "/events/"
+status = 301
+
+#[[redirects]]
+#from = "/api-gateway//1000"
+#to = "/api-gateway/"
+#status = 301
+
+[[redirects]]
+from = "/blog/tips-for-service-mesh-adoption/"
+to = "/blog/what-is-an-enterprise-service-mesh/"
+status = 301
+
+#[[redirects]]
+#from = "/what-is-istio-service-mesh//1000"
+#to = "/what-is-istio-service-mesh/"
+#status = 301
+
+[[redirects]]
+from = "/api-gateway/1000/"
+to = "/api-gateway/"
+status = 301
+
+[[redirects]]
+from = "/blog/embrace-the-mesh-gateway/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/a-history-of-networking-and-whats-next-for-service-mesh-larry-peterson-at-service-mesh-day-2019/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/tid-add-on-for-eks/1000/"
+to = "/blog/tid-add-on-for-eks/"
+status = 301
+
+[[redirects]]
+from = "/blog/nist-standards-for-zero-trust-the-sp-800-204-series/1000/"
+to = "/blog/nist-standards-for-zero-trust-the-sp-800-204-series/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-istios-mtls-traffic-encryption-works-as-part-of-a-zero-trust-security-posture/1000/"
+to = "/blog/how-istios-mtls-traffic-encryption-works-as-part-of-a-zero-trust-security-posture/"
+status = 301
+
+[[redirects]]
+from = "/blog/using-istio-with-other-ingress-proxies/1000/"
+to = "/blog/using-istio-with-other-ingress-proxies/"
+status = 301
+
+[[redirects]]
+from = "/blog/understanding-istio-and-tcp-services/1000/"
+to = "/blog/understanding-istio-and-tcp-services/"
+status = 301
+
+[[redirects]]
+from = "/blog/the-apdex-score-for-measuring-service-mesh-health/1000/"
+to = "/blog/the-apdex-score-for-measuring-service-mesh-health/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-wasm-extensions-and-ecosystem/1000/"
+to = "/blog/istio-wasm-extensions-and-ecosystem/"
+status = 301
+
+[[redirects]]
+from = "/blog/debugging-your-istio-networking-configuration/1000/"
+to = "/blog/how-to-debug-microservices-in-kubernetes-with-proxy-sidecar-or-service-mesh-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/debugging-your-istio-networking-configuration/"
+to = "/blog/how-to-debug-microservices-in-kubernetes-with-proxy-sidecar-or-service-mesh-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/what-is-apache-skywalking/1000/"
+to = "/blog/what-is-apache-skywalking/"
+status = 301
+
+[[redirects]]
+from = "/blog/why-would-you-need-spire-for-authentication-with-istio/1000/"
+to = "/blog/why-would-you-need-spire-for-authentication-with-istio/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-101-configuring-envoy-as-a-gateway/1000/"
+to = "/blog/envoy-101-configuring-envoy-as-a-gateway/"
+status = 301
+
+[[redirects]]
+from = "/blog/managing-certificates-in-istio-with-cert-manager-and-spire/1000/"
+to = "/blog/managing-certificates-in-istio-with-cert-manager-and-spire/"
+status = 301
+
+#[[redirects]]
+#from = "/blog/validating-a-request-payload-with-wasm//1000"
+#to = "/blog/validating-a-request-payload-with-wasm/"
+#status = 301
+
+[[redirects]]
+from = "/blog/validating-a-request-payload-with-wasm/1000/"
+to = "/blog/validating-a-request-payload-with-wasm/"
+status = 301
+
+[[redirects]]
+from = "/blog/zero-trust-network-for-microservices/1000/"
+to = "/blog/zero-trust-network-for-microservices/"
+status = 301
+
+[[redirects]]
+from = "/blog/what-is-a-service-mesh/1000/"
+to = "/blog/what-is-a-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/webinar-dod/"
+to = "/resources/"
+status = 301
+
+[[redirects]]
+from = "/blog/using-envoys-postgres-filter-for-network-observability-2/"
+to = "/blog/using-envoys-postgres-filter-for-network-observability/"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-tetrate-service-express/1000/"
+to = "/blog/introducing-tetrate-service-express/"
+status = 301
+
+[[redirects]]
+from = "/blog/what-is-istio-and-why-does-kubernetes-need-it/1000/"
+to = "/blog/what-is-istio-and-why-does-kubernetes-need-it/"
+status = 301
+
+[[redirects]]
+from = "/blog/skywalkings-new-storage-feature-based-on-shardingsphere-proxy-mysql-sharding/1000/"
+to = "/blog/skywalkings-new-storage-feature-based-on-shardingsphere-proxy-mysql-sharding/"
+status = 301
+
+[[redirects]]
+from = "/blog/get-started-with-envoy-in-5-minutes/1000/"
+to = "/blog/get-started-with-envoy-in-5-minutes/"
+status = 301
+
+[[redirects]]
+from = "/blog/traffic-types-and-iptables-rules-in-istio-sidecar-explained/1000/"
+to = "/blog/traffic-types-and-iptables-rules-in-istio-sidecar-explained/"
+status = 301
+
+[[redirects]]
+from = "/blog/minimizing-cross-zone-traffic-charges-with-istio/1000/"
+to = "/blog/minimizing-cross-zone-traffic-charges-with-istio/"
+status = 301
+
+[[redirects]]
+from = "/blog/end-user-tracing-in-a-skywalking-observed-browser/1000/"
+to = "/blog/end-user-tracing-in-a-skywalking-observed-browser/"
+status = 301
+
+[[redirects]]
+from = "/blog/introducing-getenvoy-extension-toolkit-for-webassembly-based-envoy-extensions/1000/"
+to = "/blog/introducing-getenvoy-extension-toolkit-for-webassembly-based-envoy-extensions/"
+status = 301
+
+[[redirects]]
+from = "/blog/what-is-istio-operator/1000/"
+to = "/blog/what-is-istio-operator/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrates-enterprise-service-mesh-for-openshift-is-now-available-on-the-red-hat-ecosystem-catalog/1000/"
+to = "/blog/tetrates-enterprise-service-mesh-for-openshift-is-now-available-on-the-red-hat-ecosystem-catalog/"
+status = 301
+
+[[redirects]]
+from = "/blog/tsb-log4j-security-announcement/1000/"
+to = "/blog/tsb-log4j-security-announcement/"
+status = 301
+
+[[redirects]]
+from = "/blog/trying-out-istios-dns-proxy-2/1000/"
+to = "/blog/trying-out-istios-dns-proxy-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-envoy-1-17-v2-xds-api-deprecated/1000/"
+to = "/blog/whats-new-in-envoy-1-17-v2-xds-api-deprecated/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-101-file-based-dynamic-configurations/1000/"
+to = "/blog/envoy-101-file-based-dynamic-configurations/"
+status = 301
+
+[[redirects]]
+from = "/author/zhenxutetrate-io/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/author/tetrate/page/18/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/author/tetrate/page/20/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/author/jjtetrate-io/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event/kubecon-cloudnativecon-north-america-2022/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/a-conversation-with-josh-long/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/geoint-symposium-2023/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/the-barcelona-developers-conference-2023/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-to-debug-microservices-proxy-sidecar-or-service-mesh/"
+to = "/blog/client-side-availability-and-resiliency-with-envoy-gateway/"
+status = 301
+
+[[redirects]]
+from = "/blog/nist2020/"
+to = "/learn/zero-trust/nist-zero-trust-architecture/"
+status = 301
+
+[[redirects]]
+from = "/blog/ebpf-enhanced-http-observability-l7-metrics-and-tracing-with-skywalking/1000/"
+to = "/blog/ebpf-enhanced-http-observability-l7-metrics-and-tracing-with-skywalking/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-ingressclass-controller-with-helm/gressclass-controller-with-helm/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/linux-journal-tetrate-launched/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/servicemesh-apac-expansion/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/ebpf-and-sidecars-getting-the-most-performance-and-resiliency-out-of-the-service-mesh/1000/"
+to = "/blog/ebpf-and-sidecars-getting-the-most-performance-and-resiliency-out-of-the-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-component-ports-and-functions-in-detail/1000/"
+to = "/blog/istio-component-ports-and-functions-in-detail/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-vs-linkerd-vs-consul/1000/"
+to = "/blog/istio-vs-linkerd-vs-consul/"
+status = 301
+
+[[redirects]]
+from = "/blog/wasm-modules-and-envoy-extensibility-explained-part-1/1000/"
+to = "/blog/wasm-modules-and-envoy-extensibility-explained-part-1/"
+status = 301
+
+[[redirects]]
+from = "/blog/building-highly-available-ha-and-resilient-microservices-using-istio-service-mesh/1000/"
+to = "/blog/building-highly-available-ha-and-resilient-microservices-using-istio-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/automate-istio-ca-rotation-in-production-at-scale/1000/"
+to = "/blog/automate-istio-ca-rotation-in-production-at-scale/"
+status = 301
+
+[[redirects]]
+from = "/blog/traefik-with-istio/1000/"
+to = "/blog/traefik-with-istio/"
+status = 301
+
+[[redirects]]
+from = "/blog/netease-qingzhou-istio-practice/1000/"
+to = "/blog/netease-qingzhou-istio-practice/"
+status = 301
+
+[[redirects]]
+from = "/blog/1000/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-tetrate-service-bridge-workspaces-ease-service-mesh-implementation/1000/"
+to = "/blog/how-tetrate-service-bridge-workspaces-ease-service-mesh-implementation/"
+status = 301
+
+[[redirects]]
+from = "/blog/hands-on-with-the-gateway-api-using-envoy-gateway-0-2/1000/"
+to = "/blog/hands-on-with-the-gateway-api-using-envoy-gateway-0-2/"
+status = 301
+
+[[redirects]]
+from = "/blog/discovery-selectors/1000/"
+to = "/blog/discovery-selectors/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-trust/1000/"
+to = "/blog/istio-trust/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-the-envoy-1-16-release-support-for-arm64-and-more/1000/"
+to = "/blog/whats-new-in-the-envoy-1-16-release-support-for-arm64-and-more/"
+status = 301
+
+[[redirects]]
+from = "/blog/wasm-outside-the-browser/1000/"
+to = "/blog/wasm-outside-the-browser/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-service-mesh-api-gateway/1000/"
+to = "/blog/istio-service-mesh-api-gateway/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-the-envoy-proxy-handles-a-user-request/1000/"
+to = "/blog/how-the-envoy-proxy-handles-a-user-request/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-how-to-enforce-egress-traffic-using-istios-authorization-policies/1000/"
+to = "/blog/istio-how-to-enforce-egress-traffic-using-istios-authorization-policies/"
+status = 301
+
+[[redirects]]
+from = "/blog/how-to-configure-prometheus-operator-scrape-metrics-from-istio-1-6/1000/"
+to = "/blog/how-to-configure-prometheus-operator-scrape-metrics-from-istio-1-6/"
+status = 301
+
+[[redirects]]
+from = "/blog/apache-skywalking-use-profiling-to-fix-the-blind-spot-of-distributed-tracing/"
+to = "/blog/what-is-apache-skywalking/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-ambient-mesh-azure-kubernetes-service/"
+to = "/blog/istio-ambient-mesh-merged-to-main/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-the-envoy-1-16-release-support-for-arm64-and-more/"
+to = "/tetrate-enterprise-gateway-for-envoy/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-ouc/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/member_category/team/page/4/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/appmesh-tetrate-integration/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-how-to-export-istio-observability-concerns-to-azure-monitor/1000/"
+to = "/blog/istio-how-to-export-istio-observability-concerns-to-azure-monitor/"
+status = 301
+
+[[redirects]]
+from = "/blog/the-new-stack-cloud-providers-vs-open-source-the-open-source-leadership-summit/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-cloud/"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/wp-content/uploads/2021/04/tetrate-cloud.svg"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-enterprise-envoy-gateway-from-zero-to-app-serving-in-15-minutes"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/faq/what-is-ingress-and-egress-in-kubernetes/"
+to = "/learn/kubernetes/what-is-kubernetes-ingress/"
+status = 301
+
+[[redirects]]
+from = "/learn/kubernetes/kubernetes-ingress-vs-service/"
+to = "/learn/kubernetes/what-is-kubernetes-ingress/"
+status = 301
+
+[[redirects]]
+from = "/resource/gateway-api-is-the-future-of-kubernetes-ingress/"
+to = "/learn/kubernetes/what-is-kubernetes-ingress/"
+status = 301
+
+[[redirects]]
+from = "/learn/kubernetes/kubernetes-ingress-controller/"
+to = "/learn/kubernetes/what-is-kubernetes-ingress/"
+status = 301
+
+[[redirects]]
+from = "/learn/kubernetes/kubernetes-ingress/"
+to = "/learn/kubernetes/what-is-kubernetes-ingress/"
+status = 301
+
+[[redirects]]
+from = "/blog/451-2-service-mesh-distributed-microservices-based-applications/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/member/venkatesh-palani/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/latest/docs/tasks/security/cert-management/"
+to = "/blog/managing-certificates-in-istio-with-cert-manager-and-spire/"
+status = 301
+
+[[redirects]]
+from = "/company/"
+to = "/about-us/"
+status = 301
+
+[[redirects]]
+from = "/career/customer-engineer-ce-federal/all/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/registration-is-open-devsecops-and-zero-trust-architecture-for-multi-cloud-environments/"
+to = "/zero-trust/"
+status = 301
+
+[[redirects]]
+from = "/event/introducing-authservice-the-future-of-cloud-native-authentication-and-compliance/"
+to = "/event/"
+status = 301
+
+[[redirects]]
+from = "/blog/apache-skywalking-the-new-stack-features-the-apm-for-the-heterogeneous-new-stack/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/press/zero-trust-imperative-within-dod/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/when-is-service-mesh-worth-it/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-founders-louis-ryan-varun-talwar-podcast/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/netease-qingzhou-istio-practice/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/author/fei/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/vm-to-container-communications-101/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-istio-1-8-dns-proxy-helps-expand-mesh-to-vms-and-multicluster/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-bringing-vms-into-the-mesh-with-cynthia-coan/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/certified-istio-administrator/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/cameron-moreau-and-tian-wang-at-tetrates-service-mesh-day-2019-all-for-auth-auth-for-all-bringing-end-user-identity-to-the-service-mesh/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-1-8-tetrate-ama-takeaways/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/netease-qingzhou-istio-practice/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/about-us/team/"
+to = "/about-us/"
+status = 301
+
+[[redirects]]
+from = "/application-tools/"
+to = "/resource/service-mesh-handbook/"
+status = 301
+
+[[redirects]]
+from = "/application-tools/tetrate-cloud-map/"
+to = "/resource/service-mesh-handbook/"
+status = 301
+
+[[redirects]]
+from = "/blog/getenvoy/"
+to = "/tetrate-enterprise-gateway-for-envoy/"
+status = 301
+
+[[redirects]]
+from = "/blog/getting-started-with-istio-on-amazon-eks/"
+to = "/resource/five-essential-amazon-eks-security-and-availability-strategies-with-a-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/press-release/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/blog/skywalking-v6-is-service-mesh-ready/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-istio-cloud-map-operator/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/terms-of-use/"
+to = "/terms-and-conditions/"
+status = 301
+
+[[redirects]]
+from = "/about-us/news/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/blog/nistoverview/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/case-study-tetrate-resolves-the-complexities-of-navs-transition-to-istio/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/introducing-the-tetrate-istio-subscription-dashboard/"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/blog/measuring-service-mesh-performance/"
+to = "/blog/the-apdex-score-for-measuring-service-mesh-health/"
+status = 301
+
+[[redirects]]
+from = "/blog/howtouseenvoygatewaywithawsnlb/"
+to = "/blog/using-envoy-gateway-with-aws-alb-or-nlb-load-balancer/"
+status = 301
+
+[[redirects]]
+from = "/faq/what-is-kubernetes-ingress-controller/"
+to = "https://tetrate.io/learn/kubernetes/what-is-kubernetes-ingress/"
+status = 301
+
+[[redirects]]
+from = "/learn/kubernetes/nginx/hnginxasloadbalancer"
+to = "/learn/kubernetes/nginx/"
+status = 301
+
+[[redirects]]
+from = "/tetrateistiosubscription/getstarted/"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/tetrateenterprisegatewayforenvoydemorequest/"
+to = "/tetrate-enterprise-gateway-for-envoy-demo-request/"
+status = 301
+
+[[redirects]]
+from = "/tetrateenterprisegatewayforenvoy/"
+to = "/tetrate-enterprise-gateway-for-envoy/"
+status = 301
+
+[[redirects]]
+from = "/nistoverview/"
+to = "/blog/nist-standards-for-zero-trust-the-sp-800-204-series/"
+status = 301
+
+[[redirects]]
+from = "/on-demand-webinars/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/wp-content/uploads/2021/04/Observability-Service-Inventory-v2-1.webm"
+to = "/learn/what-is-observability/"
+status = 301
+
+[[redirects]]
+from = "/wp-content/uploads/2021/04/Multi-Cluster-Topology-v3-1.webm"
+to = "/blog/istio-multi-cluster-authentication-mtls/"
+status = 301
+
+[[redirects]]
+from = "/faq/how-kubernetes-ingress-works/"
+to = "https://tetrate.io/learn/kubernetes/what-is-kubernetes-ingress/"
+status = 301
+
+[[redirects]]
+from = "/join-tetrate-at-kubecon-eu-april-19-21-in-amsterdam-the-netherlands/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/join-tetrate-at-kubecon-eu-april-19-21-in-amsterdam-the-netherlands/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/faq/how-does-tetrate-compare-to-soloio/"
+to = "/faq/what-is-a-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-cve-security-fixes-for-getenvoy/"
+to = "/blog/envoy-cve-security/"
+status = 301
+
+[[redirects]]
+from = "/event/accelerate-istio-adoption-with-eks-blueprints-and-tetrate-istio/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/author/*"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/cool/"
+to = "/press/tetrate-named-2021-cool-vendor-in-cloud-computing/"
+status = 301
+
+[[redirects]]
+from = "/compare-tetrate-products"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-istio-subscription/get-started"
+to = "https://docs.tetrate.io/istio-subscription/installation/"
+status = 301
+
+[[redirects]]
+from = "/4th-multi-cloud-conference-and-workshop/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/aws-re-invent2023/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/job/technical-account-manager-strategic-accounts/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/evolving-infrastructure-and-the-role-of-the-service-mesh/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/press/cloud-native-application-networking-platform/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/latest/docs/concepts/security/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-service-bridge-golden-gate-release-now-available/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/event/gophercon-2023/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/security-and-resiliency-of-cloud-native-applications-with-weave-gitops-and-tetrate-service-bridge/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-names-finance-veteran-paul-machle-as-cfo/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/events/aws-reinvent/aws-reinvent-2023/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/resource/istio-in-the-enterprise/"
+to = "/resources/"
+status = 301
+
+[[redirects]]
+from = "/resource/5-stages-to-istio-production-success/"
+to = "/resources/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-ecs-anywhere/feed/"
+to = "/blog/tetrate-eks-anywhere/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-ecs-anywhere-2/"
+to = "/blog/tetrate-eks-anywhere/"
+status = 301
+
+[[redirects]]
+from = "/blog/webinar-from-legacy-to-cloud-native-service-mesh-smoothes-apps-migration-to-k8s/"
+to = "/resources/"
+status = 301
+
+[[redirects]]
+from = "/event/4th-annual-multi-cloud-conference-and-workshop/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/introduction-to-envoy-gateway-and-tetrate-enterprise-gateway-for-envoy-2/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event-inquiry-form/"
+to = "/contact-sales/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-bridge-app-scor/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/white-paper-bridging-brownfield-greenfield/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/get-insights-into-history-and-future-of-istio-content/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/get-to-zero-trust-new/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/media-analyst-form/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/scale-20x/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/terms-and-conditions/"
+to = "https://tetrate.io/legal"
+status = 301
+
+[[redirects]]
+from = "/resource/gartner-top-strategic-technology-trends-for-2024-platform-engineering/"
+to = "/resources/"
+status = 301
+
+[[redirects]]
+from = "/blog/kubernetes-ingress-strategy/"
+to = "/blog/kubernetes-ingress-best-practices/"
+status = 301
+
+[[redirects]]
+from = "/blog/announcing-tetrate-enterprise-gateway-for-envoy-1.2"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-office-hours-for-aws-users-securing-your-application-networks-on-eks/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/qcon-sf-2023-implementing-zero-trust-architecture/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-launches-open-source-project-getistio-announces-new-community-learning-resources-and-partnerships-2/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/kubernetes-edge-platform/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/resource/mobile-premier-league-customer-story/"
+to = "/case-study/migration-made-easy-tetrate-helps-mpl-modernize-their-infrastructure-without-service-disruption-90-million-gamers/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-office-hours-for-aws-users-achieving-cross-cluster-and-cross-region-resiliency/"
+to = "/istio-office-hours-for-aws-users/"
+status = 301
+
+[[redirects]]
+from = "/kubecon-cloudnativecon-europe/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/kubecon-cloudnativecon-2023-chicago/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/ecs-anywhere-connectivity/"
+to = "/blog/aws-marketplace/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-office-hours-for-aws-users/"
+to = "/istio-office-hours-for-aws-users/"
+status = 301
+
+[[redirects]]
+from = "/a-special-coupon-for-aws-users/"
+to = "/aws/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-launches-open-source-project-getistio-announces-new-community-learning-resources-and-partnerships/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/blog/ebpf-and-sidecars-gettingthe-most-"
+to = "/blog/ebpf-and-sidecars-getting-the-most-performance-and-resiliency-out-of-the-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/ebpf-and-sidecars-gettingthe-most-/"
+to = "/blog/ebpf-and-sidecars-getting-the-most-performance-and-resiliency-out-of-the-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/transparent-trafficintercepting-and-"
+to = "/blog/transparent-traffic-intercepting-and-routing-in-the-l4-network-of-istio-ambient-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/transparent-trafficintercepting-and-/"
+to = "/blog/transparent-traffic-intercepting-and-routing-in-the-l4-network-of-istio-ambient-mesh/"
+status = 301
+
+[[redirects]]
+from = "/blog/ambient-mesh-what-youneed-to-know-about-this-"
+to = "/blog/ambient-mesh-what-you-need-to-know-about-this-experimental-new-deployment-model-for-istio/"
+status = 301
+
+[[redirects]]
+from = "/blog/ambient-mesh-what-youneed-to-know-about-this-/"
+to = "/blog/ambient-mesh-what-you-need-to-know-about-this-experimental-new-deployment-model-for-istio/"
+status = 301
+
+[[redirects]]
+from = "/press/kubernetes-service-mesh-market-is-going-to-boom/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/blog/azure-service-mesh/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/career/technical-recruiter/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/blog/top-3-mtls-best-practices-for-zero-trust-kubernetes-security/"
+to = "/zero-trust/"
+status = 301
+
+[[redirects]]
+from = "/career/community-programs-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/customer-reliability-engineer-cre/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/404-323cfa0bc8f7ac7aa5e2b668149ddf7e/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/about-us/all/"
+to = "/about-us/"
+status = 301
+
+[[redirects]]
+from = "/api-gateway/all"
+to = "/api-gateway/"
+status = 301
+
+[[redirects]]
+from = "/blg/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/blog/2018/08/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2018/10/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2019/02/"
+to = "/blog/2"
+status = 301
+
+[[redirects]]
+from = "/blog/2019/03/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2019/04/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2019/05/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2019/06/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2019/07/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2019/10/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2019/11/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2019/12/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/01/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/02/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/03/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/04/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/05/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/06/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/07/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/08/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/09"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/10/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/11/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2020/12"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/01/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/02/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/03/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/04/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/05/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/06/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/07/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/08/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/09/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/10/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/11/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2021/12/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2022/09/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2023/01/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2023/02/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/2023/03/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/announcing-the-getenvoy-project/"
+to = "/blog/announcing-envoy-gateway-1-0/"
+status = 301
+
+[[redirects]]
+from = "/blog/envoy-security-fixes/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/istioouc/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/multicluster-management-with-kubernetes-and-istio-2/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/nist-tetrate-2021-recap/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/press_category/press-coverage/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/press_category/press-coverage/page/2/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/press_category/press-coverage/page/9/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/press_category/press-release/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/press_category/press-release/page/2/press_category/press-release/page/2/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/sdxcentral-amazons-werner-vogels-dance-like-nobodys-watching-encrypt-like-everyone-is/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/service-mesh-day-recap/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/service-mesh-in-2021-the-ecosystem-is-emerging/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/silicon-valley-daily-tetrate-launches-with-12-5-million/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/skywalking-8-4-provides-infrastucture-monitoring-for-vms/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/smd_venil_noronha_from_vmware/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/special-publication-building-secure-microservices-based-applications-using-service-mesh-architecture/all/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/testimonial/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/testimonial/tracfone/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-ecs-anywhere/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/tetrate-ecs-anywhere/all"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/blog/tuya-smarts-implementation-of-an-istio-enterprise-level-production/all"
+to = "/blog/tetrate-istio-subscription-tis-the-only-fully-open-source-istio-and-envoy-distro-for-enterprise-production/"
+status = 301
+
+[[redirects]]
+from = "/blog/tuya-smarts-implementation-of-an-istio-enterprise-level-production/"
+to = "/blog/tetrate-istio-subscription-tis-the-only-fully-open-source-istio-and-envoy-distro-for-enterprise-production/"
+status = 301
+
+[[redirects]]
+from = "/blog/using-envoy-postgres-filter-for-network-observability/"
+to = "/blog/using-envoys-postgres-filter-for-network-observability/"
+status = 301
+
+[[redirects]]
+from = "/blog/vm-tsb/"
+to = "/blog/vm-onboarding-with-tsb-service-mesh-and-customer-experience/"
+status = 301
+
+[[redirects]]
+from = "/blog/whats-new-in-skywalking-metersystem-and-mesh-monitoring-in-8-0/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/career/account-executive-enterprise-sales/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/accounting-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/administration-assistant/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/administration-assistant/all/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/channel-alliance-business-development/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/chief-revenue-officer-cro/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/content-engineer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/customer-reliability-engineer-cre/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/customer-success-manager-csm-2/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/digital-marketing-and-lead-generation/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/digital-marketing-specialist/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/director-of-hrbp/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/director-public-sector-sales/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/job/distributed-systems-engineer-enterprise-infrastructure-c/all/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/distributed-systems-engineer-management-plane-go/all/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/event-marketing-specialist/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/event-specialist/"
+to = "/career/"
+status = 301
+
+[[redirects]]
+from = "/career/executive-assistant/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/frontend-engineer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/head-of-marketing/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/head-of-sales-2/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/distributed-systems-engineer-enterprise-infrastructure-c/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/head-of-sales/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/hr-business-partner-operations-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/istio-contributor-go-developer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/lead-frontend-engineer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/lead-product-designer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/oss-engineer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/page/2/all/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/partner-solutions-engineer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/people-operations-coordinator/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/post-sales-implementation-engineer/all"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/product-documentation-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/product-management/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/product-marketing-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/recruiting-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/sales-development-representative/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/sales-solutions-engineer/"
+to = "/career/"
+status = 301
+
+[[redirects]]
+from = "/career/sdr-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/senior-director-go-to-market-gtm-operations/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/senior-manager-fpa-and-data-management/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/senior-software-engineer-istio-tid/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/social-media-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/software-development-engineer-in-test/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/solutions-engineer-se-federal/all/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/sr-demand-generation-marketing-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/software-infrastructure-engineer-tid/all"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/technical-account-manager-tam-enterprise-infrastructure-and-microservices/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/technical-content-engineer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/technical-project-manager-enterprise-infrastructure-and-microservices/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/technical-project-manager/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/technical-sourcer/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/technical-trainer-microservices/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/technical-writer-enterprise-infrastructure-and-microservices/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/career/webassembly-core-engineer"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/careers-2/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/careers/all/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/cloudnativesecuritycon/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/demo/"
+to = "/demo-request/"
+status = 301
+
+[[redirects]]
+from = "/developer-friendly-zero-trust-api-platform-webinar/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/developer-friendly-zero-trust-api-platform-workshop/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/envoy-gateway/all/"
+to = "/envoy-gateway/"
+status = 301
+
+[[redirects]]
+from = "/eula/all/"
+to = "/eula/"
+status = 301
+
+[[redirects]]
+from = "/event-test/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event-venues/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/apachecon-north-america/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/cgo-less-foreign-function-interface-with-webassembly/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/demo-and-qa-tetrate-service-bridge-tsb-to-connect-and-manage-applications/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/intel-capitals-showcase-at-kubecon-secrets-to-scaling-in-a-cloud-native-world-detroit/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-0-to-60-workshop-pt/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-service-mesh-full-day-workshop/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/istio-service-mesh-on-graviton-live-masterclass/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/learn-istio-from-the-inside-continued/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/microservice-security-with-tetrate/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/onf-connect-2019/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/open-core-summit/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/scaling-service-mesh-efficiently-with-tetrates-brooklyn-release-live-webinar/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/service-mesh-summit-china-2022/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/speak-with-liyi-huang/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/speak-with-liyi-huang/all/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/tetrate-oss-connect-on-envoy/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event/tetrate-seattle-roadshow/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_category/conferences/page/3/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_category/episode/page/3/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_type/live-events/page/2/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_type/live-events/page/3/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_type/live-events/page/6/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_type/virtual-event/page/4/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/event_listing_type/virtual-event/page/5/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/events/all/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/gluecon-2022/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/istio-conference/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/istio-training-request-form/all/"
+to = "/contact-us/"
+status = 301
+
+[[redirects]]
+from = "/istio-wasm-workshop/all/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/istio-workshop-americas/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/istio-workshop-americas/all/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/istio-workshop-asia-pacific/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/job/account-executive-enterprise-sales/"
+to = "/careers/"
+status = 301
+
+[[redirects]]
+from = "/kubecon-cloudnativecon-2021/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/kubecon-cloudnativecon-2021/all/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/blog/kubernetes-edge-platform/"
+to = "/blog/"
+status = 301
+
+[[redirects]]
+from = "/meet-the-need-idc/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/nist-virtual-conference-2021/all/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/open-source-contributions/all/"
+to = "/open-source-contributions/"
+status = 301
+
+[[redirects]]
+from = "/organizer-dashboard/"
+to = "/events/"
+status = 301
+
+[[redirects]]
+from = "/pci-compliance-dss/"
+to = "/resource/tetrate-pci-dss-40-guide/"
+status = 301
+
+[[redirects]]
+from = "/press-coverage/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/all/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/announcing-the-availability-of-certified-istio-administrator-exam-by-tetrate/all/"
+to = "/press/announcing-the-availability-of-certified-istio-administrator-exam-by-tetrate/"
+status = 301
+
+[[redirects]]
+from = "/press/contour-joins-forces-with-community-leaders-to-build-new-envoy-gateway-project/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/correcting-and-replacing-cequence-and-tetrate-partner-to-embed-security-into-cloud-native-applications/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/correcting-and-replacing-cloud-native-applications/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/distinguished-high-tech-executive-sanjay-poonen-known-for-building-multibillion-dollar-businesses-joins-tetrate-board-of-advisors/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/expert-insight-on-the-necessity-of-zero-trust-architecture/all"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/headcount-firings-hirings-and-retirings-may-2022/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/improving-cybersecurity-through-education-and-public-engagement/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/key-contributors-of-envoy-and-istio-projects-launch-tetrate-with-12-5m-in-funding-to-create-enterprise-grade-service-mesh-2/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/key-contributors-of-envoy-and-istio-projects-launch-tetrate-with-12-5m-in-funding-to-create-enterprise-grade-service-mesh/all/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/nist-drafts-service-mesh-guidance-for-devsecops/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/oldtimers-dell-and-intel-show-service-mesh-newbie-tetrate-round-the-enterprise/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/rafay-launches-technical-alliance-program-and-kubernetes-addon-catalog/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/repelling-a-ransomware-attack-varun-talwar-of-tetrate-on-the-5-things-you-need-to-do-to-protect-yourself-or-your-business-from-a-ransomware-attack/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/sanjay-poonen-joins-tetrate-board-of-advisors/all/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/service-mesh-startup-tetrate-aims-to-bring-enterprise-scalability-to-istio-envoy/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/service-mesh-the-next-generation-of-cloud-networking/all/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/steering-committee-commits-to-envoy-gateway/all/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-achieves-red-hat-container-certification-now-available-via-red-hat-ecosystem-catalog-2/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-achieves-red-hat-container-certification-now-available-via-red-hat-ecosystem-catalog-3/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-achieves-red-hat-container-certification-now-available-via-red-hat-ecosystem-catalog/all/"
+to = "/press/tetrate-achieves-red-hat-container-certification-now-available-via-red-hat-ecosystem-catalog/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-adds-istio-and-envoy-support-for-arm-neoverse/all/"
+to = "/press/tetrate-adds-istio-and-envoy-support-for-arm-neoverse/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-and-federal-agency-nist-cohost-zta-and-devsecops-conference-2022-kicking-off-with-istio-and-envoy-training-2/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-and-federal-agency-nist-cohost-zta-and-devsecops-conference-2022-kicking-off-with-istio-and-envoy-training/all/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-announces-general-availability-of-the-tsb/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-announces-service-bridge-in-aws-marketplace/all/"
+to = "/press/tetrate-announces-service-bridge-in-aws-marketplace/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-hosts-first-ever-service-mesh-day-2019/all/"
+to = "/press/tetrate-hosts-first-ever-service-mesh-day-2019/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-named-2021-cool-vendor-in-cloud-computing-by-gartner/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-named-2021-cool-vendor-in-cloud-computing-by-gartner/all/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-named-2021-cool-vendor-in-cloud-computing/all/"
+to = "/press/tetrate-named-2021-cool-vendor-in-cloud-computing/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-nets-12-5-million-to-bring-microservices-to-the-corporate-masses/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-raises-40-million-for-cloud-native-application-networking-platform/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-service-bridge-reaches-1-0-with-customers-in-production/all/"
+to = "/press/tetrate-service-bridge-reaches-1-0-with-customers-in-production/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-service-bridge-tsb-golden-gate-release-now-available/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-started-by-istio-creators-announces-opening-of-asia-pacific-office-in-singapore-2/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-started-by-istio-founders-raises-40-million-to-help-enterprises-with-cloud-native-application-networking-platform-2/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-the-company-born-out-of-istios-open-source-app-networking-project-raises-40-million/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrates-getistio-helps-users-install-and-manage-istio/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/the-9-most-unforgettable-and-effective-startup-pitches-according-to-investors-at-goldman-sachs-sapphire-ventures-and-kleiner-perkins/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/the-kubernetes-ecosystem-hits-its-inflection-point/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tips-for-installing-a-service-mesh-start-with-the-pain-points/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/tsb-golden-gate-release/all/"
+to = "/press/tsb-golden-gate-release/"
+status = 301
+
+[[redirects]]
+from = "/press/ukraine-at-d29-ukrainian-counteroffensive-appears-in-progress/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/us-air-force-chief-software-officer-nicolas-chaillan-joins-tetrate-board-of-advisors/all/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/where-top-vcs-are-investing-in-open-source-and-dev-tools/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/press/zero-trust-cyber-exchange-service-mesh-plays-integral-role-in-zero-trust-runtime-security/"
+to = "/press/"
+status = 301
+
+[[redirects]]
+from = "/privacy/all/"
+to = "/privacy/"
+status = 301
+
+[[redirects]]
+from = "/resource/tetrates-guide-to-fedramp-rev-5/"
+to = "/resources/"
+status = 301
+
+[[redirects]]
+from = "/submit-organizer-form/"
+to = "/contact-us/"
+status = 301
+
+[[redirects]]
+from = "/submit-venue-form/"
+to = "/contact-us/"
+status = 301
+
+[[redirects]]
+from = "/testimonial/"
+to = "/resources/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-application-aware-networking/"
+to = "/blog/solving-application-networking-and-security-with-tetrate-on-azure-using-open-source-tech-like-istio-and-envoy/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-istio-subscription/all/"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-bridge-3/"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-bridge-wasm/"
+to = "https://docs.tetrate.io/service-bridge/refs/tsb/extension/v2/wasm_extension"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-bridge/all/"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/tetrate-service-bridge/features/"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/tis/"
+to = "/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/tsb-application-aware-networking-demo/"
+to = "/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/venue-dashboard/"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/what-is-istio-service-mesh/all/"
+to = "/what-is-istio-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/zero-trust-architecture/all/"
+to = "/tetrate-zero-trust-security/"
+status = 301
+
+[[redirects]]
+from = "/zero-trust/all/"
+to = "/tetrate-zero-trust-security/"
+status = 301
+
+[[redirects]]
+from = "/zta-devsecops-conference-2022./"
+to = "/tetrate-zero-trust-security/"
+status = 301
+
+[[redirects]]
+from = "/blog/now-available-onboard-ec2ecs-workloads-onto-tetrate-istio-service-mesh/"
+to = "/blog/announcing-onboard-ec2-ecs-workloads-onto-your-service-mesh-with-tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/blog/istio-traffic-management-ebay-industry/"
+to = "/blog/istio-based-traffic-management-use-case-of-ebay/"
+status = 301
+
+[[redirects]]
+from = "/press/tetrate-introduces-100-upstream-powered-tetrate-enterprise-envoy-gateway-to-streamline-developer-experience-for-gateway-use-cases/"
+to = "/press/envoy-decentralized-for-streamline-developers/"
+status = 301
+
+[[redirects]]
+from = "/blog/an-istio-based-traffic-management-use-case-of-ebay/"
+to = "/blog/istio-traffic-management-ebay-industry/"
+status = 301
+
+# ==== NEW REDIRECTS ====
+# Contact
+[[redirects]]
+from = "/pricing-request/"
+to = "/contact/pricing-request"
+status = 301
+
+[[redirects]]
+from = "/contact/pricing-request/"
+to = "https://tetrate.pm.peppermint.id/pricing-request"
+status = 200
+headers = {X-From = "Netlify"}
+
+[[redirects]]
+from = "/demo-request/"
+to = "/contact/demo-request"
+status = 301
+
+[[redirects]]
+from = "/contact/demo-request/"
+to = "https://tetrate.pm.peppermint.id/demo-request"
+status = 200
+headers = {X-From = "Netlify"}
+
+[[redirects]]
+from = "/istio-support-request/"
+to = "/contact/istio-support-request/"
+status = 301
+
+[[redirects]]
+from = "/contact/istio-support-request/"
+to = "https://tetrate.pm.peppermint.id/istio-support-request/"
+status = 200
+headers = {X-From = "Netlify"}
+
+# Blog
+[[redirects]]
+from = "/blog/*"
+to = "https://tetrate.pm.peppermint.id/blog/:splat"
+status = 200
+headers = {X-From = "Netlify"}
+
+# Learn
+[[redirects]]
+from = "/learn/*"
+to = "https://tetrate.pm.peppermint.id/learn/:splat"
+status = 200
+headers = {X-From = "Netlify"}
+
+# Resources
+[[redirects]]
+from = "/resources/*"
+to = "https://tetrate.pm.peppermint.id/resources/:splat"
+status = 200
+headers = {X-From = "Netlify"}
+
+# Events
+[[redirects]]
+from = "/events/*"
+to = "https://tetrate.pm.peppermint.id/events/:splat"
+status = 200
+headers = {X-From = "Netlify"}
+
+# Press
+[[redirects]]
+from = "/press/*"
+to = "https://tetrate.pm.peppermint.id/press/:splat"
+status = 200
+headers = {X-From = "Netlify"}
+
+# FAQ
+[[redirects]]
+from = "/faq/*"
+to = "https://tetrate.pm.peppermint.id/faq/:splat"
+status = 200
+headers = {X-From = "Netlify"}
+
+# Products
+## TIS
+[[redirects]]
+from = "/tetrate-istio-subscription/"
+to = "/products/tetrate-istio-subscription/"
+status = 301
+
+[[redirects]]
+from = "/products/tetrate-istio-subscription/"
+to = "https://tetrate.pm.peppermint.id/tetrate-istio-subscription/"
+status = 200
+headers = {X-From = "Netlify"}
+
+## TIS+
+[[redirects]]
+from = "/tetrate-istio-subscription-plus/"
+to = "/products/tetrate-istio-subscription-plus/"
+status = 301
+
+[[redirects]]
+from = "/products/tetrate-istio-subscription-plus"
+to = "https://tetrate.pm.peppermint.id/tetrate-istio-subscription-plus"
+status = 200
+headers = {X-From = "Netlify"}
+
+## TEG
+[[redirects]]
+from = "/tetrate-enterprise-gateway-for-envoy/"
+to = "/products/tetrate-enterprise-gateway-for-envoy/"
+status = 301
+
+[[redirects]]
+from = "/products/tetrate-enterprise-gateway-for-envoy/"
+to = "https://tetrate.pm.peppermint.id/tetrate-enterprise-gateway-for-envoy/"
+status = 200
+headers = {X-From = "Netlify"}
+
+## TSB
+[[redirects]]
+from = "/tetrate-service-bridge/"
+to = "/products/tetrate-service-bridge/"
+status = 301
+
+[[redirects]]
+from = "/products/tetrate-service-bridge/"
+to = "https://tetrate.pm.peppermint.id/tetrate-service-bridge/"
+status = 200
+headers = {X-From = "Netlify"}
+
+[[redirects]]
+from = "/tetrate-service-bridge/why-tetrate-service-bridge/"
+to = "/products/tetrate-service-bridge/why/"
+status = 301
+
+[[redirects]]
+from = "/products/tetrate-service-bridge/why/"
+to = "https://tetrate.pm.peppermint.id/tetrate-service-bridge/why-tetrate-service-bridge/"
+status = 200
+headers = {X-From = "Netlify"}
+
+[[redirects]]
+from = "/tetrate-service-bridge/how-tetrate-service-bridge-works/"
+to = "/products/tetrate-service-bridge/how/"
+status = 301
+
+[[redirects]]
+from = "/products/tetrate-service-bridge/how/"
+to = "https://tetrate.pm.peppermint.id/tetrate-service-bridge/how-tetrate-service-bridge-works/"
+status = 200
+headers = {X-From = "Netlify"}
+
+# Solutions
+## Financial services
+[[redirects]]
+from = "/tetrate-financial-services-solutions/"
+to = "/solutions/financial-services/"
+status = 301
+
+[[redirects]]
+from = "/solutions/financial-services/"
+to = "https://tetrate.pm.peppermint.id/tetrate-financial-services-solutions/"
+status = 200
+headers = {X-From = "Netlify"}
+
+## FIPS
+[[redirects]]
+from = "/fips-140-2-validated-service-mesh/"
+to = "/solutions/fips-140-2-validated-service-mesh/"
+status = 301
+
+[[redirects]]
+from = "/solutions/fips-140-2-validated-service-mesh/"
+to = "https://tetrate.pm.peppermint.id/fips-140-2-validated-service-mesh/"
+status = 200
+headers = {X-From = "Netlify"}
+
+## Government
+[[redirects]]
+from = "/government/"
+to = "/solutions/government/"
+status = 301
+
+[[redirects]]
+from = "/solutions/government/"
+to = "https://tetrate.pm.peppermint.id/government/"
+status = 200
+headers = {X-From = "Netlify"}
+
+## Kubernetes
+[[redirects]]
+from = "/manage-kubernetes-complexity/"
+to = "/solutions/manage-kubernetes-complexity/"
+status = 301
+
+[[redirects]]
+from = "/solutions/manage-kubernetes-complexity/"
+to = "https://tetrate.pm.peppermint.id/manage-kubernetes-complexity/"
+status = 200
+headers = {X-From = "Netlify"}
+
+## Zero Trust
+[[redirects]]
+from = "/tetrate-zero-trust-security/"
+to = "/solutions/zero-trust-security/"
+status = 301
+
+[[redirects]]
+from = "/solutions/zero-trust-security/"
+to = "https://tetrate.pm.peppermint.id/tetrate-zero-trust-security/"
+status = 200
+headers = {X-From = "Netlify"}
+
+# About
+[[redirects]]
+from = "/about-us/"
+to = "/about/"
+status = 301
+
+[[redirects]]
+from = "/about/"
+to = "https://tetrate.pm.peppermint.id/about-us"
+status = 200
+headers = {X-From = "Netlify"}
+
+## Why
+[[redirects]]
+from = "/why-tetrate/"
+to = "/about/why-tetrate/"
+status = 301
+
+[[redirects]]
+from = "/about/why-tetrate/"
+to = "https://tetrate.pm.peppermint.id/why-tetrate/"
+status = 200
+headers = {X-From = "Netlify"}
+
+## Customers
+[[redirects]]
+from = "/our-customers/"
+to = "/about/customers/"
+status = 301
+
+[[redirects]]
+from = "/about/customers/"
+to = "https://tetrate.pm.peppermint.id/why-tetrate/"
+status = 200
+headers = {X-From = "Netlify"}
+
+# ==== PROXY UNMATCHED TO WP OTHERWISE ====
+[[redirects]]
+from = "/*"
+to = "https://tetrate.pm.peppermint.id/:splat"
+status = 200
+headers = {X-From = "Netlify"}
+
+# ==== EDGE FUNCTIONS ====
+[[edge_functions]]
+path = "/*"
+function = "modify-headers"

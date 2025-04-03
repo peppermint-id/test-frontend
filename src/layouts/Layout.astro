@@ -1,0 +1,39 @@
+---
+import Header from "@/components/templates/header/index.astro";
+import Footer from "@/components/templates/footer/index.astro";
+import TopBar from "@/components/templates/top-bar/index.astro";
+import Analytics from "@/components/templates/analytics/index.astro";
+import "../styles/global.css";
+
+const {
+	title = "Tetrate: Application-aware networking for all workloads, in all environments",
+	description = "Tetrate provides secure, reliable, and application-aware networking solutions across all environments.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="/og-image.png" />
+		<meta property="og:type" content="website" />
+	</head>
+	<body>
+		<TopBar />
+		<Header />
+		<slot />
+		<Footer />
+		<Analytics />
+	</body>
+</html>
