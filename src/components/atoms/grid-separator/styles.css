@@ -1,0 +1,6 @@
+.grid-separator {
+	width: 100%;
+	background-image: url('/images/patterns/mesh.png');
+	background-size: 6px 12px;
+	height: 80px;
+}

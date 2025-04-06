@@ -1,0 +1,34 @@
+---
+import './styles.css'
+import Card from './demo-workflow-card.astro'
+import {Files, PlayCircle, Question, BreakingLine} from '@/components/svgs'
+---
+
+<section class="demo-workflow">
+    <div class="demo-workflow-content">
+        <h2 class="text__heading--h2 demo-workflow-heading">What to Expect from Your Demo</h2>
+        <div class="demo-workflow-cards">
+            <BreakingLine className="demo-workflow-breaking-line"/>
+            <Card
+                    title="Personalized Guidance"
+                    description="Our experts will tailor the demo to your \n specific needs and goals."
+            >
+                <Files />
+            </Card>
+
+            <Card
+                    title="Live Demonstration"
+                    description="See Tetrate products in action \n with a live demonstration."
+            >
+                <PlayCircle />
+            </Card>
+
+            <Card
+                    title="Q&A Session"
+                    description="Get answers and see how Tetrate \n meets your needs."
+            >
+                <Question />
+            </Card>
+        </div>
+    </div>
+</section>

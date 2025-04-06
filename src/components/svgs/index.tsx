@@ -46,3 +46,8 @@ export * from './chart-line'
 export * from './list-checks'
 export * from './arrows-split'
 export * from './shield-check'
+
+export * from './question'
+export * from './play-circle'
+export * from './files'
+export * from './breaking-line'

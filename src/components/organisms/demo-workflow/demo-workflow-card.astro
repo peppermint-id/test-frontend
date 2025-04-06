@@ -1,0 +1,11 @@
+---
+import './styles.css'
+import {Astro} from "astro/env";
+const {title, description} = Astro.props
+---
+
+<div class="demo-workflow-card">
+    <slot />
+    <h5 class="text__heading--h5">{title}</h5>
+    <p class="text__body--16">{description}</p>
+</div>
