@@ -39,6 +39,14 @@ import {
 	Careers,
 	GetSupport,
 	ContactUs,
+	ShieldCheck,
+	ArrowSplit,
+	ChartLineUp,
+	ListChecks,
+	DollarSign,
+	ChartDonut,
+	UserSquare,
+	LineThrough,
 } from "@/components/svgs";
 
 export const icons = {
@@ -79,6 +87,14 @@ export const icons = {
 	"m-company-careers": Careers,
 	"m-company-get-support": GetSupport,
 	"m-company-contact-us": ContactUs,
+	"card-shield-check": ShieldCheck,
+	"card-arrow-split": ArrowSplit,
+	"card-chart-line-up": ChartLineUp,
+	"card-list-checks": ListChecks,
+	"info-dollar-sign": DollarSign,
+	"info-chart-donut": ChartDonut,
+	"info-user-square": UserSquare,
+	"info-line-through": LineThrough,
 };
 export type IconType = keyof typeof icons;
 export interface IconProps

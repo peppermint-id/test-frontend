@@ -23,12 +23,13 @@
 	.footer__container {
 		padding-bottom: 60px;
 	}
-}
 
-@media (width >= 1024px) {
 	.footer__grid {
 		padding: 0 20px;
 	}
+}
+
+@media (width >= 1024px) {
 
 	.footer__container {
 		max-width: 1240px;

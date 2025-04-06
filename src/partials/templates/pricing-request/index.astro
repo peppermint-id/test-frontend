@@ -1,0 +1,120 @@
+---
+import "./styles.css"
+
+import { FeatureCard } from "@/components/molecules/";
+import { PricingRequestForm } from "../../../components/organisms";
+import type { IconType } from "../../../components/atoms";
+
+interface FeatureCardProps {
+	icon: IconType;
+	title: string;
+	text: string;
+}
+
+const featureCards: FeatureCardProps[] = [
+	{
+		icon: "card-shield-check",
+		title: "Connect & Protect",
+		text: "Secure and\u00a0connect thousands of\u00a0microservices with\u00a0Zero\u00a0Trust across\u00a0any\u00a0environment.",
+	},
+	{
+		icon: "card-arrow-split",
+		title: "Simplify Traffic Management",
+		text: "Enable built-in traffic routing, splitting,\u00a0canary\u00a0deployments, and\u00a0monitoring.",
+	},
+	{
+		icon: "card-chart-line-up",
+		title: "Improve Visibility & Troubleshooting",
+		text: "Gain deep observability for\u00a0SLOs and\u00a0faster\u00a0issue\u00a0resolution.",
+	},
+	{
+		icon: "card-list-checks",
+		title: "Ensure Compliance",
+		text: "Safeguard services, APIs, and\u00a0data while meeting PCI, HIPAA, GDPR, and\u00a0FedRAMP\u00a0requirements.",
+	},
+];
+---
+
+<section class="pricingRequest">
+	<div class="u-grid-bg u-grid-bg--top u-grid-bg--primary u-grid-bg--top-0">
+	</div>
+	<div
+		class="u-grid-bg u-grid-bg--top-thin u-grid-bg--secondary u-grid-bg--top-0"
+	>
+	</div>
+	<div class="u-grid-bg u-grid-bg--bottom u-grid-bg--primary"></div>
+	<div class="u-grid-bg u-grid-bg--bottom-thin u-grid-bg--secondary"></div>
+
+	<div class="pricingRequest__grid">
+		<div class="u-grid-bg u-grid-bg--left u-grid-bg--primary"></div>
+		<div class="u-grid-bg u-grid-bg--left-thin u-grid-bg--secondary"></div>
+		<div class="u-grid-bg u-grid-bg--right u-grid-bg--primary"></div>
+		<div class="u-grid-bg u-grid-bg--right-thin u-grid-bg--secondary"></div>
+
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-left u-grid-bg--primary u-grid-bg--top-0"
+		>
+		</div>
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-left u-grid-bg--secondary u-grid-bg--top-0"
+		>
+		</div>
+
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-right u-grid-bg--primary u-grid-bg--top-0"
+		>
+		</div>
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-right u-grid-bg--secondary u-grid-bg--top-0"
+		>
+		</div>
+
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--bottom-left u-grid-bg--primary"
+		>
+		</div>
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--bottom-left u-grid-bg--secondary"
+		>
+		</div>
+
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--bottom-right u-grid-bg--primary"
+		>
+		</div>
+		<div
+			class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--bottom-right u-grid-bg--secondary"
+		>
+		</div>
+
+		<div class="pricingRequest__container">
+			<div class="pricingRequest__content">
+				<div class="pricingRequest__body-content">
+					<div class="pricingRequest__body-title">
+						<h1
+							class="pricingRequest__body-heading text__heading--h4 text__heading--h3-md text__heading--h1-lg"
+						>
+							Get a <span class="color-orange-500">Pricing Quote</span>
+						</h1>
+						<div class="text__body--16">
+							Tetrate provides the leading solution for running open source software at production scale, availability, and security.
+						</div>
+					</div>
+					<div class="pricingRequest__content-card">
+						<div class="text__body--16-semibold text__body--18-semibold-md">
+							With Tetrate’s Istio and Envoy-based products, you can:
+						</div>
+						<div class="pricingRequest__card-wrapper">
+							{featureCards.map((card) => (
+								<FeatureCard {...card} />
+							))}
+						</div>
+					</div>
+				</div>
+			</div>
+			<PricingRequestForm />
+		</div>
+
+	</div>
+
+</section>

@@ -1,0 +1,26 @@
+/* ========== Card Container ========== */
+.card__container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+    background-color: var(--color-gray-300);
+    border-radius: 8px;
+}
+
+/* ========== Card Image ========== */
+.card__icon {
+    margin-bottom: 6px;
+}
+
+
+/* ========== Card Text ========== */
+.card__paragraph {
+    padding-right: 12px;
+}
+
+@media (width >= 1024px) {
+    .card__paragraph {
+        padding-right: 0;
+    }
+}
