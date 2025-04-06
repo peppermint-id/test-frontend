@@ -4,6 +4,7 @@ export * from "./arrow-right";
 export * from "./close";
 export * from "./menu";
 export * from "./bullet";
+export * from "./placeholder-arrow"
 
 export * from "./x";
 export * from "./youtube";
@@ -40,3 +41,8 @@ export * from "./newsroom";
 export * from "./careers";
 export * from "./get-support";
 export * from "./contact-us";
+
+export * from './chart-line'
+export * from './list-checks'
+export * from './arrows-split'
+export * from './shield-check'

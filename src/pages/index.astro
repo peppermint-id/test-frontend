@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "@/partials/templates/hero/index.astro";
-import UseCases from "@/partials/templates/use-cases/index.astro";
+import Hero from "@/components/organisms/hero/index.astro";
+import DemoPromo from "@/components/organisms/demo-promo/index.astro";
 import Workflow from "@/partials/templates/workflow/index.astro";
 import Cta from "@/partials/templates/cta/index.astro";
 
@@ -10,8 +10,7 @@ import Cta from "@/partials/templates/cta/index.astro";
 ---
 
 <Layout>
-	<Hero />
-	<UseCases />
+	<DemoPromo />
 	<Workflow />
 	<Cta />
 </Layout>

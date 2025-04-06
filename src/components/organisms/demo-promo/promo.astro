@@ -1,0 +1,41 @@
+---
+import './styles.css'
+import Card from './promo-card.astro'
+import {GetSupport, PlaceholderArrow, ShieldCheck, ArrowsSplit, ChartLine, ListChecks} from "../../svgs";
+---
+
+<div class="promo">
+    <h1 class="text__heading--h1">Get Your <br/> <span class="promo-heading-secondary">Custom Demo</span></h1>
+    <p class="promo-description text__body--16">Tetrate provides the leading solution for running open source software
+        at production scale, availability, and security.</p>
+
+    <div class="promo-content">
+        <p class="text__body--18-semibold">With Tetrate’s Istio and Envoy-based products, you can:</p>
+        <div class="promo-content-cards">
+            <Card
+                    title="Connect & Protect"
+                    description="Secure and connect thousands of microservices with Zero Trust across any environment."
+            >
+                <ShieldCheck/>
+            </Card>
+            <Card
+                    title="Simplify Traffic Management"
+                    description="Enable built-in traffic routing, splitting, canary deployments, and monitoring."
+            >
+                <ArrowsSplit/>
+            </Card>
+            <Card
+                    title="Improve Visibility & Troubleshooting"
+                    description="Gain deep observability for SLOs and faster issue resolution."
+            >
+                <ChartLine/>
+            </Card>
+            <Card
+                    title="Ensure Compliance"
+                    description="Safeguard services, APIs, and data while meeting PCI, HIPAA, GDPR, and FedRAMP requirements."
+            >
+                <ListChecks/>
+            </Card>
+        </div>
+    </div>
+</div>
