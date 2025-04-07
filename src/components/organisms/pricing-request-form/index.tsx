@@ -16,26 +16,32 @@ export const PricingRequestForm = () => {
 			<form className="form" id="pricing-form">
 				<div className="fields__wrapper">
 					<FormField
+						id="firstName"
 						label="First name:"
 						required
 						placeholder="Enter your first name"
 					/>
 					<FormField
+						id="lastName"
 						label="Last name:"
 						required
 						placeholder="Enter your last name"
 					/>
 					<FormField
+						id="email"
 						label="Email:"
 						required
 						placeholder="Enter your work email"
+						type="email"
 					/>
 					<FormField
+						id="jobTitle"
 						label="Job title:"
 						required
 						placeholder="Enter your job title"
 					/>
 					<FormField
+						id="company"
 						label="Company:"
 						required
 						placeholder="Enter your company name"

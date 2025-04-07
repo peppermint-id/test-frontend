@@ -10,6 +10,7 @@
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     height: 56px;
+    outline: none;
 }
 
 .input::placeholder {
