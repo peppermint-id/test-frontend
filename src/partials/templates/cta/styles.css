@@ -166,21 +166,20 @@
 	.cta__bg--top-left {
 		top: 58px;
 		left: 50%;
-		width: 349px;
-		transform: translateX(calc(-100% - 299px));
+		width: 562px;
+		transform: translate(calc(-100% - 120px));
 	}
 
 	.cta__bg--bottom-left {
 		top: 498px;
 		left: 50%;
-		width: 281px;
 		transform: translateX(calc(-100% - 364px));
 	}
 
 	.cta__bg--bottom-right {
-		top: 266px;
+		top: 397px;
 		left: 50%;
-		width: 281px;
-		transform: translateX(calc(-100% + 646px));
+		width: 397px;
+		transform: translateX(calc(-100% + 680px));
 	}
 }
