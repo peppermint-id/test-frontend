@@ -1,5 +1,5 @@
 ---
-import "./styles.css"
+import "./styles.css";
 
 import { FeatureCard } from "@/components/molecules/";
 import { PricingRequestForm } from "../../../components/organisms";
@@ -97,7 +97,8 @@ const featureCards: FeatureCardProps[] = [
 							Get a <span class="color-orange-500">Pricing Quote</span>
 						</h1>
 						<div class="text__body--16">
-							Tetrate provides the leading solution for running open source software at production scale, availability, and security.
+							Tetrate provides the leading solution for running open source
+							software at production scale, availability, and security.
 						</div>
 					</div>
 					<div class="pricingRequest__content-card">
@@ -105,16 +106,12 @@ const featureCards: FeatureCardProps[] = [
 							With Tetrate’s Istio and Envoy-based products, you can:
 						</div>
 						<div class="pricingRequest__card-wrapper">
-							{featureCards.map((card) => (
-								<FeatureCard {...card} />
-							))}
+							{featureCards.map((card) => <FeatureCard {...card} />)}
 						</div>
 					</div>
 				</div>
 			</div>
 			<PricingRequestForm />
 		</div>
-
 	</div>
-
 </section>

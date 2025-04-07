@@ -1,5 +1,5 @@
 ---
-import "./styles.css"
+import "./styles.css";
 
 import { Title } from "@/components/atoms";
 import { InfoItem } from "@/components/molecules";
@@ -35,7 +35,10 @@ const items: ItemsProps[] = [
 ---
 
 <section class="whatToExpect">
-	<Title as="h2" className="text__heading--h4 text__heading--h3-md text__heading--h2-lg color-white text--center">
+	<Title
+		as="h2"
+		className="text__heading--h4 text__heading--h3-md text__heading--h2-lg color-white text--center"
+	>
 		What to Expect
 	</Title>
 
@@ -43,8 +46,14 @@ const items: ItemsProps[] = [
 		<div class="whatToExpect__lineThrough">
 			<Icon name="info-line-through" />
 		</div>
-		{items.map((item) => (
-			<InfoItem icon={item.icon} title={item.title} description={item.description} />
-		))}
+		{
+			items.map((item) => (
+				<InfoItem
+					icon={item.icon}
+					title={item.title}
+					description={item.description}
+				/>
+			))
+		}
 	</div>
 </section>
