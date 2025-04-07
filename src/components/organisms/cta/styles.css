@@ -34,6 +34,10 @@
 		font-size: 14px;
 		margin-top: 0;
 	}
+
+	.cta-title-break {
+		display: none;
+	}
 }
 
 @media (width >= 1024px) {
@@ -76,6 +80,10 @@
 	z-index: 2;
 }
 
+.cta__title-span {
+	color: var(--color-orange-500);
+}
+
 /* ========== CTA Buttons ========== */
 .cta__buttons {
 	display: flex;
@@ -88,9 +96,9 @@
 .cta__bg--top-left {
 	position: absolute;
 	top: 27px;
-	left: 0;
+	left: -120px;
 	z-index: 1;
-	width: 197px;
+	width: 316px;
 	height: auto;
 }
 
@@ -105,10 +113,10 @@
 
 .cta__bg--bottom-right {
 	position: absolute;
-	top: 345px;
-	right: 0;
+	right: -38px;
+	bottom: 8px;
 	z-index: 1;
-	width: 158px;
+	width: 223px;
 	height: auto;
 }
 
@@ -119,9 +127,9 @@
 
 	.cta__bg--top-left {
 		top: 22px;
-		left: 50%;
+		left: 3px;
 		width: 262px;
-		transform: translateX(calc(-100% - 118px));
+		transform: unset;
 	}
 
 	.cta__bg--bottom-left {
@@ -132,10 +140,9 @@
 	}
 
 	.cta__bg--bottom-right {
-		top: 238px;
-		left: 50%;
+		top: 415px;
+		left: calc(100vw - 225px);
 		width: 211px;
-		transform: translateX(calc(-100% + 377px));
 	}
 
 	.cta__text br {
@@ -144,16 +151,16 @@
 
 	.cta__container {
 		gap: 36px;
-		padding: 134px 0;
+		padding: 125px 0;
 		margin-right: 20px;
 	}
 }
 
-@media (width >=1024px) {
+@media (width >= 1024px) {
 	.cta {
 		position: relative;
 		width: 100%;
-		padding: 0;
+		padding: 0 20px;
 		overflow: hidden;
 	}
 
@@ -164,16 +171,46 @@
 	}
 
 	.cta__bg--top-left {
-		top: 58px;
-		left: 50%;
-		width: 562px;
-		transform: translate(calc(-100% - 120px));
+		top: 47px;
+		left: 10px;
+		width: 462px;
 	}
 
 	.cta__bg--bottom-left {
 		top: 498px;
 		left: 50%;
 		transform: translateX(calc(-100% - 364px));
+	}
+
+	.cta__bg--bottom-right {
+		top: 437px;
+		left: calc(100vw - 350px);
+		width: 327px;
+	}
+}
+
+@media (width >= 1280px) {
+	.cta__bg--top-left {
+		top: 47px;
+		left: 50%;
+		width: 462px;
+		transform: translateX(calc(-100% - 170px));
+	}
+
+	.cta__bg--bottom-right {
+		top: 437px;
+		left: 50%;
+		width: 327px;
+		transform: translateX(calc(-100% + 630px));
+	}
+}
+
+@media (width >= 1380px) {
+	.cta__bg--top-left {
+		top: 58px;
+		left: 50%;
+		width: 562px;
+		transform: translate(calc(-100% - 120px));
 	}
 
 	.cta__bg--bottom-right {

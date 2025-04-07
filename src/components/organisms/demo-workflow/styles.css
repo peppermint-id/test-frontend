@@ -15,6 +15,7 @@
 .demo-workflow-heading {
     width: fit-content;
     color: var(--color-gray-100);
+    text-align: center;
 }
 
 .demo-workflow-cards {
@@ -33,6 +34,28 @@
     right: 0;
     left: 0;
     margin: auto;
+    max-width: calc(100vw - 340px);
+}
+
+@media (width <= 1024px) {
+    .demo-workflow {
+        padding: 60px 0 80px;
+    }
+
+    .demo-workflow-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .demo-workflow-breaking-line {
+        display: none;
+    }
+}
+
+@media (width < 768px) {
+    .demo-workflow {
+        padding: 60px 20px 80px;
+    }
 }
 
 /* Demo Workflow Card */

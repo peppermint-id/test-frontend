@@ -1,7 +1,7 @@
 .content-block {
 	position: relative;
 	width: 100%;
-	padding: 0 10px;
+	padding: 0 24px;
 }
 
 .content-block__grid {
@@ -31,4 +31,25 @@
 	display: flex;
 	gap: 60px;
 	justify-content: space-between;
+}
+
+@media (width <= 1220px) {
+	.content-block-container {
+		flex-direction: column;
+		gap: 48px;
+		align-items: center;
+		justify-content: unset;
+	}
+}
+
+@media (width <= 1024px) {
+	.content-block__grid {
+		padding: 30px 8px;
+	}
+}
+
+@media (width < 768px) {
+	.content-block {
+		padding: 0 10px;
+	}
 }

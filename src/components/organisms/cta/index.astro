@@ -1,5 +1,5 @@
 ---
-import { GlowButton } from "@/components/atoms";
+import { GlowButton } from "../../atoms";
 
 import "./styles.css";
 ---
@@ -16,7 +16,7 @@ import "./styles.css";
 
 	<picture>
 		<source
-			media="(min-width: 1024px)"
+			media="(min-width: 1380px)"
 			srcset="/images/cta-bg.svg"
 			width="562"
 			height="232"
@@ -82,19 +82,36 @@ import "./styles.css";
 			</div>
 
 			<div class="cta__container">
-				<img
-					src="/images/tetrate.png"
-					srcset="/images/tetrate.png, /images/tetrate@2x.png 2x"
-					width={110}
-					height={109}
-					loading="lazy"
-					alt="Tetrate logo"
-				/>
+				<picture>
+					<source
+						media="(max-width: 1024px)"
+						srcset="/images/tetrate-mobile.png 1x,
+                /images/tetrate-mobile@2x.png 2x"
+						width="82.5"
+						height="81.75"
+					>
+
+					<source
+						srcset="/images/tetrate.png 1x,
+                /images/tetrate@2x.png 2x"
+						width="110"
+						height="109"
+					>
+
+					<img
+						src="/images/tetrate.png"
+						srcset="/images/tetrate@2x.png 2x"
+						width="110"
+						height="109"
+						loading="lazy"
+						alt="Tetrate logo"
+					>
+				</picture>
 
 				<h2
 					class="text__heading--h5 text__heading--h4-md text__heading--h2-lg cta__title"
 				>
-					Ready to enhance your network with more intelligence?
+					Ready to <span class="cta__title-span">enhance your network</span> <br class="cta-title-break"/> with more intelligence?
 				</h2>
 
 				<div class="cta__buttons">
