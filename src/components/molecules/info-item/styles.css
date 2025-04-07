@@ -1,0 +1,29 @@
+/* ========== Info Item Container ========== */
+.infoItem__container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ========== Info Item Text ========== */
+.infoItem__title {
+	line-height: 26px;
+}
+
+.infoItem__paragraph {
+	align-self: stretch;
+	-webkit-font-smoothing: antialiased;
+}
+
+@media (width >= 768px) {
+	.infoItem__title {
+		line-height: 27.6px;
+	}
+
+	.infoItem__paragraph {
+		align-self: center;
+		max-width: 410px;
+	}
+}

@@ -1,0 +1,77 @@
+/* ========== Form Container ========== */
+.form__container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+	padding: 20px;
+	background: linear-gradient(180deg, #fff 0%, rgb(255 255 255 / 10%) 100%);
+	border: 1px solid #e7e7e7;
+	box-shadow: 0 6px 40px 0 rgb(206 206 206 / 60%);
+	border-radius: 16px;
+}
+
+@media (width >= 768px) {
+	.form__container {
+		padding: 30px 40px;
+	}
+}
+
+@media (width >= 1024px) {
+	.form__container {
+		padding: 40px;
+	}
+}
+
+/* ========== Form ========== */
+.pricingRequestForm__title {
+	line-height: 26px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+}
+
+.fields__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.policy__captcha {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.form__submit {
+	gap: 3px;
+	padding: 16px 32px;
+	align-self: flex-start;
+	height: 48px;
+}
+
+.form__captcha {
+	height: 60px;
+}
+
+.form__captcha > img {
+	box-shadow:
+		0 0 4px rgb(0 0 0 / 8%),
+		0 0 5px #808080;
+	border-radius: 2px;
+}
+
+@media (width >= 768px) {
+	.pricingRequestForm__title {
+		line-height: 27.6px;
+	}
+}
+
+@media (width >= 1024px) {
+	.pricingRequestForm__title {
+		line-height: 30.8px;
+	}
+}

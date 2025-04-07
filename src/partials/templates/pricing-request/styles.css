@@ -1,0 +1,89 @@
+/* ========== Pricing Request ========== */
+.pricingRequest {
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+}
+
+.pricingRequest__grid {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px 10px;
+	max-width: 1240px;
+}
+
+.pricingRequest__container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	transition: all 0.2s ease-in-out;
+}
+
+@media (width >= 768px) {
+	.pricingRequest {
+		padding: 0 20px;
+		margin-top: 1px;
+	}
+
+	.pricingRequest__grid {
+		padding: 0;
+	}
+
+	.pricingRequest__container {
+		padding: 30px 7px 30px 8px;
+	}
+}
+
+@media (width >= 1440px) {
+	.pricingRequest__container {
+		display: grid;
+		gap: 60px;
+		padding: 40px 20px;
+		grid-template-columns: 600px auto;
+	}
+}
+
+/* ========== Pricing Request Content ========== */
+.pricingRequest__body-content {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+
+.pricingRequest__body-title {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.pricingRequest__content-card {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.pricingRequest__card-wrapper {
+	display: grid;
+	gap: 8px;
+}
+
+@media (width >= 768px) {
+	.pricingRequest__body-title {
+		gap: 24px;
+	}
+
+	.pricingRequest__card-wrapper {
+		display: grid;
+		gap: 8px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (width >= 1440px) {
+	.pricingRequest__body-heading {
+		margin: 20px 38px 0 0;
+		line-height: 68.2px;
+	}
+}

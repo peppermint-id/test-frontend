@@ -119,7 +119,7 @@ export const Header = () => {
 																	{item.name}
 																</p>
 																{item.description && (
-																	<p className="text__body--14 text__color-gray-800 mega_menu__item_description">
+																	<p className="text__body--14 color-gray-800 mega_menu__item_description">
 																		{item.description}
 																	</p>
 																)}
@@ -237,7 +237,7 @@ export const Header = () => {
 																			{item.name}
 																		</p>
 																		{item.description && (
-																			<p className="text__body--14 text__color-gray-800 mega_menu__item_description">
+																			<p className="text__body--14 color-gray-800 mega_menu__item_description">
 																				{item.description}
 																			</p>
 																		)}

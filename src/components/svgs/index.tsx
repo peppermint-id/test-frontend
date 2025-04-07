@@ -40,3 +40,13 @@ export * from "./newsroom";
 export * from "./careers";
 export * from "./get-support";
 export * from "./contact-us";
+
+export * from "./shield-check.tsx";
+export * from "./arrow-split";
+export * from "./chart-line-up";
+export * from "./list-checks";
+
+export * from "./dollar-sign";
+export * from "./chart-donut";
+export * from "./user-square";
+export * from "./line-through";
