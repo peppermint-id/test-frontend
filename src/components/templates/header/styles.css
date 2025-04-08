@@ -85,12 +85,12 @@
 }
 
 .nav__mobile {
-	display: none;
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	z-index: 5;
+	display: none;
 	width: 100%;
 	background-color: var(--color-gray-200);
 	height: 100%;
@@ -277,8 +277,8 @@
 		box-shadow: 0 6px 40px 0 #cecece99;
 		background-color: white;
 		border-radius: 16px;
-		transform: translateX(-50%);
 		opacity: 0;
+		transform: translateX(-50%);
 		visibility: hidden;
 	}
 

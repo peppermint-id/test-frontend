@@ -1,0 +1,37 @@
+---
+import './styles.css'
+import {FormInput} from "@/components/molecules";
+import {PlaceholderArrow} from "../../svgs";
+---
+
+<div class="request-form u-box-shadow">
+    <h4 class="text__heading--h4-lg text__heading--h5-md text__heading--h6">Request a Demo</h4>
+
+    <form class="request-form__form">
+        <FormInput label="First name" required placeholder="Enter your first name"/>
+        <FormInput label="Last name" required placeholder="Enter your last name"/>
+        <FormInput label="Email" required placeholder="Enter your work email"/>
+        <FormInput label="Job title" required placeholder="Enter your job title"/>
+        <FormInput label="Company" required placeholder="Enter your company name"/>
+    </form>
+
+    <div class="request-form__protection">
+        <p class="text__body--14">Tetrate uses your contact info to share product updates. You can unsubscribe anytime.
+            Learn more in our
+            <a href="" style="color: var(--color-blue-500)">Privacy Policy.</a>
+        </p>
+        <img
+                src={'/images/mocks/captcha.png'}
+                alt="Captcha"
+                loading="lazy"
+                class="captcha"
+                width="256px"
+                height="60px"
+        />
+    </div>
+
+    <button class="btn btn--primary request-form__button text__body--16-semibold-lg">
+        Submit
+        <PlaceholderArrow />
+    </button>
+</div>
