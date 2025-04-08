@@ -61,7 +61,7 @@
 }
 
 @media (width >= 1024px) {
-	.cta .cta__container {
+	.cta__section .cta__container {
 		gap: 45px;
 		padding: 126px 0;
 	}
@@ -233,7 +233,7 @@
 		display: block;
 	}
 
-	.cat .cta__container {
+	.cta__section .cta__container {
 		gap: 36px;
 		padding: 122px 117px;
 	}
@@ -247,7 +247,7 @@
 		overflow: hidden;
 	}
 
-	.cta .cta__container {
+	.cta__section .cta__container {
 		z-index: 2;
 		gap: 45px;
 		padding: 125px 211.5px;
