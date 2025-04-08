@@ -43,6 +43,10 @@
 }
 
 @media (width <= 1024px) {
+	.content-block {
+		padding: 0 17px;
+	}
+
 	.content-block__grid {
 		padding: 30px 8px;
 	}

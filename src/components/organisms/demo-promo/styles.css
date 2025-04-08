@@ -29,7 +29,7 @@
 @media (width <= 1220px) {
     .promo {
         margin-top: 0;
-        max-width: 800px;
+        max-width: unset;
     }
 
     .promo-heading-br {
@@ -88,7 +88,7 @@
     max-width: 540px;
 }
 
-.request-form__form {
+.request-form__input-group {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -105,7 +105,9 @@
 }
 
 .request-form__button {
+    gap: 3px;
     width: fit-content;
+    height: 48px;
 }
 
 .request-form__button > svg {
@@ -114,7 +116,7 @@
 
 @media (width <= 1220px) {
     .request-form {
-        max-width: 800px;
+        max-width: unset;
     }
 }
 

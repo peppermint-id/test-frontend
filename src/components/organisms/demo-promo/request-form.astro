@@ -2,18 +2,27 @@
 import './styles.css'
 import {FormInput} from "@/components/molecules";
 import {PlaceholderArrow} from "../../svgs";
+
+const formFields = [
+    {label: 'First name', placeholder: 'Enter your first name', field: 'firstName'},
+    {label: 'Last name', placeholder: 'Enter your last name', field: 'lastName'},
+    {label: 'Email', placeholder: 'Enter your work email', field: 'email'},
+    {label: 'Job title', placeholder: 'Enter your job title', field: 'job'},
+    {label: 'Company', placeholder: 'Enter your company name', field: 'company'},
+]
 ---
 
-<div class="request-form u-box-shadow">
+<form class="request-form u-box-shadow">
     <h4 class="text__heading--h4-lg text__heading--h5-md text__heading--h6">Request a Demo</h4>
 
-    <form class="request-form__form">
-        <FormInput label="First name" required placeholder="Enter your first name"/>
-        <FormInput label="Last name" required placeholder="Enter your last name"/>
-        <FormInput label="Email" required placeholder="Enter your work email"/>
-        <FormInput label="Job title" required placeholder="Enter your job title"/>
-        <FormInput label="Company" required placeholder="Enter your company name"/>
-    </form>
+    <div class="request-form__input-group">
+        {formFields.map((field) => (
+                <FormInput
+                        required
+                        {...field}
+                />
+        ))}
+    </div>
 
     <div class="request-form__protection">
         <p class="text__body--14">Tetrate uses your contact info to share product updates. You can unsubscribe anytime.
@@ -30,8 +39,8 @@ import {PlaceholderArrow} from "../../svgs";
         />
     </div>
 
-    <button class="btn btn--primary request-form__button text__body--16-semibold-lg">
+    <button class="btn btn--primary request-form__button text__body--16-semibold">
         Submit
-        <PlaceholderArrow />
+        <PlaceholderArrow/>
     </button>
-</div>
+</form>

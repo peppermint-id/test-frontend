@@ -37,6 +37,7 @@
 
 .btn--primary:hover {
 	background-color: #ff671b;
+	transform: translateY(-1px);
 }
 
 .btn--primary:active {

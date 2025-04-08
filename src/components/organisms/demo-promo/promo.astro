@@ -2,6 +2,15 @@
 import './styles.css'
 import Card from './promo-card.astro'
 import {GetSupport, PlaceholderArrow, ShieldCheck, ArrowsSplit, ChartLine, ListChecks} from "../../svgs";
+import {IconType, Icon} from "../../atoms";
+import {TCard} from "@/types";
+
+const promoCards: TCard[] = [
+    {title: 'Connect & Protect', description:`Secure and connect thousands of${'\u00A0'}microservices with Zero Trust across any environment.`, icon: 'shield-check'},
+    {title: 'Simplify Traffic Management', description:'Enable built-in traffic routing, splitting, canary deployments, and monitoring.', icon: 'arrows-split'},
+    {title: 'Improve Visibility & Troubleshooting', description:'Gain deep observability for SLOs and faster issue resolution.', icon: 'chart-line'},
+    {title: 'Ensure Compliance', description:'Safeguard services, APIs, and data while meeting PCI, HIPAA, GDPR, and FedRAMP requirements.', icon: 'list-checks'},
+]
 ---
 
 <div class="promo">
@@ -12,30 +21,16 @@ import {GetSupport, PlaceholderArrow, ShieldCheck, ArrowsSplit, ChartLine, ListC
     <div class="promo-content">
         <p class="text__body--16-semibold text__body--18-semibold-md">With Tetrate’s Istio and Envoy-based products, you can:</p>
         <div class="promo-content-cards">
-            <Card
-                    title="Connect & Protect"
-                    description="Secure and connect thousands of microservices with Zero Trust across any environment."
-            >
-                <ShieldCheck/>
-            </Card>
-            <Card
-                    title="Simplify Traffic Management"
-                    description="Enable built-in traffic routing, splitting, canary deployments, and monitoring."
-            >
-                <ArrowsSplit/>
-            </Card>
-            <Card
-                    title="Improve Visibility & Troubleshooting"
-                    description="Gain deep observability for SLOs and faster issue resolution."
-            >
-                <ChartLine/>
-            </Card>
-            <Card
-                    title="Ensure Compliance"
-                    description="Safeguard services, APIs, and data while meeting PCI, HIPAA, GDPR, and FedRAMP requirements."
-            >
-                <ListChecks/>
-            </Card>
+            {
+                promoCards.map(({title, description, icon}) => (
+                        <Card
+                                title={title}
+                                description={description}
+                        >
+                            <Icon name={icon} />
+                        </Card>
+                ))
+            }
         </div>
     </div>
 </div>
