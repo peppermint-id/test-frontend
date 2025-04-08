@@ -1,0 +1,17 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import ProductionSupport from "@/partials/templates/production-support/index.astro";
+import Enterprise from "@/partials/templates/enterprise-support-section/index.astro";
+import Rhombus from "@/partials/templates/production-support/rhombus.astro";
+import Cta from "@/partials/templates/cta/index.astro";
+
+const learMoreText =
+	"Announcing TEG 1.2—Enterprise support and FedRAMP-ready FIPS builds for Envoy Gateway 1.2";
+---
+
+<Layout learnMore={learMoreText}>
+	<ProductionSupport />
+	<Rhombus />
+	<Enterprise />
+	<Cta />
+</Layout>

@@ -1,6 +1,10 @@
 ---
 import { ArrowRight, Close } from "@/components/svgs";
 import "./style.css";
+
+const {
+	learnMore = "Announcing Tetrate Agent Operations Director for GenAI Runtime Visibility and Governance",
+} = Astro.props;
 ---
 
 <div class="topBar" id="topBar">
@@ -10,8 +14,7 @@ import "./style.css";
 			<h4
 				class="text__body--12-medium text__body--14-medium-lg text__body--14-medium-md topBar__title"
 			>
-				Announcing Tetrate Agent Operations Director for GenAI Runtime
-				Visibility and Governance
+				{learnMore}
 			</h4>
 			<a
 				href="/blog/announcing-tetrate-agent-operations-director-for-genai-runtime-visibility-and-governance/"

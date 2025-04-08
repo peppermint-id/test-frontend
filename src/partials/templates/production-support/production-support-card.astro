@@ -1,0 +1,11 @@
+---
+import "./production-support-card.css";
+
+const { icon, title, description } = Astro.props;
+---
+
+<div class="feature-card">
+	<div class="feature-card__icon"><img src={icon} alt={title} /></div>
+	<h3 class="text__body--14-semibold">{title}</h3>
+	<p class="feature-card__description text__body--14">{description}</p>
+</div>
