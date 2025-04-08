@@ -1,0 +1,15 @@
+.mesh__pattern--grey {
+	background-image: url("/public/images/patterns/mesh.png");
+}
+
+.mesh__pattern {
+	width: 100%;
+	background-size: 6px 12px;
+	height: 40px;
+}
+
+@media (width >= 1024px) {
+	.mesh__pattern {
+		height: 80px;
+	}
+}

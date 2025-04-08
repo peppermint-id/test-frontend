@@ -1,7 +1,8 @@
 ---
-import { GlowButton } from "@/components/atoms";
-
 import "./styles.css";
+
+import { GlowButton } from "@/components/atoms";
+import { Title } from "@/components/atoms";
 ---
 
 <section class="cta">
@@ -15,6 +16,36 @@ import "./styles.css";
 	</div>
 
 	<!--  CTA Pattern -->
+	<picture>
+		<img
+			src="/images/cta-bg.svg"
+			width="562"
+			height="232"
+			class="cta__bg--top-left u-hidden--md u-visible--lg"
+			loading="lazy"
+			alt="Decorative CTA background pattern"
+		/>
+	</picture>
+	<picture>
+		<img
+			src="/images/cta-bg-tablet.svg"
+			width="298"
+			height="174"
+			alt="background"
+			class="cta__background--tablet u-hidden u-visible--md u-hidden--lg"
+			loading="lazy"
+		/>
+	</picture>
+	<picture>
+		<img
+			src="/images/cta-bg-right.svg"
+			width="398"
+			height="232"
+			alt="background"
+			class="cta__bg--bottom-right"
+			loading="lazy"
+		/>
+	</picture>
 
 	<div
 		class="cta__bg--linear u-grid-bg--right u-grid-bg u-grid-bg--top-thin u-grid-bg--top-40 u-grid-bg--top-80-lg"
@@ -52,13 +83,30 @@ import "./styles.css";
 			</div>
 
 			<div class="cta__container">
-				<!--  CTA Logo -->
+				<picture>
+					<source
+						media="(min-width: 1440px)"
+						srcset="/images/tetrate.png 1x, /images/tetrate@2x.png 2x"
+						width="110"
+						height="109"
+					/>
+					<img
+						src="/images/tetrate-mobile.png"
+						srcset="/images/tetrate-mobile.png 1x, /images/tetrate-mobile@2x.png 2x"
+						alt="Tetrate logo in the CTA section"
+						width="84"
+						height="82"
+						loading="lazy"
+					/>
+				</picture>
 
-				<h2
-					class="text__heading--h5 text__heading--h4-md text__heading--h2-lg cta__title"
+				<Title
+					as="h2"
+					className="text__heading--h5 text__heading--h4-md text__heading--h2-lg cta__title"
 				>
-					<!--  CTA Title -->
-				</h2>
+					Ready to <span class="color-orange-500">enhance your network</span> with
+					more intelligence?
+				</Title>
 
 				<div class="cta__buttons">
 					<a href="/contact/demo-request/">
@@ -67,9 +115,9 @@ import "./styles.css";
 						>
 					</a>
 					<a href="/contact/pricing-request/">
-						<GlowButton className="text__body--16-semibold"
-							>Pricing Request</GlowButton
-						>
+						<GlowButton className="text__body--16-semibold">
+							Pricing Request
+						</GlowButton>
 					</a>
 				</div>
 			</div>

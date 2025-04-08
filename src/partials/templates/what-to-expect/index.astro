@@ -1,0 +1,55 @@
+---
+import "./styles.css";
+
+import { Title } from "@/components/atoms";
+import { InfoItem } from "@/components/molecules";
+import { Icon } from "@/components/atoms";
+import type { IconType } from "@/components/atoms";
+
+interface ItemsProps {
+	icon: IconType;
+	title: string;
+	description: string;
+}
+
+const items: ItemsProps[] = [
+	{
+		icon: "info-dollar-sign",
+		title: "Personalized Pricing",
+		description:
+			"Receive a\u00a0customized quote tailored to your specific business needs and environment.",
+	},
+	{
+		icon: "info-chart-donut",
+		title: "Clear Breakdown",
+		description:
+			"Understand the\u00a0full scope of\u00a0services included, with\u00a0transparent pricing details for\u00a0each.",
+	},
+	{
+		icon: "info-user-square",
+		title: "Expert Guidance",
+		description:
+			"Get expert support to\u00a0select the\u00a0best solution\u00a0and\u00a0optimize costs.",
+	},
+];
+---
+
+<section class="whatToExpect">
+	<Title
+		as="h2"
+		className="text__heading--h4 text__heading--h3-md text__heading--h2-lg color-white text--center"
+	>
+		What to Expect
+	</Title>
+
+	<div class="whatToExpect__content">
+		<div class="whatToExpect__lineThrough">
+			<Icon name="info-line-through" />
+		</div>
+		{
+			items.map((item) => (
+				<InfoItem {...item} />
+			))
+		}
+	</div>
+</section>
