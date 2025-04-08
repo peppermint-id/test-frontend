@@ -201,10 +201,10 @@
 	content: "";
 	position: absolute;
 	z-index: -1;
-	top: -100vh;
-	left: 0;
-	width: 100vh;
-	height: 151vw;
+	top: -107vw;
+	left: -37vh;
+	width: 110vh;
+	height: 200vw;
 	background-image: url("/images/patterns/gray-line.png");
 	background-size: 6px 12px;
 	transform: rotate(115deg);
@@ -216,9 +216,9 @@
 	content: "";
 	position: absolute;
 	z-index: -1;
-	top: -100vh;
+	top: -200px;
 	left: 0;
-	width: 100vh;
+	width: 150vh;
 	height: 151vw;
 	background-image: url("/images/patterns/gray-line.png");
 	background-size: 6px 12px;
