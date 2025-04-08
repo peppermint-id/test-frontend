@@ -91,34 +91,34 @@
 }
 
 @media (width < 375px) {
-	.cta__bg-tablet {
+	.cta .cta__bg-tablet {
 		display: none;
 	}
-	.cta__bg {
+	.cta .cta__bg {
 		display: none;
 	}
 }
 
 @media (width >= 375px) {
-	.cta__bg-tablet {
+	.cta .cta__bg-tablet {
 		display: none;
 	}
-	.cta__bg {
+	.cta .cta__bg {
 		display: none;
 	}
 }
 
 @media (width >= 768px) {
-	.cta__bg-right {
+	.cta .cta__bg-right {
 		bottom: 7px;
 		right: -3px;
 		width: 297px;
 		height: 173px;
 	}
-	.cta__bg-mobile {
+	.cta .cta__bg-mobile {
 		display: none;
 	}
-	.cta__bg-tablet {
+	.cta .cta__bg-tablet {
 		display: block;
 		position: absolute;
 		top: 28px;
@@ -127,17 +127,17 @@
 }
 
 @media (width >= 1440px) {
-	.cta__bg-tablet {
+	.cta .cta__bg-tablet {
 		display: none;
 	}
-	.cta__bg {
+	.cta .cta__bg {
 		position: absolute;
 		top: 57px;
 		left: -60px;
 		display: block;
 	}
 
-	.cta__bg-right {
+	.cta .cta__bg-right {
 		right: -60px;
 		bottom: 11px;
 		width: initial;

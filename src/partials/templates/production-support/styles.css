@@ -66,12 +66,12 @@
 /* ========== Desktop / Tablet / Mobile Overrides ========== */
 
 @media (min-width: 376px) {
-	.production-support__title {
+	.production-support > .production-support__title {
 		padding-top: 19px;
 		line-height: 68.2px;
 		margin: 0;
 	}
-	.production-support__description {
+	.production-support .production-support__description {
 		padding-top: 11px;
 	}
 }
