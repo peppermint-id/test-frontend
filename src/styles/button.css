@@ -37,6 +37,7 @@
 
 .btn--primary:hover {
 	background-color: #ff671b;
+	transform: translateY(-1px);
 }
 
 .btn--primary:active {
@@ -84,7 +85,7 @@
 
 /* ========== Sizes ========== */
 .btn--lg {
-	padding: 13px 32px;
+	padding: 16px 32px;
 }
 
 .btn--md {

@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from "react";
+import type {IconType} from "@/components/atoms";
 
 export interface SvgProps {
 	width?: number;
@@ -71,3 +72,9 @@ export type THeaderMenu = {
 		items: TMenuItem[];
 	}[];
 };
+
+export type TCard = {
+	title: string;
+	description: string;
+	icon: IconType;
+}

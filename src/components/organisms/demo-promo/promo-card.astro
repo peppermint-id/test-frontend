@@ -1,0 +1,13 @@
+---
+import {Astro} from "astro/env";
+const {title, description} = Astro.props
+import './styles.css'
+---
+
+<div class="promo-card">
+    <slot />
+    <div class="promo-card-content">
+        <h6 class="text__body--14-semibold">{title}</h6>
+        <p class="text__body--14 promo-card-description">{description}</p>
+    </div>
+</div>

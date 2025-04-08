@@ -1,0 +1,30 @@
+---
+import './styles.css'
+import Card from './demo-workflow-card.astro'
+import {Files, PlayCircle, Question, BreakingLine} from '@/components/svgs'
+import {Icon} from '@/components/atoms'
+import {TCard} from "@/types";
+
+const cards: TCard[] = [
+    {title: 'Personalized Guidance', description: 'Our experts will tailor the demo to your \n specific needs and goals.', icon: 'files'},
+    {title: 'Live Demonstration', description: 'See Tetrate products in action \n with a live demonstration.', icon: 'play-circle'},
+    {title: 'Q&A Session', description: 'Get answers and see how Tetrate \n meets your needs.', icon: 'question'},
+]
+
+---
+
+<section class="demo-workflow">
+    <div class="demo-workflow-content">
+        <h2 class="text__heading--h2-lg text__heading--h3-md text__heading--h4 demo-workflow-heading">What to Expect from Your Demo</h2>
+        <div class="demo-workflow-cards">
+            <BreakingLine className="demo-workflow-breaking-line"/>
+            {
+                cards.map(({icon, ...rest}) => (
+                        <Card {...rest}>
+                            <Icon name={icon} />
+                        </Card>
+                ))
+            }
+        </div>
+    </div>
+</section>

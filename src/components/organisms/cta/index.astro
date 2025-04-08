@@ -1,5 +1,5 @@
 ---
-import { GlowButton } from "@/components/atoms";
+import { GlowButton } from "../../atoms";
 
 import "./styles.css";
 ---
@@ -14,7 +14,37 @@ import "./styles.css";
 	>
 	</div>
 
-	<!--  CTA Pattern -->
+	<picture>
+		<source
+			media="(min-width: 1380px)"
+			srcset="/images/cta-bg.svg"
+			width="562"
+			height="232"
+		>
+		<source
+			media="(min-width: 768px)"
+			srcset="/images/cta-bg-tablet.svg"
+			width="298"
+			height="174"
+		>
+		<img
+			src="/images/cta-bg.svg"
+			width="562"
+			height="232"
+			class="cta__bg--top-left"
+			loading="lazy"
+			alt="Cta Background"
+		/>
+	</picture>
+
+	<img
+		src="/images/cta-bg-right.svg"
+		width="398"
+		height="232"
+		class="cta__bg--bottom-right"
+		loading="lazy"
+		alt="Cta Background"
+	>
 
 	<div
 		class="cta__bg--linear u-grid-bg--right u-grid-bg u-grid-bg--top-thin u-grid-bg--top-40 u-grid-bg--top-80-lg"
@@ -27,11 +57,11 @@ import "./styles.css";
 
 	<div class="cta__section">
 		<div class="cta__grid">
-			<div class="u-grid-bg u-grid-bg--left u-grid-bg--primary"></div>
-			<div class="u-grid-bg u-grid-bg--left-thin u-grid-bg--secondary"></div>
+			<div class="u-grid-bg u-grid-bg--left u-grid-bg--primary u-grid-bg--top-40 u-grid-bg--top-80-lg"></div>
+			<div class="u-grid-bg u-grid-bg--left-thin u-grid-bg--secondary u-grid-bg--top-40 u-grid-bg--top-80-lg"></div>
 
-			<div class="u-grid-bg u-grid-bg--right u-grid-bg--primary"></div>
-			<div class="u-grid-bg u-grid-bg--right-thin u-grid-bg--secondary"></div>
+			<div class="u-grid-bg u-grid-bg--right u-grid-bg--primary u-grid-bg--top-40 u-grid-bg--top-80-lg"></div>
+			<div class="u-grid-bg u-grid-bg--right-thin u-grid-bg--secondary u-grid-bg--top-40 u-grid-bg--top-80-lg"></div>
 
 			<div
 				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-left u-grid-bg--primary u-grid-bg--top-40 u-grid-bg--top-80-lg"
@@ -52,12 +82,37 @@ import "./styles.css";
 			</div>
 
 			<div class="cta__container">
-				<!--  CTA Logo -->
+				<picture>
+					<source
+						media="(max-width: 1024px)"
+						srcset="/images/tetrate-mobile.png 1x,
+                /images/tetrate-mobile@2x.png 2x"
+						width="82.5"
+						height="81.75"
+					>
+
+					<source
+						srcset="/images/tetrate.png 1x,
+                /images/tetrate@2x.png 2x"
+						width="110"
+						height="109"
+					>
+
+					<img
+						src="/images/tetrate.png"
+						srcset="/images/tetrate@2x.png 2x"
+						width="110"
+						height="109"
+						loading="lazy"
+						alt="Tetrate logo"
+						class="cta__container-logo"
+					>
+				</picture>
 
 				<h2
 					class="text__heading--h5 text__heading--h4-md text__heading--h2-lg cta__title"
 				>
-					<!--  CTA Title -->
+					Ready to <span class="cta__title-span">enhance your network</span> <br class="cta-title-break"/> with more intelligence?
 				</h2>
 
 				<div class="cta__buttons">
