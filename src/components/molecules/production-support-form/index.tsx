@@ -1,23 +1,22 @@
 import { useState } from "react";
 import type { ChangeEvent, FormEvent } from "react";
-import { firstFields, lastFields, businessObjectives } from "./formFields";
+
 import { ArrowRight } from "@/components/svgs";
 
-import "./production-support-form.css";
+import { firstFields, lastFields, businessObjectives } from "./formFields";
+import "./index.css";
 
-type FormData = {
-	[key: string]: string;
-};
+type FormData = Record<string, string>;
 
 const ProductionSupportForm = () => {
 	const [formData, setFormData] = useState<FormData>({});
 	const [selectedObjectives, setSelectedObjectives] = useState<string[]>([]);
 
 	const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-		setFormData({
-			...formData,
+		setFormData((prev) => ({
+			...prev,
 			[e.target.id]: e.target.value,
-		});
+		}));
 	};
 
 	const toggleObjective = (objective: string) => {
@@ -92,6 +91,7 @@ const ProductionSupportForm = () => {
 						</label>
 						<input
 							id={id}
+							name={id}
 							type={type}
 							placeholder={placeholder}
 							className="production-support-form__input"

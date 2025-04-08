@@ -1,4 +1,4 @@
-export type Field = {
+type Field = {
 	id: string;
 	label: string;
 	placeholder: string;

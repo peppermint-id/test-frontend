@@ -1,5 +1,6 @@
 ---
 import { GlowButton } from "@/components/atoms";
+import { Icon } from "@/components/atoms";
 
 import "./styles.css";
 ---
@@ -50,26 +51,29 @@ import "./styles.css";
 				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-right u-grid-bg--secondary u-grid-bg--top-40 u-grid-bg--top-80-lg"
 			>
 			</div>
-			<img class="cta__bg" src="images/cta-bg.svg" alt="background logo" />
-			<img
-				class="cta__bg-tablet"
-				src="images/cta-bg-tablet.svg"
-				alt="background logo mobile"
-			/>
-			<img
-				class="cta__bg-mobile"
-				src="images/cta-bg-mobile.svg"
-				alt="background logo mobile"
-			/>
-			<img
-				class="cta__bg-right"
-				src="images/cta-bg-right.svg"
-				alt="background logo second"
-			/>
+			<Icon name="cta-bg" className="cta__bg" />
+			<Icon name="cta-bg-tablet" className="cta__bg-tablet" />
+			<Icon name="cta-bg-mobile" className="cta__bg-mobile" />
+			<Icon name="cta-bg-right" className="cta__bg-right" />
 
 			<div class="cta__container">
 				<!--  CTA Logo -->
-				<img alt="logo" src="images/tetrate-mobile.png" class="cta__logo" />
+				<picture>
+					<source
+						srcset="/images/tetrate.png 1x, /images/tetrate@2x.png 2x"
+						media="(min-width: 1440px)"
+						width="110"
+						height="109"
+					/>
+					<img
+						srcset="/images/tetrate-mobile.png 1x, /images/tetrate-mobile@2x.png 2x"
+						src="/images/tetrate-mobile.png"
+						alt="Tetrate logo"
+						loading="lazy"
+						width="84"
+						height="82"
+					/>
+				</picture>
 				<h2
 					class="text__heading--h5 text__heading--h4-md text__heading--h2-lg cta__title"
 				>

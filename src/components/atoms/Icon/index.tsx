@@ -39,8 +39,19 @@ import {
 	Careers,
 	GetSupport,
 	ContactUs,
+	CtaBgMobile,
+	CtaBgRight,
+	CtaBgTablet,
+	CtaBg,
+	Lifecycle,
+	ReleaseStable,
+	Support,
+	Connect,
+	Compliance,
+	Improve,
+	Management,
+	Dashes,
 } from "@/components/svgs";
-
 export const icons = {
 	arrow: Arrow,
 	"arrow-up": ArrowUp,
@@ -79,6 +90,18 @@ export const icons = {
 	"m-company-careers": Careers,
 	"m-company-get-support": GetSupport,
 	"m-company-contact-us": ContactUs,
+	"cta-bg-mobile": CtaBgMobile,
+	"cta-bg-right": CtaBgRight,
+	"cta-bg-tablet": CtaBgTablet,
+	"cta-bg": CtaBg,
+	lifecycle: Lifecycle,
+	"release-stable": ReleaseStable,
+	support: Support,
+	connect: Connect,
+	compliance: Compliance,
+	improve: Improve,
+	management: Management,
+	dashes: Dashes,
 };
 export type IconType = keyof typeof icons;
 export interface IconProps

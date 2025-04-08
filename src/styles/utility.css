@@ -211,6 +211,21 @@
 	transform-origin: center;
 }
 
+/* Rotated background layer */
+.rhombus-bg::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: -100vh;
+	left: 0;
+	width: 100vh;
+	height: 151vw;
+	background-image: url("/images/patterns/gray-line.png");
+	background-size: 6px 12px;
+	transform: rotate(0deg);
+	transform-origin: center;
+}
+
 .u-grid-bg--extended {
 	height: calc(100% + 40px);
 }

@@ -67,9 +67,7 @@
 	}
 }
 
-//* ========== CTA Background ========== */
-
-.cta__bg-tablet {
+/========== CTA Background ========== .cta__bg-tablet {
 	position: absolute;
 	top: 27px;
 	left: 0px;
@@ -249,7 +247,7 @@
 
 	.cta__section .cta__container {
 		z-index: 2;
-		gap: 45px;
+		gap: 42px;
 		padding: 125px 211.5px;
 	}
 

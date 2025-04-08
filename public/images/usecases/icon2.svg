@@ -47,8 +47,8 @@
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_8269_60507"/>
 </filter>
 <linearGradient id="paint0_linear_8269_60507" x1="54.499" y1="4.5" x2="54.499" y2="79.5" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 </defs>
 </svg>

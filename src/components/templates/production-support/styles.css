@@ -42,14 +42,14 @@
 }
 
 .production-support__intro {
-	padding-top: 49px;
+	padding-top: 48px;
 }
 
 .production-support__features-grid {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 8px;
-	padding-top: 21px;
+	padding-top: 20px;
 }
 
 .production-support__form {
@@ -87,11 +87,11 @@
 	}
 
 	.production-support .production-support__title {
-		padding-top: 21px;
+		padding-top: 20px;
 	}
 
 	.production-support .production-support__description {
-		padding-top: 23px;
+		padding-top: 24px;
 	}
 
 	.production-support__info {
