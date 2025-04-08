@@ -202,7 +202,7 @@
 	position: absolute;
 	z-index: -1;
 	top: -107vw;
-	left: -37vh;
+	left: -37vw;
 	width: 110vw;
 	height: 200vw;
 	background-image: url("/images/patterns/gray-line.png");
