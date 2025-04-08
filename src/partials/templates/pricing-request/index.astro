@@ -2,8 +2,8 @@
 import "./styles.css";
 
 import { FeatureCard } from "@/components/molecules/";
-import { PricingRequestForm } from "../../../components/organisms";
-import type { IconType } from "../../../components/atoms";
+import { PricingRequestForm } from "@/components/organisms";
+import type { IconType } from "@/components/atoms";
 
 interface FeatureCardProps {
 	icon: IconType;
@@ -89,10 +89,10 @@ const featureCards: FeatureCardProps[] = [
 
 		<div class="pricingRequest__container">
 			<div class="pricingRequest__content">
-				<div class="pricingRequest__body-content">
-					<div class="pricingRequest__body-title">
+				<div class="pricingRequest__body_content">
+					<div class="pricingRequest__body_title">
 						<h1
-							class="pricingRequest__body-heading text__heading--h4 text__heading--h3-md text__heading--h1-lg"
+							class="pricingRequest__body_heading text__heading--h4 text__heading--h3-md text__heading--h1-lg"
 						>
 							Get a <span class="color-orange-500">Pricing Quote</span>
 						</h1>
@@ -101,11 +101,11 @@ const featureCards: FeatureCardProps[] = [
 							software at production scale, availability, and security.
 						</div>
 					</div>
-					<div class="pricingRequest__content-card">
+					<div class="pricingRequest__content_card">
 						<div class="text__body--16-semibold text__body--18-semibold-md">
 							With Tetrate’s Istio and Envoy-based products, you can:
 						</div>
-						<div class="pricingRequest__card-wrapper">
+						<div class="pricingRequest__card_wrapper">
 							{featureCards.map((card) => <FeatureCard {...card} />)}
 						</div>
 					</div>

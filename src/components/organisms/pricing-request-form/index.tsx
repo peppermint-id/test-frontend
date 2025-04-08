@@ -4,6 +4,40 @@ import { SubmitButton } from "@/components/atoms";
 import { Title } from "@/components/atoms";
 import { ArrowRight } from "@/components/svgs";
 
+const formFields = [
+	{
+		id: "firstName",
+		label: "First name:",
+		required: true,
+		placeholder: "Enter your first name",
+	},
+	{
+		id: "lastName",
+		label: "Last name:",
+		required: true,
+		placeholder: "Enter your last name",
+	},
+	{
+		id: "email",
+		label: "Email:",
+		required: true,
+		placeholder: "Enter your work email",
+		type: "email",
+	},
+	{
+		id: "jobTitle",
+		label: "Job title:",
+		required: true,
+		placeholder: "Enter your job title",
+	},
+	{
+		id: "company",
+		label: "Company:",
+		required: true,
+		placeholder: "Enter your company name",
+	},
+];
+
 export const PricingRequestForm = () => {
 	return (
 		<div className="form__container">
@@ -15,37 +49,9 @@ export const PricingRequestForm = () => {
 			</Title>
 			<form className="form" id="pricing-form">
 				<div className="fields__wrapper">
-					<FormField
-						id="firstName"
-						label="First name:"
-						required
-						placeholder="Enter your first name"
-					/>
-					<FormField
-						id="lastName"
-						label="Last name:"
-						required
-						placeholder="Enter your last name"
-					/>
-					<FormField
-						id="email"
-						label="Email:"
-						required
-						placeholder="Enter your work email"
-						type="email"
-					/>
-					<FormField
-						id="jobTitle"
-						label="Job title:"
-						required
-						placeholder="Enter your job title"
-					/>
-					<FormField
-						id="company"
-						label="Company:"
-						required
-						placeholder="Enter your company name"
-					/>
+					{formFields.map((field) => (
+						<FormField {...field} />
+					))}
 				</div>
 
 				<div className="policy__captcha">

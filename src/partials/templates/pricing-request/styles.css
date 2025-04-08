@@ -40,41 +40,41 @@
 	.pricingRequest__container {
 		display: grid;
 		gap: 60px;
-		padding: 40px 20px;
+		padding: 40px 18px 40px 17px;
 		grid-template-columns: 600px auto;
 	}
 }
 
 /* ========== Pricing Request Content ========== */
-.pricingRequest__body-content {
+.pricingRequest__body_content {
 	display: flex;
 	flex-direction: column;
 	gap: 48px;
 }
 
-.pricingRequest__body-title {
+.pricingRequest__body_title {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
 }
 
-.pricingRequest__content-card {
+.pricingRequest__content_card {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
 
-.pricingRequest__card-wrapper {
+.pricingRequest__card_wrapper {
 	display: grid;
 	gap: 8px;
 }
 
 @media (width >= 768px) {
-	.pricingRequest__body-title {
+	.pricingRequest__body_title {
 		gap: 24px;
 	}
 
-	.pricingRequest__card-wrapper {
+	.pricingRequest__card_wrapper {
 		display: grid;
 		gap: 8px;
 		grid-template-columns: repeat(2, 1fr);
@@ -82,7 +82,7 @@
 }
 
 @media (width >= 1440px) {
-	.pricingRequest__body-heading {
+	.pricingRequest .pricingRequest__body_heading {
 		margin: 20px 38px 0 0;
 		line-height: 68.2px;
 	}

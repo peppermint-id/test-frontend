@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { Icon, type IconType } from "@/components/atoms/Icon";
-import { Title } from "src/components/atoms/title";
-import { Paragraph } from "src/components/atoms/paragraph";
+import { Icon, type IconType } from "@/components/atoms";
+import { Title } from "@/components/atoms";
+import { Paragraph } from "@/components/atoms";
 
 interface FeatureCardProps {
 	icon: IconType;

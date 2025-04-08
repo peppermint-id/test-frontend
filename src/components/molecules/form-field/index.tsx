@@ -4,7 +4,7 @@ import type { InputHTMLAttributes } from "react";
 
 interface FormFieldProps extends InputHTMLAttributes<HTMLInputElement> {
 	id: string;
-	label: string;
+	label?: string;
 	required?: boolean;
 }
 
@@ -15,10 +15,12 @@ export const FormField = ({
 	...inputProps
 }: FormFieldProps) => (
 	<div className="formField__container">
-		<Label htmlFor={id}>
-			{label}
-			{required && <span>*</span>}
-		</Label>
+		{label && (
+			<Label htmlFor={id}>
+				{label}
+				{required && <span>*</span>}
+			</Label>
+		)}
 		<Input id={id} required {...inputProps} />
 	</div>
 );

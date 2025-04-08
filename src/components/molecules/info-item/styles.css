@@ -8,7 +8,7 @@
 }
 
 /* ========== Info Item Text ========== */
-.infoItem__title {
+.infoItem__container .infoItem__title {
 	line-height: 26px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 @media (width >= 768px) {
-	.infoItem__title {
+	.infoItem__container .infoItem__title {
 		line-height: 27.6px;
 	}
 

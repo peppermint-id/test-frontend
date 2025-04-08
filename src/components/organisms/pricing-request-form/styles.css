@@ -24,7 +24,7 @@
 }
 
 /* ========== Form ========== */
-.pricingRequestForm__title {
+.form__container .pricingRequestForm__title {
 	line-height: 26px;
 }
 
@@ -65,13 +65,13 @@
 }
 
 @media (width >= 768px) {
-	.pricingRequestForm__title {
+	.form__container .pricingRequestForm__title {
 		line-height: 27.6px;
 	}
 }
 
 @media (width >= 1024px) {
-	.pricingRequestForm__title {
+	.form__container .pricingRequestForm__title {
 		line-height: 30.8px;
 	}
 }

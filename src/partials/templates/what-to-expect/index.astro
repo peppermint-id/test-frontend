@@ -3,8 +3,8 @@ import "./styles.css";
 
 import { Title } from "@/components/atoms";
 import { InfoItem } from "@/components/molecules";
-import { Icon } from "../../../components/atoms";
-import type { IconType } from "../../../components/atoms";
+import { Icon } from "@/components/atoms";
+import type { IconType } from "@/components/atoms";
 
 interface ItemsProps {
 	icon: IconType;
@@ -48,11 +48,7 @@ const items: ItemsProps[] = [
 		</div>
 		{
 			items.map((item) => (
-				<InfoItem
-					icon={item.icon}
-					title={item.title}
-					description={item.description}
-				/>
+				<InfoItem {...item} />
 			))
 		}
 	</div>
