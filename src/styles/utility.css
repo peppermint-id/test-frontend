@@ -218,7 +218,7 @@
 	z-index: -1;
 	top: -200px;
 	left: 0;
-	width: 150vh;
+	width: 150vw;
 	height: 151vw;
 	background-image: url("/images/patterns/gray-line.png");
 	background-size: 6px 12px;
