@@ -1,0 +1,9 @@
+.rhombus.rhombus-bg {
+	height: 40px;
+}
+
+@media (min-width: 1440px) {
+	.rhombus.rhombus-bg {
+		height: 80px;
+	}
+}

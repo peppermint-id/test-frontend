@@ -179,6 +179,53 @@
 	background: linear-gradient(180deg, #0d4597 0%, #04132a 200%);
 }
 
+.u-grid-bg--horizontal-midnight {
+	background: linear-gradient(
+		90deg,
+		#114798 -14.44%,
+		#0a0d0f 50.19%,
+		#114798 114.83%
+	);
+}
+
+.rhombus-bg {
+	position: relative;
+	z-index: 0;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+/* Rotated background layer */
+.rhombus-bg::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: -107vw;
+	left: -37vw;
+	width: 110vw;
+	height: 200vw;
+	background-image: url("/images/patterns/gray-line.png");
+	background-size: 6px 12px;
+	transform: rotate(115deg);
+	transform-origin: center;
+}
+
+/* Rotated background layer */
+.rhombus-bg::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: -200px;
+	left: 0;
+	width: 150vw;
+	height: 151vw;
+	background-image: url("/images/patterns/gray-line.png");
+	background-size: 6px 12px;
+	transform: rotate(0deg);
+	transform-origin: center;
+}
+
 .u-grid-bg--extended {
 	height: calc(100% + 40px);
 }

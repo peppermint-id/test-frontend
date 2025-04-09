@@ -1,0 +1,14 @@
+---
+import { Icon } from "@/components/atoms";
+import "./index.css";
+
+const { icon, title, description } = Astro.props;
+---
+
+<div class="feature-card">
+	<div class="feature-card__icon">
+		<Icon name={icon} about={title} />
+	</div>
+	<h3 class="text__body--14-semibold">{title}</h3>
+	<p class="feature-card__description text__body--14">{description}</p>
+</div>

@@ -40,3 +40,19 @@ export * from "./newsroom";
 export * from "./careers";
 export * from "./get-support";
 export * from "./contact-us";
+
+export * from "./cta-bg-mobile";
+export * from "./cta-bg-right";
+export * from "./cta-bg-tablet";
+export * from "./cta-bg";
+
+export * from "./lifecycle";
+export * from "./release-stable";
+export * from "./support";
+
+export * from "./connect";
+export * from "./compliance";
+export * from "./improve";
+export * from "./management";
+
+export * from "./dashes";

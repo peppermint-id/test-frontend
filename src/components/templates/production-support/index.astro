@@ -1,0 +1,119 @@
+---
+import SupportForm from "@/components/molecules/production-support-form/index";
+import FeatureCard from "@/components/molecules/feature-card/index.astro";
+
+import "./styles.css";
+
+const features = [
+	{
+		icon: "connect",
+		title: "Connect & Protect",
+		description:
+			"Secure and connect thousands \nof microservices with Zero Trust \nacross any environment.",
+	},
+	{
+		icon: "management",
+		title: "Simplify Traffic Management",
+		description:
+			"Enable built-in traffic routing, \nsplitting, canary deployments, \nand monitoring.",
+	},
+	{
+		icon: "improve",
+		title: "Improve Visibility & Troubleshooting",
+		description:
+			"Gain deep observability for SLOs \nand faster issue resolution.",
+	},
+	{
+		icon: "compliance",
+		title: "Ensure Compliance",
+		description:
+			"Safeguard services, APIs, and data while meeting PCI, HIPAA, GDPR, \nand FedRAMP requirements.",
+	},
+];
+---
+
+<section class="production-support">
+	<div class="production-support__grid">
+		<!-- Borders -->
+		<div class="u-grid-bg u-grid-bg--top u-grid-bg--primary"></div>
+		<div class="u-grid-bg u-grid-bg--top-thin u-grid-bg--secondary"></div>
+
+		<div class="u-grid-bg u-grid-bg--bottom u-grid-bg--primary"></div>
+		<div class="u-grid-bg u-grid-bg--bottom-thin u-grid-bg--secondary"></div>
+
+		<div class="production-support__container">
+			<div class="u-grid-bg u-grid-bg--left u-grid-bg--primary"></div>
+			<div class="u-grid-bg u-grid-bg--left-thin u-grid-bg--secondary"></div>
+
+			<div class="u-grid-bg u-grid-bg--right u-grid-bg--primary"></div>
+			<div class="u-grid-bg u-grid-bg--right-thin u-grid-bg--secondary"></div>
+
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--bottom-left u-grid-bg--primary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--bottom-left u-grid-bg--secondary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--bottom-right u-grid-bg--primary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--bottom-right u-grid-bg--secondary"
+			>
+			</div>
+
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-left u-grid-bg--primary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-left u-grid-bg--secondary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--large u-grid-bg-dot--top-right u-grid-bg--primary"
+			>
+			</div>
+			<div
+				class="u-grid-bg-dot u-grid-bg-dot--small u-grid-bg-dot--top-right u-grid-bg--secondary"
+			>
+			</div>
+
+			<div class="production-support__content-wrapper">
+				<div class="production-support__info">
+					<h1
+						class="production-support__title text__heading--h4 text__heading--h3-md text__heading--h1-lg"
+					>
+						Get <span class="production-support__highlighted-title"
+							>Production Support</span
+						>
+					</h1>
+					<p class="production-support__description text__body--16">
+						Tetrate provides the leading solution for running open source
+						software at production scale, availability, and security.
+					</p>
+					<p
+						class="production-support__intro text__body--16-semibold text__body--18-semibold-md"
+					>
+						With Tetrate’s Istio and Envoy-based products, you can:
+					</p>
+					<div class="production-support__features-grid">
+						{
+							features.map((feature) => (
+								<FeatureCard
+									icon={feature.icon}
+									title={feature.title}
+									description={feature.description}
+								/>
+							))
+						}
+					</div>
+				</div>
+				<div class="production-support__form"><SupportForm /></div>
+			</div>
+		</div>
+	</div>
+</section>

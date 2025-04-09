@@ -1,0 +1,34 @@
+---
+import { Icon, type IconType } from "@/components/atoms";
+
+import { sections } from "./utils";
+import "./styles.css";
+---
+
+<section class="enterprise-support-section u-grid-bg--horizontal-midnight">
+	<div class="enterprise-support-section__container">
+		<h2
+			class="enterprise-support-section__heading text--center text__heading--h4 text__heading--h3-md text__heading--h2-lg"
+		>
+			Enterprise-Grade Support for Istio and Envoy
+		</h2>
+		<div class="enterprise-support-section__cards">
+			<Icon name="dashes" className="enterprise-support-section-dashes" />
+			{
+				sections.map(({ icon, id, title, description }) => (
+					<div class="enterprise-support-section__card text--center">
+						<div class="enterprise-support-section__image-wrapper">
+							<Icon name={icon as IconType} />
+						</div>
+						<h5 class="enterprise-support-section__card-title text__heading--h6 text__heading--h5-md text--center">
+							{title}
+						</h5>
+						<p class="enterprise-support-section__card-description text__body--16 text--center">
+							{description}
+						</p>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>
